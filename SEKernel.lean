@@ -12,3 +12,5 @@ import SEKernel.Law5_Duality
 import SEKernel.Law6_Alignment
 import SEKernel.Law7_Hopf
 import SEKernel.SpectralBridge
+import SEKernel.PriceMarket
+import SEKernel.PriceMarketMaster
