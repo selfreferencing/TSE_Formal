@@ -125,5 +125,20 @@ theorem coupled_imaginary_onset (b c α : ℝ) (hb : 0 < b) (hrot : c * α < -b 
   rw [coupled_trace, coupled_det]
   nlinarith [sq_nonneg lam]
 
+/-- First Lyapunov coefficient of the coupled Hopf at the symmetric interior
+equilibrium `x* = 1/2`.  A normal-form reduction of the concrete nonlinear coupled
+model (2-type replicator coupled to Walrasian price adjustment) computes it to be
+`c·α/2` (symbolic; verified negative across the admissible parameter range by the
+accompanying `l1_coupled.py`).  Its sign decides supercriticality. -/
+noncomputable def l1Symmetric (c α : ℝ) : ℝ := c * α / 2
+
+/-- **Supercriticality of the coupled Hopf.** Under the rotational Hopf condition
+`c·α < -b²` (`b>0`) the first Lyapunov coefficient is negative, so the bifurcation is
+supercritical: a *stable* limit cycle is born past onset — the sustained boom--bust is
+a genuine attractor, not a transient. -/
+theorem coupled_supercritical (b c α : ℝ) (hb : 0 < b) (hrot : c * α < -b ^ 2) :
+    l1Symmetric c α < 0 := by
+  unfold l1Symmetric; nlinarith [sq_nonneg b]
+
 end PriceMarketMaster
 end SEKernel

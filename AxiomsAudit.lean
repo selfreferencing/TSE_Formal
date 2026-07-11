@@ -90,3 +90,4 @@ import SEKernel
 #print axioms SEKernel.PriceMarketMaster.coupled_hopf
 #print axioms SEKernel.PriceMarketMaster.coupled_transversal
 #print axioms SEKernel.PriceMarketMaster.coupled_imaginary_onset
+#print axioms SEKernel.PriceMarketMaster.coupled_supercritical
