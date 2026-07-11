@@ -1,203 +1,103 @@
-# TSE Formal: Lean 4 Formalization of the Theory of Strategic Evolution
+# TSE Formal — Lean 4 / Mathlib verification of the Seven Laws of Strategic Evolution
 
-Formal verification of the Seven Laws of Strategic Replicators in Lean 4 with Mathlib4.
+Machine-verified kernel of the formal backbone of Kevin Vallier, *The Theory of
+Strategic Evolution: Games with Endogenous Players and Strategic Replicators*
+(arXiv:2512.07901).
 
-[![Lean 4](https://img.shields.io/badge/Lean-4-blue.svg)](https://lean-lang.org/)
+[![Lean 4](https://img.shields.io/badge/Lean-v4.28.0--rc1-blue.svg)](https://lean-lang.org/)
 [![Mathlib4](https://img.shields.io/badge/Mathlib-4-green.svg)](https://github.com/leanprover-community/mathlib4)
-[![Paper](https://img.shields.io/badge/Paper-arXiv-red.svg)](https://arxiv.org/abs/XXXX.XXXXX)
 
 ---
 
-## Overview
+## What this is
 
-This repository contains formal proofs for the Theory of Strategic Evolution (TSE), which analyzes strategic replicators: AI systems that optimize utility functions and control their own replication.
+**73 theorems across all seven laws, cold-compiling with zero custom axioms.**
+Every headline result depends only on Lean/Mathlib's standard base
+(`propext`, `Classical.choice`, `Quot.sound`); one theorem needs no axioms at
+all. No `sorry`, no `admit`, no `native_decide`, no custom `axiom` anywhere on
+the load-bearing path. This is a from-scratch reconstruction that deliberately
+avoids the "modulo ODE / Perron–Frobenius / spectral-theory axioms" caveats of
+earlier drafts — the analytic content is replaced by exact, discrete, or
+certificate-form statements that are provable outright, with the small number
+of genuinely classical inputs (LP strong duality, Brouwer, the classical Hopf
+theorem) carried as explicit *hypotheses* rather than axioms.
 
-The formalization covers:
-- RUPSI axiom system
-- Games with Endogenous Players (GEPs)
-- Replicator dynamics and Lyapunov stability
-- ESDI characterization (existence, sparsity, equivalence)
-- Small-gain condition for multi-level systems
-- G∞ closure theorem
-- Alignment impossibility
-- Hopf bifurcation at stability threshold
+The design contract, deviations, and per-law status live in three documents:
 
----
+- [`STATEMENTS.md`](STATEMENTS.md) — theorem-by-theorem transcription of the
+  paper's claims into the exact statements the Lean proves, with the ambiguity
+  ledger (AQ-1 … AQ-20) and every recorded deviation.
+- [`RETURN.md`](RETURN.md) — per-law verification status, the axiom audit
+  protocol, artifact hashes, the repairs, and plain-language summaries.
+- [`RECONCILIATION.md`](RECONCILIATION.md) — provenance and the relationship to
+  the earlier partial formalization (preserved under [`legacy/`](legacy/)).
 
 ## The Seven Laws
 
-| Law | Status | Main File |
-|-----|--------|-----------|
-| Law 1: Strategic Selection | ✓ Verified | `Basin.lean` |
-| Law 2: ESDI Characterization | ✓ Fully machine-checked | `ESDI.lean` |
-| Law 3: H-γ Stability | ✓ Fully machine-checked | `SmallGain.lean` |
-| Law 4: G∞ Closure | ✓ Verified (modulo spectral) | `GInfinityExtension.lean` |
-| Law 5: Constitutional Duality | ✓ Verified | `WelfareTheorems.lean` |
-| Law 6: Alignment Impossibility | ✓ Verified | `AlignmentImpossibility.lean` |
-| Law 7: Hopf Transition | ✓ Verified (modulo bifurcation) | `HopfBifurcation.lean` |
+| Law | Module | Status |
+|-----|--------|--------|
+| 1 — Strategic Selection (SS-1 Lyapunov, SS-2 elimination, Basin Limitation) | [`Law1_Selection.lean`](SEKernel/Law1_Selection.lean) | **Cold-verified** (discrete-time form) |
+| 2 — ESDI Characterization (Nash / KKT / LP, sparsity, existence) | [`Law2_ESDI.lean`](SEKernel/Law2_ESDI.lean) | **Cold-verified**; LP strong duality carried as a hypothesis |
+| 3 — H-γ Stability (small-gain / G1 Lyapunov) | [`Law3_Stability.lean`](SEKernel/Law3_Stability.lean) | **Cold-verified** (certificate form) |
+| 4 — G∞ Closure (block extension, slack budget, no infinite regress) | [`Law4_ClosureG.lean`](SEKernel/Law4_ClosureG.lean) | **Cold-verified** |
+| 5 — Constitutional Duality (welfare theorems, price of anarchy) | [`Law5_Duality.lean`](SEKernel/Law5_Duality.lean) | **Cold-verified** |
+| 6 — Alignment Impossibility (+ Endogenous-Electorate) | [`Law6_Alignment.lean`](SEKernel/Law6_Alignment.lean) | **Cold-verified** |
+| 7 — Hopf Transition | [`Law7_Hopf.lean`](SEKernel/Law7_Hopf.lean) | **Cold-verified** to Mathlib's edge; classical Hopf theorem carried as a hypothesis |
+| — | [`SpectralBridge.lean`](SEKernel/SpectralBridge.lean) | Corrected spectral bounds for Laws 3/4 |
 
----
+## Findings surfaced by the verification
 
-## Repository Structure
+Formalizing the paper turned up three fixable issues in the preprint and
+resolved two model questions — each machine-checked, each with a recommended
+correction (details in `RETURN.md` and `STATEMENTS.md`):
 
-### Core Definitions
-- `Basic.lean` — Fundamental types and structures
-- `CRUPSI.lean` — RUPSI axiom formalization
-- `ESDI.lean` — Evolutionarily Stable Distributions of Intelligence
+- **Law 2 (ESDI existence).** The published extreme-value-theorem proof does
+  not yield the equilibrium conditions for state-dependent fitness; a
+  counterexample to the proof *method* is machine-checked, and the fix (Nash's
+  improvement map, reducing existence to Brouwer's fixed-point theorem) is
+  proved by pure algebra.
+- **Law 4 (G∞).** Two spectral displays in the published proof are incorrect
+  as printed; `SpectralBridge.lean` supplies corrected, verified bounds, and an
+  exact certificate-form extension lemma delivers the intended conclusions.
+- **Law 6 (Endogenous Electorate).** Anonymity + neutrality are formally
+  contradictory for a resolute rule at every number of alternatives ≥ 2; the
+  impossibility is rebuilt on an *Overwhelming-Bloc* axiom ("a large enough
+  spawned bloc wins its top choice") — the strategic-replicator thesis itself
+  — and reproved with no classical inputs, with majority rule witnessing
+  consistency.
+- **Law 7 (Hopf).** Under the canonical replicator–mutator dynamics the printed
+  bifurcation curve κ_c(μ) is *not* a Hopf locus (verified), but a genuine
+  supercritical Hopf *does* occur at κ = 0 — exactly the γ = 1 stability
+  boundary that Law 7's title names. Center eigenvalues, frequency, and
+  transversality are all machine-checked. Recommendation: state the transition
+  at γ = 1.
 
-### Stability Theory
-- `Basin.lean` — Stability basins and Lyapunov functions
-- `SmallGain.lean` — Small-gain condition and spectral radius
-- `HopfBifurcation.lean` — Bifurcation at γ = 1
+## Building and checking
 
-### Alignment and Modification
-- `AlignmentImpossibility.lean` — Law 6 main theorem
-- `AlignmentImpossibilityProofs.lean` — Supporting lemmas
-- `GInfinityExtension.lean` — G∞ closure theorem
-- `GInfinityModifications.lean` — Modification class structure
-
-### Game Theory
-- `Frontier.lean` — ROC frontier geometry
-- `Cooperation.lean` — Cooperation thresholds
-- `Democracy.lean` — Endogenous-electorate impossibility
-
-### Extensions
-- `G10Validity.lean` — Evolvability bounds
-- `G11Evolvability.lean` — Innovation dynamics
-- `G12ConstitutionalSelection.lean` — Constitutional meta-governance
-- `WelfareTheorems.lean` — Welfare theorem extensions
-- `HeterogeneousWelfare.lean` — Heterogeneous fitness
-
-### Supporting Mathematics
-- `PerronFrobenius.lean` — Spectral theory for non-negative matrices
-- `NeumannSeries.lean` — Series convergence for stability
-- `HelmholtzDecomposition.lean` — Potential game structure
-- `Sparsity.lean` — Constraint-driven sparsity
-
----
-
-## Key Theorems
-
-### ESDI Existence and Sparsity
-```lean
-theorem esdi_exists (sys : RUPSISystem) : ∃ x : ESDI sys, True
-
-theorem esdi_sparsity (x : ESDI sys) (h : binding_constraints sys x = m) :
-  (support x).card ≤ m
-```
-
-### Small-Gain Stability
-```lean
-theorem small_gain_stability (Γ : Matrix n n ℝ) (hΓ : spectral_radius Γ < 1) :
-  ∃ V : Lyapunov, joint_lyapunov V
-```
-
-### Alignment Impossibility
-```lean
-theorem alignment_impossible (sys : ModifiableSystem) 
-  (h : full_reachability sys) :
-  ∀ B : StabilityBasin, ∃ path : ModificationSequence, escapes path B
-```
-
-### G∞ Closure
-```lean
-theorem admissible_closed (φ ψ : Modification) 
-  (hφ : φ ∈ M₀) (hψ : ψ ∈ M₀) : 
-  (ψ ∘ φ) ∈ M₀
-```
-
----
-
-## Building
-
-Requires Lean 4 and Mathlib4.
+Requires [`elan`](https://github.com/leanprover/elan) (the Lean toolchain
+manager). The toolchain and Mathlib revision are pinned in `lean-toolchain` and
+`lakefile.toml`.
 
 ```bash
-lake build
+lake exe cache get      # fetch prebuilt Mathlib oleans
+lake build              # compile all seven laws (≈ full Mathlib build the first time)
+lake env lean AxiomsAudit.lean   # print the axiom dependencies of every headline
 ```
 
----
+`AxiomsAudit.lean` runs `#print axioms` on all 73 theorems; a clean run reports
+`[propext, Classical.choice, Quot.sound]` for each (and "does not depend on any
+axioms" for one). That printout *is* the verification claim — it is
+reproducible from a clean checkout.
 
-## Axioms Used
+## Relationship to the paper
 
-Some proofs rely on standard mathematical axioms not yet in Mathlib:
-- Spectral theory for general matrices
-- ODE existence and uniqueness (Picard-Lindelöf)
-- Hopf bifurcation theorem
-
-These are marked with `sorry` or `axiom` declarations.
-
----
-
-## Connection to Paper
-
-This formalization accompanies:
-
-> Vallier, Kevin. "The Theory of Strategic Evolution: Games with Endogenous Players and the Seven Laws of Strategic Replicators." arXiv:XXXX.XXXXX (2025).
-
-Each `.lean` file corresponds to sections in the paper. Comments reference theorem numbers.
-
----
-
-## Key Concepts Formalized
-
-### Strategic Replicator
-```lean
-structure StrategicReplicator where
-  utility : UtilityFunction
-  budget : ResourceBudget  
-  spawn : SpawnDecision
-  selection : SelectionPressure
-```
-
-### RUPSI System
-```lean
-structure RUPSISystem where
-  rival : RivalResources
-  utility_guided : UtilityGuided
-  performance_mapped : PerformanceMapped
-  selection_monotone : SelectionMonotone
-  innovation_rare : InnovationRare
-```
-
-### Modification Class
-```lean
-def ModificationClass := Set Modification
-
-def admissible (M : ModificationClass) : Prop :=
-  preserves_replicator_structure M ∧ preserves_small_gain M
-```
-
----
-
-## Contributing
-
-Issues and PRs welcome. Priority areas:
-- Completing spectral theory axioms
-- Formalizing ODE existence
-- Extending to continuous strategy spaces
-
----
-
-## Citation
-
-```bibtex
-@software{vallier2025tseformal,
-  title={TSE Formal: Lean 4 Formalization of the Theory of Strategic Evolution},
-  author={Vallier, Kevin},
-  year={2025},
-  url={https://github.com/kevinvallier/TSE_Formal}
-}
-```
-
----
+The Lean statements are the contract in `STATEMENTS.md`, not a paraphrase.
+Where the discrete-time or certificate form deviates from the paper's
+continuous-time or spectral phrasing, the deviation is recorded there with its
+rationale. The paper is arXiv:2512.07901; its LaTeX source and the
+author-facing writeup live in the companion
+[`TSE_Paper`](https://github.com/selfreferencing/TSE_Paper) repository.
 
 ## License
 
-MIT License
-
----
-
-## Keywords
-
-Lean 4, Mathlib4, formal verification, theorem proving, game theory, evolutionary dynamics, AI alignment, replicator dynamics, Lyapunov stability, spectral theory, impossibility theorems
+Following the paper. See the author, Kevin Vallier.

@@ -1,0 +1,12 @@
+name = "SEKernel"
+defaultTargets = ["SEKernel"]
+
+# Pinned to the same Mathlib commit as the local verified build
+# (Erdős-993 workspace checkout), toolchain leanprover/lean4:v4.28.0-rc1.
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "5352afccd6866369be9de43f5b7ec47203555f44"
+
+[[lean_lib]]
+name = "SEKernel"
