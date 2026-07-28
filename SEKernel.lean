@@ -15,3 +15,4 @@ import SEKernel.SpectralBridge
 import SEKernel.PriceMarket
 import SEKernel.PriceMarketMaster
 import SEKernel.WaterLine
+import SEKernel.SpawnConflict
