@@ -7,10 +7,12 @@ per-law status, axiom audits, and the deviations ledger.
 import SEKernel.Law1_Selection
 import SEKernel.Law2_ESDI
 import SEKernel.Law3_Stability
+import SEKernel.Law3_SpectralClosure
 import SEKernel.Law4_ClosureG
 import SEKernel.Law5_Duality
 import SEKernel.Law6_Alignment
 import SEKernel.Law7_Hopf
+import SEKernel.Law7_Instantiation
 import SEKernel.SpectralBridge
 import SEKernel.PriceMarket
 import SEKernel.PriceMarketMaster

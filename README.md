@@ -11,16 +11,31 @@ Strategic Evolution: Games with Endogenous Players and Strategic Replicators*
 
 ## What this is
 
-**73 theorems across all seven laws, cold-compiling with zero custom axioms.**
-Every headline result depends only on Lean/Mathlib's standard base
-(`propext`, `Classical.choice`, `Quot.sound`); one theorem needs no axioms at
-all. No `sorry`, no `admit`, no `native_decide`, no custom `axiom` anywhere on
-the load-bearing path. This is a from-scratch reconstruction that deliberately
-avoids the "modulo ODE / Perron–Frobenius / spectral-theory axioms" caveats of
-earlier drafts — the analytic content is replaced by exact, discrete, or
-certificate-form statements that are provable outright, with the small number
-of genuinely classical inputs (LP strong duality, Brouwer, the classical Hopf
-theorem) carried as explicit *hypotheses* rather than axioms.
+**All seven laws carry machine-verified content, cold-compiling with zero
+custom axioms** — 203 theorem/lemma declarations in source, 240 theorems in
+the elaborated environment, every one depending only on Lean/Mathlib's
+standard base (`propext`, `Classical.choice`, `Quot.sound`); a handful need
+no axioms at all. No `sorry`, no `admit`, no `native_decide`, no custom
+`axiom` anywhere on the load-bearing path — verified exhaustively over the
+environment, not just over a name list. This is a from-scratch
+reconstruction that deliberately avoids the "modulo ODE / Perron–Frobenius /
+spectral-theory axioms" caveats of earlier drafts — the analytic content is
+replaced by exact, discrete, or certificate-form statements that are
+provable outright, with the small number of genuinely classical inputs
+(LP strong duality, Brouwer, the classical planar Hopf theorem) carried as
+explicit *hypotheses* rather than axioms.  (Counts as of the 2026-08-07 fix
+wave; regenerate with the audit commands below rather than trusting any
+frozen number.)
+
+**2026-08-07 fix wave** (see [`FIXES.md`](FIXES.md)): the certificate ⟺
+spectral-radius interface of Law 3 (AQ-9) is now **proved in both
+directions** with zero custom axioms (`Law3_SpectralClosure.lean`); Law 7's
+classical-Hopf interface was **re-architected to be non-vacuous** — every
+piece of eigendata is now tied to the vector field, the first Lyapunov
+number is machine-DERIVED from the replicator–mutator dynamics
+(`ell1At = −6μ` on the genuine locus `κ = −6μ`), and the degenerate center
+at `κ = μ = 0` is identified (`Law7_Hopf.lean`, `Law7_Instantiation.lean`,
+`RepairProbe.lean`).
 
 The design contract, deviations, and per-law status live in three documents:
 
@@ -30,7 +45,7 @@ The design contract, deviations, and per-law status live in three documents:
 - [`RETURN.md`](RETURN.md) — per-law verification status, the axiom audit
   protocol, artifact hashes, the repairs, and plain-language summaries.
 - [`RECONCILIATION.md`](RECONCILIATION.md) — provenance and the relationship to
-  the earlier partial formalization (preserved under [`legacy/`](legacy/)).
+  the earlier partial formalization described in the paper's own notes.
 
 ## The Seven Laws
 
@@ -38,12 +53,13 @@ The design contract, deviations, and per-law status live in three documents:
 |-----|--------|--------|
 | 1 — Strategic Selection (SS-1 Lyapunov, SS-2 elimination, Basin Limitation) | [`Law1_Selection.lean`](SEKernel/Law1_Selection.lean) | **Cold-verified** (discrete-time form) |
 | 2 — ESDI Characterization (Nash / KKT / LP, sparsity, existence) | [`Law2_ESDI.lean`](SEKernel/Law2_ESDI.lean) | **Cold-verified**; LP strong duality carried as a hypothesis |
-| 3 — H-γ Stability (small-gain / G1 Lyapunov) | [`Law3_Stability.lean`](SEKernel/Law3_Stability.lean) | **Cold-verified** (certificate form) |
+| 3 — H-γ Stability (small-gain / G1 Lyapunov) | [`Law3_Stability.lean`](SEKernel/Law3_Stability.lean), [`Law3_SpectralClosure.lean`](SEKernel/Law3_SpectralClosure.lean) | **Cold-verified**, now in BOTH forms: certificate ⟺ ρ(Γ) < 1 proved outright (AQ-9 closed, 2026-08-07), so the law's own spectral phrasing is a theorem |
 | 4 — G∞ Closure (block extension, slack budget, no infinite regress) | [`Law4_ClosureG.lean`](SEKernel/Law4_ClosureG.lean) | **Cold-verified** |
 | 5 — Constitutional Duality (welfare theorems, price of anarchy) | [`Law5_Duality.lean`](SEKernel/Law5_Duality.lean) | **Cold-verified** |
 | 6 — Alignment Impossibility (+ Endogenous-Electorate) | [`Law6_Alignment.lean`](SEKernel/Law6_Alignment.lean) | **Cold-verified** |
-| 7 — Hopf Transition | [`Law7_Hopf.lean`](SEKernel/Law7_Hopf.lean) | **Cold-verified** to Mathlib's edge; classical Hopf theorem carried as a hypothesis |
+| 7 — Hopf Transition | [`Law7_Hopf.lean`](SEKernel/Law7_Hopf.lean), [`Law7_Instantiation.lean`](SEKernel/Law7_Instantiation.lean) | **Cold-verified** to Mathlib's edge; classical planar Hopf theorem carried as the ONE hypothesis, now stated non-vacuously with all eigendata tied to the field (2026-08-07); every side condition machine-discharged for the replicator–mutator, ℓ₁ machine-derived |
 | — | [`SpectralBridge.lean`](SEKernel/SpectralBridge.lean) | Corrected spectral bounds for Laws 3/4 |
+| — | [`RepairProbe.lean`](RepairProbe.lean) | Anti-vacuity certificates: the audit's zero-field / linear-field attacks provably fail the repaired Law 7 hypotheses |
 
 ## Findings surfaced by the verification
 
@@ -82,12 +98,22 @@ manager). The toolchain and Mathlib revision are pinned in `lean-toolchain` and
 lake exe cache get      # fetch prebuilt Mathlib oleans
 lake build              # compile all seven laws (≈ full Mathlib build the first time)
 lake env lean AxiomsAudit.lean   # print the axiom dependencies of every headline
+lake env lean RepairProbe.lean   # anti-vacuity certificates for the Law 7 interface
+
+# zero custom axioms, checkable directly — this must print nothing:
+grep -rnE "^[[:space:]]*axiom[[:space:]]" --include='*.lean' .
 ```
 
-`AxiomsAudit.lean` runs `#print axioms` on all 73 theorems; a clean run reports
-`[propext, Classical.choice, Quot.sound]` for each (and "does not depend on any
-axioms" for one). That printout *is* the verification claim — it is
-reproducible from a clean checkout.
+(An unanchored `grep -rn axiom` will still match the *word* in prose and the
+`#print axioms` directives. Those are documentation and audit commands, not
+declarations. The anchored pattern above is the claim.)
+
+`AxiomsAudit.lean` runs `#print axioms` on the 141 headline theorems; a
+clean run reports `[propext, Classical.choice, Quot.sound]` for each (and
+"does not depend on any axioms" for `admissible_foldr`). That printout *is*
+the verification claim — it is reproducible from a clean checkout, and an
+exhaustive environment-level sweep (every `SEKernel.*` theorem, not just the
+audit list) reports zero custom axioms and zero `sorryAx` dependencies.
 
 ## Relationship to the paper
 

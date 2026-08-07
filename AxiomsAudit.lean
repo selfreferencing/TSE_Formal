@@ -122,3 +122,23 @@ import SEKernel
 #print axioms SEKernel.SpawnConflict.dissipation_gap_identity
 #print axioms SEKernel.SpawnConflict.dissipation_bound
 #print axioms SEKernel.SpawnConflict.dissipation_bound_strict
+-- 2026-08-07 fix wave: Law 3 spectral closure (AQ-9 closed, both directions)
+#print axioms SEKernel.SmallGain.spectrum_transpose
+#print axioms SEKernel.SmallGain.spectral_bound_of_cert
+#print axioms SEKernel.SmallGain.cert_of_spectral
+#print axioms SEKernel.SmallGain.cert_iff_spectral
+#print axioms SEKernel.SmallGain.G1_weighted_lyapunov_of_spectral
+-- 2026-08-07 fix wave: Law 7 repaired interface + replicator instantiation
+#print axioms SEKernel.Law7.IsPeriodicOrbit.pushforward
+#print axioms SEKernel.Law7.rmPlanar_comp0
+#print axioms SEKernel.Law7.rmPlanar_comp1
+#print axioms SEKernel.Law7.rmPlanar_bary
+#print axioms SEKernel.Law7.rmPlanar_hasJac
+#print axioms SEKernel.Law7.rmPlanar_smooth_rev
+#print axioms SEKernel.Law7.QP_one
+#print axioms SEKernel.Law7.PQ_one
+#print axioms SEKernel.Law7.rmJ_conj
+#print axioms SEKernel.Law7.ell1_Wc
+#print axioms SEKernel.Law7.ell1_Wc_neg
+#print axioms SEKernel.Law7.ell1_pureRPS_zero
+#print axioms SEKernel.Law7.rm_supercritical_hopf
