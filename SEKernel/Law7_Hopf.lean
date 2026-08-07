@@ -78,17 +78,92 @@ theorem firstLyapunov_neg {μ : ℝ} (h0 : 0 < μ) (h13 : μ < 1 / 3) :
   unfold firstLyapunovCoeff
   linarith
 
-/-! ### The classical Hopf interface (recorded input, never an axiom) -/
+/-! ### The classical Hopf interface (recorded input, never an axiom)
+
+REPAIRED 2026-08-07.  The previous interface carried `α, ω : ℝ → ℝ` as free
+fields of `HopfFamily` and `ℓ₁` as a bare real in `ClassicalHopfStatement`;
+nothing tied any of them to `V`.  That made the statement refutable — the
+identically-zero field satisfies every hypothesis with `α κ = κ, ω = 1,
+ℓ₁ = −1` yet has no nonconstant periodic orbit — so the conditional
+packaging was vacuously true (audit finding, `VacuityProbe.lean`).
+
+The repair ties every piece of eigendata to `V` itself:
+* the Jacobian `J κ` is REQUIRED to be the Fréchet derivative of `V κ` at
+  the equilibrium (`hasJac`), so trace/determinant data — hence the
+  eigenvalue pair — are properties of `V`, not free parameters;
+* the family is jointly smooth (`smooth`) and the equilibrium branch is
+  smooth (`eqSmooth`), excluding branch-switching selections;
+* the first Lyapunov number is DEFINED from the third-order jet of `V`
+  (`ell1At`, the Guckenheimer–Holmes 3.4.11 formula in the rotation frame),
+  so the `ℓ₁ < 0` hypothesis constrains `V`, not a free real;
+* the critical linearization is pinned to the rotation frame
+  `J κc = rotation ω₀`, which simultaneously encodes `α(κc) = 0` and the
+  nonzero frequency, and is the frame in which 3.4.11 is stated.
+
+With all data tied, `ClassicalHopfStatement` is the planar supercritical
+Hopf theorem (Guckenheimer–Holmes Thm 3.4.2 + formula 3.4.11) — still not
+in Mathlib, still carried as a named hypothesis, never an axiom — but now
+TRUE as stated, hence meaningful to assume.  The zero-field and
+linear-field attacks provably fail its hypotheses (`RepairProbe.lean`),
+and the replicator instantiation (`Law7_Instantiation.lean`) discharges
+every side condition for the concrete model, witnessing satisfiability. -/
+
+/-! #### Planar jet machinery: slice partials and the G–H first Lyapunov
+number -/
+
+/-- First-coordinate partial derivative via a slice `deriv`. -/
+noncomputable def p1 (F : (Fin 2 → ℝ) → ℝ) (x : Fin 2 → ℝ) : ℝ :=
+  deriv (fun s => F ![s, x 1]) (x 0)
+
+/-- Second-coordinate partial derivative via a slice `deriv`. -/
+noncomputable def p2 (F : (Fin 2 → ℝ) → ℝ) (x : Fin 2 → ℝ) : ℝ :=
+  deriv (fun s => F ![x 0, s]) (x 1)
+
+/-- **The first Lyapunov number** of a planar field `W` at the origin in the
+rotation frame with frequency `ω` — Guckenheimer–Holmes, formula (3.4.11):
+for `ẋ = −ωy + f(x,y)`, `ẏ = ωx + g(x,y)`,
+
+  `16·ℓ₁ = f_xxx + f_xyy + g_xxy + g_yyy
+           + (1/ω)·(f_xy(f_xx + f_yy) − g_xy(g_xx + g_yy)
+                     − f_xx g_xx + f_yy g_yy)`.
+
+Second- and third-order partials of the full component functions coincide
+with those of the nonlinear parts `f, g` (the linear part contributes
+nothing at order ≥ 2), so the formula is evaluated directly on `W`. -/
+noncomputable def ell1At (W : (Fin 2 → ℝ) → Fin 2 → ℝ) (ω : ℝ) : ℝ :=
+  let f : (Fin 2 → ℝ) → ℝ := fun x => W x 0
+  let g : (Fin 2 → ℝ) → ℝ := fun x => W x 1
+  let z : Fin 2 → ℝ := 0
+  (1 / 16) * (p1 (p1 (p1 f)) z + p1 (p2 (p2 f)) z
+            + p2 (p1 (p1 g)) z + p2 (p2 (p2 g)) z)
+  + (1 / (16 * ω)) *
+      (p1 (p2 f) z * (p1 (p1 f) z + p2 (p2 f) z)
+        - p1 (p2 g) z * (p1 (p1 g) z + p2 (p2 g) z)
+        - p1 (p1 f) z * p1 (p1 g) z + p2 (p2 f) z * p2 (p2 g) z)
+
+/-- The rotation matrix `[[0, −ω], [ω, 0]]` — the linearization of a planar
+field at a Hopf point, in the normal frame with frequency `ω`. -/
+def rotation (ω : ℝ) : Matrix (Fin 2) (Fin 2) ℝ := !![0, -ω; ω, 0]
 
 /-- A one-parameter planar family (center-manifold reduction of the biased
 RPS replicator family): vector fields `V κ`, an equilibrium branch, and the
-real/imaginary parts `α, ω` of the critical eigenvalue pair. -/
+Jacobian data — TIED to `V` by `hasJac`, not carried as free functions. -/
 structure HopfFamily where
   V : ℝ → (Fin 2 → ℝ) → Fin 2 → ℝ
   equilibrium : ℝ → Fin 2 → ℝ
   isEquil : ∀ κ, V κ (equilibrium κ) = 0
-  α : ℝ → ℝ
-  ω : ℝ → ℝ
+  /-- The Jacobian matrix of `V κ` along the equilibrium branch. -/
+  J : ℝ → Matrix (Fin 2) (Fin 2) ℝ
+  /-- `J κ` IS the Fréchet derivative of `V κ` at the equilibrium — the
+  field that makes the eigendata below properties of `V`. -/
+  hasJac : ∀ κ, HasFDerivAt (V κ)
+    (LinearMap.toContinuousLinearMap (Matrix.mulVecLin (J κ))) (equilibrium κ)
+  /-- Joint smoothness of the family (G–H requires `C^k`, `k ≥ 3`). -/
+  smooth : ContDiff ℝ (⊤ : ℕ∞) fun p : ℝ × (Fin 2 → ℝ) => V p.1 p.2
+  /-- Smoothness of the equilibrium branch (excludes branch-switching
+  selections; near a nondegenerate critical point this is what the implicit
+  function theorem delivers anyway). -/
+  eqSmooth : ContDiff ℝ (⊤ : ℕ∞) equilibrium
 
 /-- A nonconstant periodic solution of `ẏ = W(y)`, in the given-trajectory
 encoding used throughout the kernel (no ODE existence assumed). -/
@@ -97,40 +172,211 @@ def IsPeriodicOrbit (W : (Fin 2 → ℝ) → Fin 2 → ℝ) (y : ℝ → Fin 2 �
   0 < T ∧ (∀ t i, HasDerivAt (fun s => y s i) (W (y t) i) t)
     ∧ (∀ t, y (t + T) = y t) ∧ ∃ t₁ t₂, y t₁ ≠ y t₂
 
+/-- Periodic orbits push forward through invertible affine changes of
+coordinates: if `y` solves `ẏ = W(y)` then `t ↦ P·y(t) + c` solves the
+conjugated system `ẋ = P·W(Q·(x − c))`, and nonconstancy survives.  This is
+what lets the rotation-frame classical statement conclude orbits for a
+family in an arbitrary frame. -/
+theorem IsPeriodicOrbit.pushforward
+    {W : (Fin 2 → ℝ) → Fin 2 → ℝ} {y : ℝ → Fin 2 → ℝ} {T : ℝ}
+    (P Q : Matrix (Fin 2) (Fin 2) ℝ) (c : Fin 2 → ℝ)
+    (hQP : Q * P = 1)
+    (h : IsPeriodicOrbit W y T) :
+    IsPeriodicOrbit (fun x => P.mulVec (W (Q.mulVec (x - c))))
+      (fun t => P.mulVec (y t) + c) T := by
+  obtain ⟨hT, hderiv, hper, t₁, t₂, hne⟩ := h
+  have hcancel : ∀ v : Fin 2 → ℝ, Q.mulVec (P.mulVec v) = v := by
+    intro v
+    rw [Matrix.mulVec_mulVec, hQP, Matrix.one_mulVec]
+  refine ⟨hT, ?_, ?_, ⟨t₁, t₂, ?_⟩⟩
+  · intro t i
+    have hval : (fun x => P.mulVec (W (Q.mulVec (x - c))))
+        (P.mulVec (y t) + c) i = (P.mulVec (W (y t))) i := by
+      show P.mulVec (W (Q.mulVec (P.mulVec (y t) + c - c))) i = _
+      have h1 : P.mulVec (y t) + c - c = P.mulVec (y t) := by
+        funext j; simp
+      rw [h1, hcancel]
+    rw [hval]
+    have hsum : HasDerivAt (fun s => ∑ j, P i j * y s j + c i)
+        (∑ j, P i j * W (y t) j) t := by
+      have hs := HasDerivAt.sum (u := Finset.univ)
+        (A := fun j s => P i j * y s j) (A' := fun j => P i j * W (y t) j)
+        (x := t) (fun j _ => (hderiv t j).const_mul (P i j))
+      have hfe : (∑ j, fun s => P i j * y s j)
+          = fun s => ∑ j, P i j * y s j := by
+        funext s; simp
+      rw [hfe] at hs
+      simpa using hs.add_const (c i)
+    have hfun : (fun s => (P.mulVec (y s) + c) i)
+        = fun s => ∑ j, P i j * y s j + c i := by
+      funext s
+      simp [Matrix.mulVec, dotProduct]
+    have hder : (P.mulVec (W (y t))) i = ∑ j, P i j * W (y t) j := by
+      simp [Matrix.mulVec, dotProduct]
+    rw [hfun, hder]
+    exact hsum
+  · intro t
+    have := hper t
+    simp only [this]
+  · intro hcontra
+    apply hne
+    have hc : P.mulVec (y t₁) + c = P.mulVec (y t₂) + c := hcontra
+    have h1 : Q.mulVec (P.mulVec (y t₁) + c - c) = y t₁ := by
+      have h : P.mulVec (y t₁) + c - c = P.mulVec (y t₁) := by
+        funext j; simp
+      rw [h, hcancel]
+    have h2 : Q.mulVec (P.mulVec (y t₂) + c - c) = y t₂ := by
+      have h : P.mulVec (y t₂) + c - c = P.mulVec (y t₂) := by
+        funext j; simp
+      rw [h, hcancel]
+    rw [← h1, ← h2, hc]
+
 /-- **The classical supercritical Hopf bifurcation theorem**
-(Guckenheimer–Holmes, Thm 3.4.2 shape), stated as an explicit Prop: an
-eigenvalue pair crossing the imaginary axis transversally with nonzero
-frequency and negative first Lyapunov coefficient produces periodic orbits
-on the supercritical side.  Not in Mathlib (bifurcation theory); recorded as
-the ONE classical input of Law 7 — a hypothesis of the results below, never
-an axiom.  (Binding the abstract `ℓ₁` argument to the normal-form cubic
-coefficient of `fam.V` is part of the same deferred classical content;
-orbital stability of the cycle is likewise part of the classical
-conclusion and is not re-stated here.) -/
+(Guckenheimer–Holmes Thm 3.4.2 with the first Lyapunov number computed by
+formula 3.4.11), stated as an explicit Prop with every hypothesis tied to
+the field `V`:
+
+* the Jacobian along the branch is `fam.J` (structure field `hasJac`);
+* at the critical parameter the linearization is exactly the rotation
+  frame `rotation ω₀` with `ω₀ > 0` — this encodes the eigenvalue pair
+  `±iω₀` on the imaginary axis, i.e. crossing position AND nonzero
+  frequency;
+* the trace (twice the eigenvalue real part) crosses zero transversally;
+* the first Lyapunov number `ell1At`, computed from the second/third-order
+  jet of the shifted field, is negative — supercriticality.
+
+Conclusion: nonconstant periodic orbits exist for every parameter just past
+the critical value.  Not in Mathlib (bifurcation theory); recorded as the
+ONE classical input of Law 7 — a hypothesis of the results below, never an
+axiom.  Unlike the pre-repair version this statement is TRUE (it is the
+textbook theorem), non-vacuous (the zero-field/linear-field instantiations
+fail its hypotheses — `RepairProbe.lean`), and satisfiable (the replicator
+family of `Law7_Instantiation.lean` meets every hypothesis). -/
 def ClassicalHopfStatement : Prop :=
-  ∀ (fam : HopfFamily) (κc ℓ₁ : ℝ),
-    fam.α κc = 0 →
-    fam.ω κc ≠ 0 →
-    (∃ α', HasDerivAt fam.α α' κc ∧ 0 < α') →
-    ℓ₁ < 0 →
+  ∀ (fam : HopfFamily) (κc ω₀ : ℝ),
+    0 < ω₀ →
+    fam.J κc = rotation ω₀ →
+    (∃ a', HasDerivAt (fun κ => (fam.J κ).trace) a' κc ∧ 0 < a') →
+    ell1At (fun z => fam.V κc (z + fam.equilibrium κc)) ω₀ < 0 →
     ∃ ε > 0, ∀ κ, κc < κ → κ < κc + ε →
       ∃ y T, IsPeriodicOrbit (fam.V κ) y T
 
-/-- **Theorem 16.2 (Hopf Transition), kernel packaging.**  Given the
-classical Hopf theorem and eigenvalue-crossing data for the (author-specified)
-biased-RPS family at the Hopf curve, the machine-checked supercriticality
-sign `ℓ₁(κ_c, μ) < 0` yields nonconstant periodic orbits for every bias just
-past the curve: perpetual cycling replaces stable equilibrium. -/
+/-- **Theorem 16.2 (Hopf Transition), kernel packaging — general frame.**
+Given the classical Hopf theorem, a family whose critical linearization is
+conjugate to the rotation frame (`fam.J κc · P = P · rotation ω₀` with an
+explicit inverse `Q`), transversal trace crossing, and a negative first
+Lyapunov number for the conjugated-and-shifted field, nonconstant periodic
+orbits exist for every parameter just past critical: perpetual cycling
+replaces stable equilibrium.
+
+The proof builds the conjugated family (whose equilibrium is the origin and
+whose critical Jacobian IS the rotation frame), applies the classical
+statement there, and pushes the orbits forward through the affine change of
+coordinates. -/
 theorem hopf_transition_conditional
     (classical_hopf : ClassicalHopfStatement)
-    (fam : HopfFamily) {μ : ℝ} (h0 : 0 < μ) (h13 : μ < 1 / 3)
-    (hcross : fam.α (hopfCurve μ) = 0)
-    (hfreq : fam.ω (hopfCurve μ) ≠ 0)
-    (htrans : ∃ α', HasDerivAt fam.α α' (hopfCurve μ) ∧ 0 < α') :
-    ∃ ε > 0, ∀ κ, hopfCurve μ < κ → κ < hopfCurve μ + ε →
-      ∃ y T, IsPeriodicOrbit (fam.V κ) y T :=
-  classical_hopf fam (hopfCurve μ) (firstLyapunovCoeff μ) hcross hfreq
-    htrans (firstLyapunov_neg h0 h13)
+    (fam : HopfFamily) (κc ω₀ : ℝ) (hω : 0 < ω₀)
+    (P Q : Matrix (Fin 2) (Fin 2) ℝ) (hQP : Q * P = 1) (hPQ : P * Q = 1)
+    (hconj : fam.J κc * P = P * rotation ω₀)
+    (htrans : ∃ a', HasDerivAt (fun κ => (fam.J κ).trace) a' κc ∧ 0 < a')
+    (hℓ₁ : ell1At
+      (fun z => Q.mulVec (fam.V κc (P.mulVec z + fam.equilibrium κc))) ω₀ < 0) :
+    ∃ ε > 0, ∀ κ, κc < κ → κ < κc + ε →
+      ∃ y T, IsPeriodicOrbit (fam.V κ) y T := by
+  classical
+  -- the conjugated family: V' κ z = Q·V κ (P·z + e(κ)), equilibrium ≡ 0
+  have hcancelQP : ∀ v : Fin 2 → ℝ, Q.mulVec (P.mulVec v) = v := by
+    intro v; rw [Matrix.mulVec_mulVec, hQP, Matrix.one_mulVec]
+  have hcancelPQ : ∀ v : Fin 2 → ℝ, P.mulVec (Q.mulVec v) = v := by
+    intro v; rw [Matrix.mulVec_mulVec, hPQ, Matrix.one_mulVec]
+  set fam' : HopfFamily :=
+    { V := fun κ z => Q.mulVec (fam.V κ (P.mulVec z + fam.equilibrium κ))
+      equilibrium := fun _ => 0
+      isEquil := by
+        intro κ
+        have h0 : P.mulVec (0 : Fin 2 → ℝ) + fam.equilibrium κ
+            = fam.equilibrium κ := by
+          funext j; simp [Matrix.mulVec_zero]
+        rw [h0, fam.isEquil κ, Matrix.mulVec_zero]
+      J := fun κ => Q * fam.J κ * P
+      hasJac := by
+        intro κ
+        have h0 : P.mulVec (0 : Fin 2 → ℝ) + fam.equilibrium κ
+            = fam.equilibrium κ := by
+          funext j; simp [Matrix.mulVec_zero]
+        -- inner affine map
+        have h1 : HasFDerivAt (fun z : Fin 2 → ℝ => P.mulVec z + fam.equilibrium κ)
+            (LinearMap.toContinuousLinearMap (Matrix.mulVecLin P)) 0 :=
+          (LinearMap.toContinuousLinearMap (Matrix.mulVecLin P)).hasFDerivAt.add_const _
+        -- outer field at the image point
+        have h2 : HasFDerivAt (fam.V κ)
+            (LinearMap.toContinuousLinearMap (Matrix.mulVecLin (fam.J κ)))
+            (P.mulVec (0 : Fin 2 → ℝ) + fam.equilibrium κ) := by
+          rw [h0]; exact fam.hasJac κ
+        have h3 := h2.comp (0 : Fin 2 → ℝ) h1
+        have h4 := ((LinearMap.toContinuousLinearMap
+          (Matrix.mulVecLin Q)).hasFDerivAt (x := fam.V κ
+            (P.mulVec (0 : Fin 2 → ℝ) + fam.equilibrium κ))).comp (0 : Fin 2 → ℝ) h3
+        -- identify the composite with the matrix-product Jacobian
+        have hCLM : (LinearMap.toContinuousLinearMap (Matrix.mulVecLin Q)).comp
+            ((LinearMap.toContinuousLinearMap (Matrix.mulVecLin (fam.J κ))).comp
+              (LinearMap.toContinuousLinearMap (Matrix.mulVecLin P)))
+            = LinearMap.toContinuousLinearMap
+                (Matrix.mulVecLin (Q * fam.J κ * P)) := by
+          ext x
+          simp [Matrix.mulVecLin_apply, Matrix.mulVec_mulVec, Matrix.mul_assoc]
+        rw [hCLM] at h4
+        exact h4
+      smooth := by
+        have hinner : ContDiff ℝ (⊤ : ℕ∞)
+            (fun p : ℝ × (Fin 2 → ℝ) =>
+              (p.1, P.mulVec p.2 + fam.equilibrium p.1)) := by
+          apply ContDiff.prodMk contDiff_fst
+          exact ((LinearMap.toContinuousLinearMap
+            (Matrix.mulVecLin P)).contDiff.comp contDiff_snd).add
+            (fam.eqSmooth.comp contDiff_fst)
+        exact (LinearMap.toContinuousLinearMap
+          (Matrix.mulVecLin Q)).contDiff.comp (fam.smooth.comp hinner)
+      eqSmooth := contDiff_const } with hfam'
+  -- the conjugated family satisfies the rotation-frame hypotheses
+  have hJ' : fam'.J κc = rotation ω₀ := by
+    show Q * fam.J κc * P = rotation ω₀
+    rw [Matrix.mul_assoc, hconj, ← Matrix.mul_assoc, hQP, Matrix.one_mul]
+  have htrace' : (fun κ => (fam'.J κ).trace) = fun κ => (fam.J κ).trace := by
+    funext κ
+    show (Q * fam.J κ * P).trace = (fam.J κ).trace
+    rw [Matrix.trace_mul_comm (Q * fam.J κ) P, ← Matrix.mul_assoc,
+      hPQ, Matrix.one_mul]
+  have htrans' : ∃ a', HasDerivAt (fun κ => (fam'.J κ).trace) a' κc ∧ 0 < a' := by
+    rw [htrace']; exact htrans
+  have hℓ₁' : ell1At (fun z => fam'.V κc (z + fam'.equilibrium κc)) ω₀ < 0 := by
+    have hz0 : (fun z : Fin 2 → ℝ => fam'.V κc (z + fam'.equilibrium κc))
+        = fun z => Q.mulVec (fam.V κc (P.mulVec z + fam.equilibrium κc)) := by
+      funext z
+      show fam'.V κc (z + 0) = _
+      have : z + (0 : Fin 2 → ℝ) = z := by funext j; simp
+      rw [this]
+    rw [hz0]
+    exact hℓ₁
+  -- apply the classical statement to the conjugated family
+  obtain ⟨ε, hε, horb⟩ := classical_hopf fam' κc ω₀ hω hJ' htrans' hℓ₁'
+  refine ⟨ε, hε, ?_⟩
+  intro κ hκl hκr
+  obtain ⟨y', T, hy'⟩ := horb κ hκl hκr
+  -- push the orbit forward through z ↦ P·z + e(κ)
+  have hpush := hy'.pushforward P Q (fam.equilibrium κ) hQP
+  -- the conjugated-back field is fam.V κ
+  have hfield : (fun x => P.mulVec (fam'.V κ (Q.mulVec (x - fam.equilibrium κ))))
+      = fam.V κ := by
+    funext x
+    show P.mulVec (Q.mulVec (fam.V κ
+      (P.mulVec (Q.mulVec (x - fam.equilibrium κ)) + fam.equilibrium κ))) = _
+    rw [hcancelPQ, hcancelPQ]
+    congr 1
+    funext j
+    simp
+  rw [hfield] at hpush
+  exact ⟨_, T, hpush⟩
 
 /-! ### AQ-17 resolution (design ruling, 2026-07-10): the replicator–mutator
 instantiation, and a machine-checked no-Hopf finding
