@@ -1,8 +1,15 @@
 # TSE Formal — Lean 4 / Mathlib verification of the Seven Laws of Strategic Evolution
 
 Machine-verified kernel of the formal backbone of Kevin Vallier, *The Theory of
-Strategic Evolution: Games with Endogenous Players and Strategic Replicators*
-(arXiv:2512.07901).
+Strategic Evolution: Games with Endogenous Players and the Seven Laws of
+Strategic Replicators* (arXiv:2512.07901).
+
+> **Looking for the paper itself?** This repository is the Lean kernel only.
+> The paper — LaTeX source, compiled PDF, and the v4 changelog — lives at
+> **[`selfreferencing/TSE_Paper`](https://github.com/selfreferencing/TSE_Paper)**.
+> The arXiv preprint links here, so readers arriving from it land on the
+> verification rather than the text; that is deliberate, but the paper is one
+> click away.
 
 [![Lean 4](https://img.shields.io/badge/Lean-v4.28.0--rc1-blue.svg)](https://lean-lang.org/)
 [![Mathlib4](https://img.shields.io/badge/Mathlib-4-green.svg)](https://github.com/leanprover-community/mathlib4)
