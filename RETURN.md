@@ -36,9 +36,10 @@ carry machine-checked repair content (see the Repairs section below).
 ## What is proven, and what is assumed — at a glance
 
 Zero custom axioms means **nothing is assumed inside Lean**.  It does not mean
-every law is unconditional: four classical results are carried as explicit
-*hypotheses* of the theorems that use them, so a reader can see exactly what
-is being taken on faith.  That is the whole table:
+every law is unconditional: several classical results are carried as explicit
+*hypotheses* of the theorems that use them, so a reader can see exactly what is
+being taken on faith.  No total is quoted — Law 6 carries two distinct inputs,
+so any single count is ambiguous.  Read the rows:
 
 | Law | Proven outright | Carried as a hypothesis |
 |---|---|---|
@@ -47,7 +48,7 @@ is being taken on faith.  That is the whole table:
 | 3 — H-γ Stability | G1 weighted Lyapunov inequality; **certificate ⟺ ρ(Γ) < 1, both directions**, no Perron–Frobenius | — (AQ-9 closed 2026-08-07) |
 | 4 — G∞ Closure | certificate extension with explicit margin; slack budget; safe stack depth; no infinite regress | — |
 | 5 — Constitutional Duality | First Welfare; Second Welfare *implementation* half; PoA ≤ 1/(1−γ) | cross-state H-γ bound (AQ-16); Second Welfare **converse is absent** (separating hyperplane) |
-| 6 — Alignment Impossibility | exact derivative identity, MSG necessity/sufficiency/maximality; reachability destroys Lyapunov structure; anonymity+neutrality unsatisfiable at every \|A\| ≥ 2; majority-rule witness | Perron–Frobenius step, as the eigen-witness `(u ≥ 0, λ ≥ 1)` in `lyapunov_destruction` |
+| 6 — Alignment Impossibility | exact derivative identity, MSG necessity/sufficiency/maximality; reachability destroys Lyapunov structure; anonymity+neutrality unsatisfiable at every \|A\| ≥ 2; majority-rule witness | **two inputs** — (i) the Perron–Frobenius step, as the eigen-witness `(u ≥ 0, λ ≥ 1)` in `lyapunov_destruction`; (ii) the Lemma 15.3 interface for the electorate result. The Law 3 spectral closure does **not** discharge (i) |
 | 7 — Hopf Transition | `ell1At` machine-derived from the field (**ℓ₁ = −6μ**); every side condition of `rm_supercritical_hopf`; the degenerate centre at κ = μ = 0; refutation of the paper's printed locus | **the classical planar Hopf theorem** (`ClassicalHopfStatement`) — the single undischarged input |
 
 **Not formalized anywhere**: the identification of the paper's `γ` with any
@@ -153,9 +154,14 @@ spectrum API (`spectrum.norm_le_norm_of_mem` + the L∞ operator norm):
   every eigenvalue of the block extension Γ̃ stays within 1 − m′.
 - Suggested paper fix: replace the `ρ(Γ̃) ≤ ρ(Γ) + √(‖b‖·‖c‖)` and
   "Gershgorin" displays with the row-sum bound above (machine-checked), or
-  cite the certificate lemma `extension_cert` for the weighted form.  The
-  Perron–Frobenius certificate ⟺ ρ equivalence (C.5(2)⟺(3)) remains the one
-  recorded spectral interface (not in Mathlib).
+  cite the certificate lemma `extension_cert` for the weighted form.
+  **Superseded 2026-08-07:** this bullet previously ended "the certificate ⟺ ρ
+  equivalence (C.5(2)⟺(3)) remains the one recorded spectral interface (not in
+  Mathlib)."  AQ-9 closed that interface — the equivalence is now proved in
+  both directions in `Law3_SpectralClosure.lean`, with no Perron–Frobenius.
+  Note this is the equivalence for the small-gain matrix; it does **not**
+  supply the nonnegative eigenvector with λ ≥ 1 that Law 6 needs (see the Law 6
+  row of the at-a-glance table).
 
 ### AQ-14 — §15 axioms (Lem 15.3 / Thm 15.4): REPAIRED-AND-DEEPENED
 `Law6_Alignment.lean §NeutralityImpossibility`.
@@ -420,7 +426,19 @@ shadow price λ).
   `3μκ² − 2(1−μ)κ + (1−μ)² = 0`, the fingerprint offered to identify the
   family the author intended.  Thm 16.3 (amplitude scaling): deferred with the
   classical layer.
-- **AQ-20 RESOLVED — the true Hopf is at the γ=1 boundary** (`§TrueHopf`).
+- **AQ-20 — WITHDRAWN 2026-08-07.**  The subsection below is retained as a
+  record of a superseded conclusion; **do not cite it.**  `rm_true_hopf`
+  verifies only the *necessary* conditions at κ = 0 (trace 0, det > 0,
+  transversality).  It is not a supercritical Hopf: `ell1_pureRPS_zero` gives
+  ℓ₁ = 0 there, and pure RPS conserves `x₀x₁x₂`, so the barycentre is a
+  degenerate **centre**.  The genuine locus is κ = −6μ, μ > 0, with ℓ₁ = −6μ.
+  The γ = 1 identification below is prose with no formal support (the Law 7
+  modules do not import Law 3; `swirlRatio` is a function of κ alone and
+  cannot pick out μ = 0; and its definition `(κ+2)/κ` omits the absolute
+  values the Frobenius ratio requires, so it is negative on κ ∈ (−2,0), the
+  range containing the entire genuine locus).  Superseded text follows.
+
+- ~~**AQ-20 RESOLVED — the true Hopf is at the γ=1 boundary**~~ (`§TrueHopf`).
   The positive counterpart to the no-Hopf finding: the pure replicator on
   Π(κ) has center eigenvalues `−κ/6 ± i√3(κ+2)/6`, so a genuine supercritical
   Hopf occurs at **κ = 0**, which is exactly the pure-swirl / γ=1 boundary
@@ -456,7 +474,7 @@ shadow price λ).
 | AQ-17 | Law 7: μ-dynamics never displayed | **RESOLVED** (ruling: canonical replicator–mutator; see AQ-20) |
 | AQ-18 | Law 7: classical-Hopf interface scoping (periodic orbits; stability & ℓ₁-binding in classical layer) | confirm |
 | AQ-19 | §15 axiom-set repair | **RESOLVED** (ruling: drop Neutrality, adopt A5 Overwhelming-Bloc; 15.3/15.4 reproved axiom-free) |
-| AQ-20 | Law 7: κ_c(μ) not a Hopf locus, BUT genuine supercritical Hopf proved at γ=1/κ=0 (`rm_true_hopf`) | **RESOLVED** — recommend restating Prop 16.1 at κ=0 (the γ=1 boundary); Thm 16.2 supercriticality stands |
+| AQ-20 | Law 7: κ_c(μ) not a Hopf locus (stands); the claimed replacement Hopf at γ=1/κ=0 | **PARTLY WITHDRAWN 2026-08-07** — the refutation of the printed curve stands (`rm_no_hopf`). The replacement claim does not: κ = μ = 0 has ℓ₁ = 0 (`ell1_pureRPS_zero`), a degenerate centre, and the γ = 1 identification has no formal support. Genuine locus: κ = −6μ, ℓ₁ = −6μ |
 
 ## Plain-language summaries (fellowship dossier)
 
@@ -523,23 +541,25 @@ voters gets its way; from that axiom the impossibility of stable democratic
 aggregation follows with no external inputs, and ordinary majority rule
 witnesses that the repaired axioms are consistent.
 
-**Law 7 (Hopf Transition).**  The paper's quantitative claims are now
-verified as far as the mathematical library ecosystem currently reaches: the
-Hopf curve is a well-defined positive locus over the whole parameter range,
-and the first Lyapunov coefficient is provably strictly negative there —
-the exact inequality that makes the bifurcation supercritical.  What remains
-is the citation to the textbook Hopf theorem itself, stated in the
-development as a single named hypothesis (not an axiom).  Instantiating the
-model with the standard replicator–mutator dynamics settled where the cycling
-actually begins: not at the specific threshold the paper's formula names, but
-at the symmetric point where selection vanishes and the interaction becomes
-pure rotation — which is precisely the γ = 1 stability boundary that Law 7's
-own title invokes.  There the machine-checked eigenvalues cross the imaginary
-axis with nonzero frequency, exactly a supercritical Hopf.  So Law 7 is true
-at its own stated threshold; the formalization's recommendation is simply to
-state the transition there (γ = 1), which also unifies it with the stability
-laws, and it flags the separate threshold formula as the one line to
-correct.
+**Law 7 (Hopf Transition).**  *(Rewritten 2026-08-07; the previous summary
+placed the transition at the γ = 1 boundary and is withdrawn.)*  Formalization
+settled where the cycling actually begins, and it is not where the paper's
+printed formula says.  That formula names a curve at positive bias; the
+barycentre linearisation has strictly negative trace everywhere on that range,
+so no oscillation can begin there — machine-checked.  The genuine threshold
+sits at negative bias, on the locus κ = −6μ.  The quantity governing whether
+the emerging cycle is stable was recomputed from the dynamics themselves
+rather than carried over from the earlier draft, giving ℓ₁ = −6μ; it is
+strictly negative across the range, so the cycle that appears is a stable one.
+An independent check confirms the recomputation: at the symmetric point the
+new value correctly vanishes, recovering the classical fact that
+rock–paper–scissors with no bias circles forever at constant amplitude — a
+frictionless orbit rather than a bifurcation.  The earlier value did not
+vanish there, which is how the error was found.  What remains assumed is the
+textbook Hopf theorem itself, carried as one named hypothesis; every other
+condition is machine-checked.  Whether this threshold is the framework's own
+γ = 1 boundary is **open** — the two parameters are defined over different
+objects and no map between them is established.
 
 ## Honest-return notes
 
@@ -548,19 +568,42 @@ correct.
   neutrality unsatisfiability finding).  The two delegated design rulings are
   implemented and verified: **AQ-19** — §15 rebuilt on the Overwhelming-Bloc
   axiom (Neutrality dropped, impossibility now axiom-free); **AQ-17/AQ-20** — Law 7
-  instantiated with the canonical replicator–mutator, yielding a two-sided
-  machine-checked result: the printed κ_c(μ) is not a Hopf locus, but a
-  genuine supercritical Hopf *does* occur at the γ = 1 boundary κ = 0 (Law 7's
-  own stated threshold).  Law 7 is true where its title says it is; only the
-  illustrative locus formula needs correcting.  That two-sided resolution —
-  refutation plus the correct positive statement, all cold-checked — is the
-  highest-value output of this round.
-- Named classical inputs (hypotheses, never axioms): LP strong duality
-  (Law 2 hard direction), the Lemma 15.3 interface (Law 6 electorate),
-  Brouwer's fixed-point theorem (Law 2 general existence — verified absent
-  from Mathlib at this pin), and the classical supercritical Hopf theorem
-  (Law 7).  Each is a standard textbook result and a well-defined future
-  formalization target.
+  instantiated with the canonical replicator–mutator.
+
+  > **Superseded 2026-08-07.**  This bullet previously concluded that "a
+  > genuine supercritical Hopf *does* occur at the γ = 1 boundary κ = 0" and
+  > that "Law 7 is true where its title says it is."  **That is withdrawn.**
+  > The eigenvalue pair does cross at κ = μ = 0, but `ell1_pureRPS_zero` shows
+  > ℓ₁ = 0 there: it is a degenerate centre (pure RPS conserves `x₀x₁x₂`), not
+  > a supercritical Hopf.  The genuine locus is κ = −6μ for μ > 0.  Separately,
+  > the identification of that locus with γ = 1 has **no formal support** — γ
+  > appears in the Law 7 sources only in prose, and the Law 7 modules do not
+  > import Law 3.  What survives is the refutation of the printed curve
+  > (`rm_no_hopf`), which never depended on γ.  See the Law 7 section.
+
+- **Named classical inputs, per law** (hypotheses, never axioms).  No total is
+  quoted: Law 6 carries two distinct inputs, so any single count is
+  ambiguous.  Read the list.
+  - **Law 1** — the hull-domination interface, for `frontier_support`
+    (concrete and satisfiable, not vacuous).
+  - **Law 2** — LP strong duality, as a zero-gap dual witness, for the
+    LP ⟹ KKT direction; **and** Brouwer's fixed-point theorem for general
+    (state-dependent) existence, verified absent from Mathlib at this pin.
+    The state-*independent* existence case is proved outright.
+  - **Law 3** — none.  AQ-9 closed; certificate ⟺ ρ(Γ) < 1 both directions.
+  - **Law 4** — none.
+  - **Law 5** — the cross-state H-γ bound for `poa_bound` (AQ-16).  Separately,
+    only the *implementation half* of the Second Welfare theorem is proved;
+    the separating-hyperplane converse is **absent**, not hypothesised.
+  - **Law 6** — **two** inputs: the Perron–Frobenius step that manufactures a
+    nonnegative eigenvector with λ ≥ 1 from ρ(Γ) ≥ 1, carried as the
+    eigen-witness hypothesis of `lyapunov_destruction`; **and** the Lemma 15.3
+    interface for the electorate result.  Note the Law 3 spectral closure does
+    **not** discharge the former — it proves a different statement.
+  - **Law 7** — the classical planar Hopf theorem (`ClassicalHopfStatement`).
+    Every other side condition of `rm_supercritical_hopf` is discharged.
+
+  Each is a standard result and a well-defined future formalization target.
 - Cosmetic: two benign linter notes (unused variable/binder) remain in the
   build log; no mathematical content.
 - Suggested next steps: (i) author rulings on the AQ ledger; (ii) spectral
