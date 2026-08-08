@@ -128,8 +128,19 @@ theorem coupled_imaginary_onset (b c α : ℝ) (hb : 0 < b) (hrot : c * α < -b 
 /-- First Lyapunov coefficient of the coupled Hopf at the symmetric interior
 equilibrium `x* = 1/2`.  A normal-form reduction of the concrete nonlinear coupled
 model (2-type replicator coupled to Walrasian price adjustment) computes it to be
-`c·α/2` (symbolic; verified negative across the admissible parameter range by the
-accompanying `l1_coupled.py`).  Its sign decides supercriticality. -/
+`c·α/2`; the symbolic derivation is in `scripts/l1_coupled.py`.  Its sign decides
+supercriticality.
+
+**Scope of that reference (be precise about what it does and does not close).**
+`l1Symmetric` is a *definition* here, not a derived quantity.  `coupled_supercritical`
+proves `c·α/2 < 0` from `c·α < −b²`, which is arithmetic.  The script supplies
+**provenance** — where the value `c·α/2` came from — but the claim that this quantity
+*is* the first Lyapunov coefficient of the coupled model is established outside Lean
+and is not machine-checked.  That is exactly the status `Law7.firstLyapunovCoeff` had
+before the Law 7 rebuild, where `ell1At` replaced a transcribed formula with one
+computed from the field's third-order jet.  Doing the same here — defining `ell1At`
+for the coupled field and proving the value — is the well-defined next step; until
+then, do not describe this coefficient as machine-derived. -/
 noncomputable def l1Symmetric (c α : ℝ) : ℝ := c * α / 2
 
 /-- **Supercriticality of the coupled Hopf.** Under the rotational Hopf condition
