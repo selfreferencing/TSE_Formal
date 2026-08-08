@@ -38,8 +38,9 @@ carry machine-checked repair content (see the Repairs section below).
 Zero custom axioms means **nothing is assumed inside Lean**.  It does not mean
 every law is unconditional: several classical results are carried as explicit
 *hypotheses* of the theorems that use them, so a reader can see exactly what is
-being taken on faith.  No total is quoted — Law 6 carries two distinct inputs,
-so any single count is ambiguous.  Read the rows:
+being taken on faith.  No total is quoted — the inputs are of different kinds
+(classical theorems in some laws, modelling axioms in others), so any single
+count is ambiguous.  Read the rows:
 
 | Law | Proven outright | Carried as a hypothesis |
 |---|---|---|
@@ -48,7 +49,7 @@ so any single count is ambiguous.  Read the rows:
 | 3 — H-γ Stability | G1 weighted Lyapunov inequality; **certificate ⟺ ρ(Γ) < 1, both directions**, no Perron–Frobenius | — (AQ-9 closed 2026-08-07) |
 | 4 — G∞ Closure | certificate extension with explicit margin; slack budget; safe stack depth; no infinite regress | — |
 | 5 — Constitutional Duality | First Welfare; Second Welfare *implementation* half; PoA ≤ 1/(1−γ) | cross-state H-γ bound (AQ-16); Second Welfare **converse is absent** (separating hyperplane) |
-| 6 — Alignment Impossibility | exact derivative identity, MSG necessity/sufficiency/maximality; reachability destroys Lyapunov structure; anonymity+neutrality unsatisfiable at every \|A\| ≥ 2; majority-rule witness | **two inputs** — (i) the Perron–Frobenius step, as the eigen-witness `(u ≥ 0, λ ≥ 1)` in `lyapunov_destruction`; (ii) the Lemma 15.3 interface for the electorate result. The Law 3 spectral closure does **not** discharge (i) |
+| 6 — Alignment Impossibility | exact derivative identity, MSG necessity/sufficiency/maximality; reachability destroys Lyapunov structure; anonymity+neutrality unsatisfiable at every \|A\| ≥ 2; majority-rule witness | the Perron–Frobenius step, as the eigen-witness `(u ≥ 0, λ ≥ 1)` in `lyapunov_destruction`; the Law 3 spectral closure does **not** discharge it. The electorate result carries no classical input — the repaired route takes **A5 Overwhelming-Bloc** (a modelling axiom, consistent by the majority-rule witness) and *derives* spawn-manipulability |
 | 7 — Hopf Transition | `ell1At` machine-derived from the field (**ℓ₁ = −6μ**); every side condition of `rm_supercritical_hopf`; the degenerate centre at κ = μ = 0; refutation of the paper's printed locus | **the classical planar Hopf theorem** (`ClassicalHopfStatement`) — the single undischarged input |
 
 **Not formalized anywhere**: the identification of the paper's `γ` with any
@@ -595,11 +596,17 @@ objects and no map between them is established.
   - **Law 5** — the cross-state H-γ bound for `poa_bound` (AQ-16).  Separately,
     only the *implementation half* of the Second Welfare theorem is proved;
     the separating-hyperplane converse is **absent**, not hypothesised.
-  - **Law 6** — **two** inputs: the Perron–Frobenius step that manufactures a
-    nonnegative eigenvector with λ ≥ 1 from ρ(Γ) ≥ 1, carried as the
-    eigen-witness hypothesis of `lyapunov_destruction`; **and** the Lemma 15.3
-    interface for the electorate result.  Note the Law 3 spectral closure does
-    **not** discharge the former — it proves a different statement.
+  - **Law 6** — the Perron–Frobenius step that manufactures a nonnegative
+    eigenvector with λ ≥ 1 from ρ(Γ) ≥ 1, carried as the eigen-witness
+    hypothesis of `lyapunov_destruction`.  The Law 3 spectral closure does
+    **not** discharge it — it proves a different statement.
+    **Corrected 2026-08-08:** this entry previously also listed the Lemma 15.3
+    interface.  It should not have.  That interface is a hypothesis only of the
+    *superseded* `endogenous_electorate_impossibility`; the repaired route
+    (`endogenous_electorate_impossibility_repaired`) takes `OverwhelmingBloc`
+    (A5) and **derives** `SpawnManipulable` via
+    `spawnManipulable_of_overwhelmingBloc`.  A5 is a modelling axiom of the
+    theory, witnessed consistent by majority rule — not a classical result.
   - **Law 7** — the classical planar Hopf theorem (`ClassicalHopfStatement`).
     Every other side condition of `rm_supercritical_hopf` is discharged.
 
