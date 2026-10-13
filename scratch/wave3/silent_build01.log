@@ -1,0 +1,80 @@
+✖ [7891/7891] Building SEKernel.SilentGene (23s)
+trace: .> LEAN_PATH=/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/Cli/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/batteries/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/Qq/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/aesop/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/importGraph/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/plausible/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/mathlib/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/lib/lean /Users/kvallier/.elan/toolchains/leanprover--lean4---v4.28.0-rc1/bin/lean /Users/kvallier/Desktop/TSE_Formal_chile/SEKernel/SilentGene.lean -o /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/lib/lean/SEKernel/SilentGene.olean -i /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/lib/lean/SEKernel/SilentGene.ilean -c /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/ir/SEKernel/SilentGene.c --setup /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/ir/SEKernel/SilentGene.setup.json --json
+error: SEKernel/SilentGene.lean:21:4: failed to compile definition, consider marking it as 'noncomputable' because it depends on 'Real.instDivInvMonoid', which is 'noncomputable'
+error: SEKernel/SilentGene.lean:48:6: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∑ i ∈ ?s, ?f i / ?a
+in the target expression
+  ∑ j, (x.mass j * f j ^ t / ∑ i, x.mass i * f i ^ t) * f j = (∑ i, x.mass i * f i ^ (t + 1)) / ∑ i, x.mass i * f i ^ t
+
+ι : Type u_1
+inst✝ : Fintype ι
+x : Law ι
+f : ι → ℝ
+hf : ∀ (i : ι), 0 < f i
+t : ℕ
+⊢ ∑ j, (x.mass j * f j ^ t / ∑ i, x.mass i * f i ^ t) * f j = (∑ i, x.mass i * f i ^ (t + 1)) / ∑ i, x.mass i * f i ^ t
+error: SEKernel/SilentGene.lean:92:4: failed to compile definition, consider marking it as 'noncomputable' because it depends on 'Real.instDivInvMonoid', which is 'noncomputable'
+error: SEKernel/SilentGene.lean:93:4: failed to compile definition, consider marking it as 'noncomputable' because it depends on 'Real.instDivInvMonoid', which is 'noncomputable'
+error: SEKernel/SilentGene.lean:98:42: Unknown constant `Bool.sum_bool`
+warning: SEKernel/SilentGene.lean:104:5: unused variable `hV`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SEKernel/SilentGene.lean:111:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: SEKernel/SilentGene.lean:111:6: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SEKernel/SilentGene.lean:129:22: This simp argument is unused:
+  Bool.true_eq
+
+Hint: Omit it from the simp argument list.
+  simp only [fitness, B̵o̵o̵l̵.̵t̵r̵u̵e̵_̵e̵q̵,̵ ̵↓reduceIte, Bool.false_eq_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SEKernel/SilentGene.lean:131:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: SEKernel/SilentGene.lean:131:6: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SEKernel/SilentGene.lean:141:33: This simp argument is unused:
+  Bool.true_eq
+
+Hint: Omit it from the simp argument list.
+  simp only [Law1.step, fitness, B̵o̵o̵l̵.̵t̵r̵u̵e̵_̵e̵q̵,̵ ̵↓reduceIte, Bool.false_eq_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SEKernel/SilentGene.lean:143:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: SEKernel/SilentGene.lean:143:6: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+error: SEKernel/SilentGene.lean:148:49: Unknown constant `Bool.sum_bool`
+warning: SEKernel/SilentGene.lean:154:5: unused variable `hV`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SEKernel/SilentGene.lean:162:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: SEKernel/SilentGene.lean:162:6: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SEKernel/SilentGene.lean:182:22: This simp argument is unused:
+  Bool.true_eq
+
+Hint: Omit it from the simp argument list.
+  simp only [fitness, B̵o̵o̵l̵.̵t̵r̵u̵e̵_̵e̵q̵,̵ ̵↓reduceIte, Bool.false_eq_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SEKernel/SilentGene.lean:184:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: SEKernel/SilentGene.lean:184:6: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+error: Lean exited with code 1
+Some required targets logged failures:
+- SEKernel.SilentGene
+error: build failed

@@ -1,0 +1,7 @@
+{
+  "command": "lake env lean scratch/wave3/correlation_axioms.lean",
+  "exit_code": 0,
+  "seconds": 38.23,
+  "source_sha256": "19623a4cb6520fa5b91fcb0b96ba19297cfd2ab936e432dc09d9c785d34d7db0",
+  "theorems": 44
+}

@@ -1,0 +1,86 @@
+⚠ [7891/7892] Replayed SEKernel.MutationBaseline
+warning: SEKernel/MutationBaseline.lean:127:5: unused variable `hu`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SEKernel/MutationBaseline.lean:127:32: unused variable `hd`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SEKernel/MutationBaseline.lean:176:50: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: SEKernel/MutationBaseline.lean:176:50: 'positivity' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SEKernel/MutationBaseline.lean:196:37: This simp argument is unused:
+  ha
+
+Hint: Omit it from the simp argument list.
+  simp [Law.prob, sixAlleleMutation, h̵a̵,̵ ̵Ne.symm ha]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✖ [7892/7892] Building SEKernel.InnovationArrival (8.6s)
+trace: .> LEAN_PATH=/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/Cli/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/batteries/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/Qq/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/aesop/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/importGraph/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/plausible/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/mathlib/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/lib/lean /Users/kvallier/.elan/toolchains/leanprover--lean4---v4.28.0-rc1/bin/lean /Users/kvallier/Desktop/TSE_Formal_chile/SEKernel/InnovationArrival.lean -o /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/lib/lean/SEKernel/InnovationArrival.olean -i /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/lib/lean/SEKernel/InnovationArrival.ilean -c /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/ir/SEKernel/InnovationArrival.c --setup /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/ir/SEKernel/InnovationArrival.setup.json --json
+warning: SEKernel/InnovationArrival.lean:17:0: automatically included section variable(s) unused in theorem `SEKernel.InnovationArrival.avoids_zero`:
+  [Fintype Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: SEKernel/InnovationArrival.lean:20:0: automatically included section variable(s) unused in theorem `SEKernel.InnovationArrival.avoids_succ`:
+  [Fintype Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+error: SEKernel/InnovationArrival.lean:32:30: failed to synthesize instance of type class
+  Decidable (hit t ω)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: SEKernel/InnovationArrival.lean:46:52: unsolved goals
+case pos
+Ω : Type u_1
+inst✝ : Fintype Ω
+L : Law Ω
+hit : ℕ → Ω → Prop
+t : ℕ
+ω : Ω
+a✝ : ω ∈ Finset.univ
+ha : avoids hit t ω
+hh : hit t ω
+⊢ L.mass ω * sorry () = L.mass ω
+
+case neg
+Ω : Type u_1
+inst✝ : Fintype Ω
+L : Law Ω
+hit : ℕ → Ω → Prop
+t : ℕ
+ω : Ω
+a✝ : ω ∈ Finset.univ
+ha : avoids hit t ω
+hh : ¬hit t ω
+⊢ L.mass ω = 0 ∨ sorry () = 0
+warning: SEKernel/InnovationArrival.lean:57:13: unused variable `hu`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SEKernel/InnovationArrival.lean:79:13: unused variable `hu`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+error: SEKernel/InnovationArrival.lean:139:4: `simp` made no progress
+error: SEKernel/InnovationArrival.lean:142:6: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (Law.pi ?Ls).expect fun z => ∏ i, ?g i (z i)
+in the target expression
+  ((Law.pi fun x => MutationBaseline.bernoulli u hu hu').expect fun z => ∏ j, if z j = false then 1 else 0) =
+    (1 - u) ^ (M * T)
+
+u : ℝ
+hu : 0 ≤ u
+hu' : u ≤ 1
+M T : ℕ
+h : (fun z => if ∀ (j : Fin (M * T)), z j = false then 1 else 0) = fun z => ∏ j, if z j = false then 1 else 0
+⊢ ((Law.pi fun x => MutationBaseline.bernoulli u hu hu').expect fun z => ∏ j, if z j = false then 1 else 0) =
+    (1 - u) ^ (M * T)
+error: Lean exited with code 1
+Some required targets logged failures:
+- SEKernel.InnovationArrival
+error: build failed

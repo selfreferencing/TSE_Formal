@@ -1,0 +1,12 @@
+{
+  "files": [
+    "SilentGene",
+    "GenotypeTransition",
+    "CorrelatedAnswers",
+    "SpawnAllocation",
+    "InnovationArrival"
+  ],
+  "findings": [],
+  "comments_stripped": true,
+  "final_source_comments_checked": true
+}

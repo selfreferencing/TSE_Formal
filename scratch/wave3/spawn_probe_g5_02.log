@@ -1,0 +1,28 @@
+scratch/wave3/spawn_probe_g5_02.lean:4:74: error: unsolved goals
+case false.false
+hu : Finset.univ = {0, 1}
+⊢ ¬some false = none ∧
+    (¬some false = none →
+      {i ∈ {0, 1} | ![some false, some false] i = some false}.card ≤
+        {i ∈ {0, 1} | ![some false, some false] i = some false}.card)
+
+case false.true
+hu : Finset.univ = {0, 1}
+⊢ ¬some false = none ∧
+    (¬some true = none →
+      {i ∈ {0, 1} | ![some false, some true] i = some true}.card ≤
+        {i ∈ {0, 1} | ![some false, some true] i = some false}.card)
+
+case true.false
+hu : Finset.univ = {0, 1}
+⊢ ¬some true = none ∧
+    (¬some false = none →
+      {i ∈ {0, 1} | ![some true, some false] i = some false}.card ≤
+        {i ∈ {0, 1} | ![some true, some false] i = some true}.card)
+
+case true.true
+hu : Finset.univ = {0, 1}
+⊢ ¬some true = none ∧
+    (¬some true = none →
+      {i ∈ {0, 1} | ![some true, some true] i = some true}.card ≤
+        {i ∈ {0, 1} | ![some true, some true] i = some true}.card)

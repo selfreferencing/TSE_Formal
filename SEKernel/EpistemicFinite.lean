@@ -15,3 +15,10 @@ import SEKernel.MutationBaseline
 import SEKernel.NoisySelection
 import SEKernel.PairedScores
 import SEKernel.ScorePooling
+
+/- Wave 3 finite genes, copies, allocation and arrival. -/
+import SEKernel.SilentGene
+import SEKernel.GenotypeTransition
+import SEKernel.CorrelatedAnswers
+import SEKernel.SpawnAllocation
+import SEKernel.InnovationArrival

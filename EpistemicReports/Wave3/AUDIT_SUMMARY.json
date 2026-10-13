@@ -1,0 +1,52 @@
+{
+  "theorems_audited": 238,
+  "module_theorem_counts": {
+    "SilentGene": 47,
+    "GenotypeTransition": 63,
+    "CorrelatedAnswers": 44,
+    "SpawnAllocation": 69,
+    "InnovationArrival": 15
+  },
+  "axiom_sets": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "count": 234
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "count": 4
+    }
+  ],
+  "missing": [],
+  "unexpected_axioms": {},
+  "source_sha256": {
+    "SEKernel/SilentGene.lean": "0a6dbb31422f1d93f71e39f37e766e03295da2072bc4ca96dec6dfaefcf3e862",
+    "SEKernel/GenotypeTransition.lean": "aa6dd4ade43a4e093ce237e000b9f8e0c6451afb15835cc8fde726c1e0f57ab1",
+    "SEKernel/CorrelatedAnswers.lean": "19623a4cb6520fa5b91fcb0b96ba19297cfd2ab936e432dc09d9c785d34d7db0",
+    "SEKernel/SpawnAllocation.lean": "8eae69d364522b91737284d983cd04c611086382f032e5178b274142a31f2053",
+    "SEKernel/InnovationArrival.lean": "4703707e095c3ae3e4cd56498ada7cd58fa7c44e7aaaf189485c6d040751bffe",
+    "SEKernel/EpistemicFinite.lean": "b4706d2c58ce964cb56854b673d1ec250cc03473e7f8a951ba9bf8826f517e80",
+    "SEKernel/AxiomsAuditEpistemic.lean": "7af7abb10d26c44c57bc0392b0a578b1bc8cf203b2fbcb9fa73336d7f19e153f"
+  },
+  "forbidden_construct_scan": [],
+  "earlier_files_preserved": 141,
+  "append_only_prefix_checks": {
+    "SEKernel/EpistemicFinite.lean": true,
+    "SEKernel/AxiomsAuditEpistemic.lean": true,
+    "STATEMENTS_EPISTEMIC.md": true
+  },
+  "protected_files_unchanged": 19,
+  "branch": "chile-epistemic-evolution",
+  "head": "bd80f4a5b94b691168533c7dd1a8df6e7f21f285",
+  "commits_ahead_origin_main": 0,
+  "remotes_unchanged": true,
+  "final_audit_sha256": "197e424993fe3b2bb8a2e562c1ca761e6a04c49a5710fa66e7cbd2865d376129",
+  "final_ledger_sha256": "3bc0339a0e5a452953b475ec114a6f565c44c9a1b2b7b3cf23b9b657dbb3a416"
+}

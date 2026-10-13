@@ -1,0 +1,50 @@
+{
+  "modules": [
+    "SilentGene",
+    "GenotypeTransition",
+    "CorrelatedAnswers",
+    "SpawnAllocation",
+    "InnovationArrival"
+  ],
+  "source_sha256": {
+    "SEKernel/SilentGene.lean": "0a6dbb31422f1d93f71e39f37e766e03295da2072bc4ca96dec6dfaefcf3e862",
+    "SEKernel/GenotypeTransition.lean": "aa6dd4ade43a4e093ce237e000b9f8e0c6451afb15835cc8fde726c1e0f57ab1",
+    "SEKernel/CorrelatedAnswers.lean": "19623a4cb6520fa5b91fcb0b96ba19297cfd2ab936e432dc09d9c785d34d7db0",
+    "SEKernel/SpawnAllocation.lean": "8eae69d364522b91737284d983cd04c611086382f032e5178b274142a31f2053",
+    "SEKernel/InnovationArrival.lean": "4703707e095c3ae3e4cd56498ada7cd58fa7c44e7aaaf189485c6d040751bffe",
+    "SEKernel/EpistemicFinite.lean": "b4706d2c58ce964cb56854b673d1ec250cc03473e7f8a951ba9bf8826f517e80",
+    "SEKernel/AxiomsAuditEpistemic.lean": "7af7abb10d26c44c57bc0392b0a578b1bc8cf203b2fbcb9fa73336d7f19e153f"
+  },
+  "earlier_theorems": 383,
+  "new_theorems": 238,
+  "total_theorems": 621,
+  "commands": [
+    {
+      "command": "lake build SEKernel.EpistemicFinite",
+      "exit_code": 0,
+      "seconds": 49.63,
+      "log": "EpistemicReports/Wave3/FINAL_BUILD.log"
+    },
+    {
+      "command": "lake env lean SEKernel/AxiomsAuditEpistemic.lean",
+      "exit_code": 0,
+      "seconds": 87.21,
+      "log": "EpistemicReports/ThroughWave3/FINAL_AXIOMS.txt"
+    }
+  ],
+  "prior_commands": [
+    {
+      "command": "lake build SEKernel.EpistemicFinite",
+      "exit_code": 0,
+      "seconds": 19.71,
+      "log": "EpistemicReports/Wave3/BUILD.log"
+    },
+    {
+      "command": "lake env lean SEKernel/AxiomsAuditEpistemic.lean",
+      "exit_code": 0,
+      "seconds": 79.44,
+      "log": "EpistemicReports/ThroughWave3/AXIOMS.txt"
+    }
+  ],
+  "documentation_correction": "Spawn equality-level-set payoff lemma has optimal interpretation only with separately certified true maximum; proof bodies unchanged."
+}

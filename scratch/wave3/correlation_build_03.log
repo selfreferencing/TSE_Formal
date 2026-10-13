@@ -1,0 +1,51 @@
+⚠ [7891/7893] Replayed SEKernel.MutationBaseline
+warning: SEKernel/MutationBaseline.lean:127:5: unused variable `hu`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SEKernel/MutationBaseline.lean:127:32: unused variable `hd`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SEKernel/MutationBaseline.lean:176:50: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: SEKernel/MutationBaseline.lean:176:50: 'positivity' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SEKernel/MutationBaseline.lean:196:37: This simp argument is unused:
+  ha
+
+Hint: Omit it from the simp argument list.
+  simp [Law.prob, sixAlleleMutation, h̵a̵,̵ ̵Ne.symm ha]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [7893/7893] Built SEKernel.CorrelatedAnswers (14s)
+warning: SEKernel/CorrelatedAnswers.lean:32:0: automatically included section variable(s) unused in theorem `SEKernel.CorrelatedAnswers.pair_square_identity`:
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: SEKernel/CorrelatedAnswers.lean:126:20: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: SEKernel/CorrelatedAnswers.lean:140:0: automatically included section variable(s) unused in theorem `SEKernel.CorrelatedAnswers.variance_sum_covariance`:
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: SEKernel/CorrelatedAnswers.lean:180:37: unused variable `hn`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SEKernel/CorrelatedAnswers.lean:200:53: This simp argument is unused:
+  Finset.sum_ite_eq'
+
+Hint: Omit it from the simp argument list.
+  simp only [Finset.sum_add_distrib, F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵i̵t̵e̵_̵e̵q̵'̵,̵ ̵Finset.sum_ite_eq, Finset.mem_univ, if_true,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲Finset.sum_const, Finset.card_univ, Fintype.card_fin, nsmul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SEKernel/CorrelatedAnswers.lean:209:82: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Build completed successfully (7893 jobs).

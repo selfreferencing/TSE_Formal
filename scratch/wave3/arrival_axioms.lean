@@ -1,0 +1,16 @@
+import SEKernel.InnovationArrival
+#print axioms SEKernel.InnovationArrival.avoids_zero
+#print axioms SEKernel.InnovationArrival.avoids_succ
+#print axioms SEKernel.InnovationArrival.absence_partition
+#print axioms SEKernel.InnovationArrival.first_creation_mass
+#print axioms SEKernel.InnovationArrival.absence_le_of_conditional_lower
+#print axioms SEKernel.InnovationArrival.absence_ge_of_conditional_upper
+#print axioms SEKernel.InnovationArrival.absence_eq_of_conditional
+#print axioms SEKernel.InnovationArrival.one_sub_pow_le_mul
+#print axioms SEKernel.InnovationArrival.appearance_le_trials_mul
+#print axioms SEKernel.InnovationArrival.independent_no_appearance
+#print axioms SEKernel.InnovationArrival.independent_appearance
+#print axioms SEKernel.InnovationArrival.independent_appearance_le
+#print axioms SEKernel.InnovationArrival.presence_le_appearance
+#print axioms SEKernel.InnovationArrival.selection_zero
+#print axioms SEKernel.InnovationArrival.selectionIter_zero

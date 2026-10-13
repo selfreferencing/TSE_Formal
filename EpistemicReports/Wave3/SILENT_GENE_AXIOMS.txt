@@ -1,0 +1,57 @@
+'SEKernel.SilentGene.clonalNormalizer_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.clonalTrajectory_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.clonalTrajectory_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.clonalTrajectory_total' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.clonalTrajectory_mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.clonalTrajectory_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.constant_fitness_closed_form' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.fitness_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.clonal_mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.silent_frequency_preserved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.advocate_frequency_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.advocate_odds_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.four_genotype_normalizer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.silent_frequency_time' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.advocate_frequency_time' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.board_frequency_time' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.advocate_odds_time' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.complement_fraction_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.advocate_deficit_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.board_deficit_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.board_half_frequency_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.advocate_half_frequency_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.removing_voters_does_not_suppress_silent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.SilentGene.CrossingModel.b_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.CrossingModel.c_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.CrossingModel.bv_gt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.CrossingModel.cv_gt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.CrossingModel.cb_gt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.CrossingModel.boardMass_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.CrossingModel.advocateMass_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.CrossingModel.advocate_bernoulli_certificate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.SilentGene.CrossingModel.board_bernoulli_certificate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.SilentGene.CrossingModel.linear_certificate_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.CrossingModel.advocate_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.CrossingModel.board_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.CrossingModel.advocateTime_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.CrossingModel.boardTime_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.CrossingModel.advocateTime_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.CrossingModel.boardTime_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.CrossingModel.advocateTime_le_bernoulli' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.CrossingModel.boardTime_le_bernoulli' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.CrossingModel.board_before_advocate_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.CrossingModel.boardTime_eq_of_predecessor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.SilentGene.CrossingModel.advocateTime_eq_of_predecessor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.SilentGene.advocateFirstA_crossings' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.boardFirst_crossings' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.SilentGene.advocateFirstB_crossings' depends on axioms: [propext, Classical.choice, Quot.sound]

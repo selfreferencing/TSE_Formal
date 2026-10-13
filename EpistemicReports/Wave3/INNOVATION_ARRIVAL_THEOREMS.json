@@ -1,0 +1,21 @@
+{
+  "module": "InnovationArrival",
+  "names": [
+    "SEKernel.InnovationArrival.avoids_zero",
+    "SEKernel.InnovationArrival.avoids_succ",
+    "SEKernel.InnovationArrival.absence_partition",
+    "SEKernel.InnovationArrival.first_creation_mass",
+    "SEKernel.InnovationArrival.absence_le_of_conditional_lower",
+    "SEKernel.InnovationArrival.absence_ge_of_conditional_upper",
+    "SEKernel.InnovationArrival.absence_eq_of_conditional",
+    "SEKernel.InnovationArrival.one_sub_pow_le_mul",
+    "SEKernel.InnovationArrival.appearance_le_trials_mul",
+    "SEKernel.InnovationArrival.independent_no_appearance",
+    "SEKernel.InnovationArrival.independent_appearance",
+    "SEKernel.InnovationArrival.independent_appearance_le",
+    "SEKernel.InnovationArrival.presence_le_appearance",
+    "SEKernel.InnovationArrival.selection_zero",
+    "SEKernel.InnovationArrival.selectionIter_zero"
+  ],
+  "source_sha256": "4703707e095c3ae3e4cd56498ada7cd58fa7c44e7aaaf189485c6d040751bffe"
+}

@@ -1,0 +1,14 @@
+{
+  "build_command": "PATH=\"$HOME/.elan/bin:$PATH\" lake build SEKernel.SilentGene",
+  "build_exit_code": 0,
+  "build_log": "SILENT_GENE_BUILD.log",
+  "audit_command": "PATH=\"$HOME/.elan/bin:$PATH\" lake env lean scratch/wave3/silent_audit.lean",
+  "audit_exit_code": 0,
+  "audited_theorems": 47,
+  "axiom_groups": {
+    "[propext, Classical.choice, Quot.sound]": 47
+  },
+  "without_axioms": [],
+  "forbidden_tokens_after_comment_stripping": [],
+  "source_sha256": "0a6dbb31422f1d93f71e39f37e766e03295da2072bc4ca96dec6dfaefcf3e862"
+}

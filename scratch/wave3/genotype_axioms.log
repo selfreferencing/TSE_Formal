@@ -1,0 +1,81 @@
+'SEKernel.GenotypeTransition.four_masses_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.voterMass_eq_one_sub_boardMass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.linkage_determinant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.marginal_fst_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.marginal_snd_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.recombine_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.recombine_boardMass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.recombine_advocateMass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.recombine_linkage' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.pairCrossover_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.independentCrossover_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.survivorLaw_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.expect_prod_iterated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.prod_map_expect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.independentRosterCrossover_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.flipLaw_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.mutate_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.mutate_voterMass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.mutate_silent_coordinate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.retainedOffspring_silentFrequency' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.GenotypeTransition.distinctPair_expect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.pairCrossover_diagonal_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.independentRoster_mass_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.survivorLaw_mass_indicator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.distinctRho_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.distinctRosterCrossover_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.wordCount_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.wordCount_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.wordCount_real_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.nextRoster_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.broodHistogram_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.iid_offspring_count_expectation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.broodHistogram_expectedCount' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.histogramKernel_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.histogramKernel_expectedCount' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.ratio_expectation_counterexample' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.GenotypeTransition.iid_product_expectation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.expect_count_function' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.voterCountR_eq_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.silentCountR_eq_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.all00_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.all00_inner_expectation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.all00_expected_silent_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.all00_one_step_one_fifteenth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.all00_one_step_two_locus_expected_ratio' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.GenotypeTransition.nextRoster_silentCountR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.nextRoster_voterCountR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.iid_silentCountR_mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.iid_voterCountR_mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.all00_one_step_ratio_of_expected_counts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.GenotypeTransition.lexSurvivors_record_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.priority_forces_zero_advocate_survivors' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.GenotypeTransition.priority_selectedRoster_all00' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.priority_one_step_one_fifteenth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.constant_bind_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.all00_independentCrossover_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.all00_distinctCrossover_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.mutate_point00_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.all00_actual_one_step_two_locus' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.GenotypeTransition.all00_actual_distinct_one_step_two_locus' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.GenotypeTransition.protected_set_forces_zero_advocate_survivors' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.GenotypeTransition.protected_set_selectedRoster_all00' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.GenotypeTransition.corrected_priority_actual_one_step_one_fifteenth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

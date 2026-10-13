@@ -1,0 +1,954 @@
+[
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.clonalNormalizer_pos"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.clonalTrajectory_zero"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.clonalTrajectory_nonneg"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.clonalTrajectory_total"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.clonalTrajectory_mean"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.clonalTrajectory_step"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.constant_fitness_closed_form"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.fitness_pos"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.clonal_mean"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.silent_frequency_preserved"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.advocate_frequency_step"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.advocate_odds_step"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.four_genotype_normalizer"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.silent_frequency_time"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.advocate_frequency_time"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.board_frequency_time"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.advocate_odds_time"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.complement_fraction_bound"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.advocate_deficit_bound"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.board_deficit_bound"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.board_half_frequency_iff"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.advocate_half_frequency_iff"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.removing_voters_does_not_suppress_silent"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.CrossingModel.b_pos"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.CrossingModel.c_pos"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.CrossingModel.bv_gt_one"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.CrossingModel.cv_gt_one"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.CrossingModel.cb_gt_one"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.CrossingModel.boardMass_monotone"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.CrossingModel.advocateMass_monotone"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.CrossingModel.advocate_bernoulli_certificate"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.CrossingModel.board_bernoulli_certificate"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.CrossingModel.linear_certificate_exists"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.CrossingModel.advocate_exists"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.CrossingModel.board_exists"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.CrossingModel.advocateTime_spec"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.CrossingModel.boardTime_spec"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.CrossingModel.advocateTime_le"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.CrossingModel.boardTime_le"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.CrossingModel.advocateTime_le_bernoulli"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.CrossingModel.boardTime_le_bernoulli"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.CrossingModel.board_before_advocate_iff"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.CrossingModel.boardTime_eq_of_predecessor"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.CrossingModel.advocateTime_eq_of_predecessor"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.advocateFirstA_crossings"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.boardFirst_crossings"
+  },
+  {
+    "module": "SilentGene",
+    "name": "SEKernel.SilentGene.advocateFirstB_crossings"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.four_masses_sum"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.voterMass_eq_one_sub_boardMass"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.linkage_determinant"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.marginal_fst_mass"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.marginal_snd_mass"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.recombine_mass"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.recombine_boardMass"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.recombine_advocateMass"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.recombine_linkage"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.pairCrossover_mass"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.independentCrossover_mass"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.survivorLaw_mass"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.expect_prod_iterated"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.prod_map_expect"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.independentRosterCrossover_mass"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.flipLaw_mass"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.mutate_mass"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.mutate_voterMass"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.mutate_silent_coordinate"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.retainedOffspring_silentFrequency"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.distinctPair_expect"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.pairCrossover_diagonal_mass"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.independentRoster_mass_sum"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.survivorLaw_mass_indicator"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.distinctRho_bounds"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.distinctRosterCrossover_mass"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.wordCount_le"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.wordCount_eq_sum"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.wordCount_real_eq_sum"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.nextRoster_count"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.broodHistogram_mass"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.iid_offspring_count_expectation"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.broodHistogram_expectedCount"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.histogramKernel_mass"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.histogramKernel_expectedCount"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.ratio_expectation_counterexample"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.iid_product_expectation"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.expect_count_function"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.voterCountR_eq_count"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.silentCountR_eq_count"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.all00_ratio"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.all00_inner_expectation"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.all00_expected_silent_ratio"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.all00_one_step_one_fifteenth"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.all00_one_step_two_locus_expected_ratio"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.nextRoster_silentCountR"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.nextRoster_voterCountR"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.iid_silentCountR_mean"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.iid_voterCountR_mean"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.all00_one_step_ratio_of_expected_counts"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.lexSurvivors_record_top"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.priority_forces_zero_advocate_survivors"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.priority_selectedRoster_all00"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.priority_one_step_one_fifteenth"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.constant_bind_mass"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.all00_independentCrossover_law"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.all00_distinctCrossover_law"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.mutate_point00_law"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.all00_actual_one_step_two_locus"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.all00_actual_distinct_one_step_two_locus"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.protected_set_forces_zero_advocate_survivors"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.protected_set_selectedRoster_all00"
+  },
+  {
+    "module": "GenotypeTransition",
+    "name": "SEKernel.GenotypeTransition.corrected_priority_actual_one_step_one_fifteenth"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.bernoulli_bit_mean"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.bernoulli_bit_variance"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.pair_square_identity"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.effectiveCopies_le"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.effectiveCopies_eq_iff"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.natural_copies_bound"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.clone_mean"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.clone_variance"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.clone_chebyshev"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.covariance_symm"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.covariance_self"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.variance_sum_covariance"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.binary_variance"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.covariance_off_diagonal"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.correlated_variance"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.correlated_effective_identity"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.exchangeable_effective_size"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.even_pair_data"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.odd_pair_data"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.same_independent_pairs"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.pair_covariances_zero"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.majority_accuracy_not_pairwise"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.pairwise_effective_size_three"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.plurality_at_first_candidate"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.correctness_pattern_does_not_determine_plurality"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.two_world_success_sum"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.two_world_nonidentification"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.indicator_mean"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.empirical_moments"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.empirical_squared_error"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.empirical_concentration"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.empirical_concentration_simple"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.correlated_mean"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.correlated_chebyshev"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.correlatedEffectiveSize_le_sample_iff"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.binary_vote_requires_half"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.biased_binary_accuracy_bound"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.biased_binary_accuracy_min_bound"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.covariance_const_mul"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.weighted_variance_upper_triangle"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.normalized_weighted_mean"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.weighted_correlated_variance"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.weighted_effective_identity"
+  },
+  {
+    "module": "CorrelatedAnswers",
+    "name": "SEKernel.CorrelatedAnswers.empirical_squared_error_le"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.reach_marginal_identity"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.reach_zero"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.reach_endpoint_zero"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.reach_endpoint_one"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.reach_marginals_nonneg"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.reach_marginals_decreasing"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.reach_telescoping"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.finite_spawning_wedge"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.itemMultiplier_nonneg"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.item_dual_feasible"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.slot_lp_dual"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.slot_certificate_value"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.slot_certificate_optimal"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.greedy_pick_dominates_unpicked"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.dominating_bset_maximum"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.rankedSlotSet_card"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.rankedSlotSet_dominates"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.selected_record_le_unselected"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.rankedSlotSet_prefix"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.dominating_set_has_certificate"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.slot_lp_dual_min"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.exists_certified_allocation"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.feasible_allocation_nonempty"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.whole_allocation_kkt"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.whole_allocation_kkt_consequences"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.certified_allocation_optimal"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.forecast_regret"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.forecast_gap_identifies"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.biased_forecast_two_task_B"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.biased_forecast_two_task_A"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.clonal_policy_support"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.clonal_policy_ratio"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.supported_within_maximizers_equal_payoff"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.redrawn_policy_unchanged"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.redrawn_with_elites"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.biased_policy_fitness_pos"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.biased_policy_ratio"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.actual_reach_payoff"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.marginal_forecast_error"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.suboptimal_mass_bound"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.initial_segment_mem_iff"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.prefix_mem_iff_taskCount"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.taskCount_le_cap"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.slot_sum_by_task"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.taskCount_sum"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.prefix_allocation_ext"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.sum_finite_prefix"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.reach_allocation_objective"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.exists_reach_certified_allocation"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.callSlot_card"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.certified_reach_optimal"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.exists_optimal_reach_allocation"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.plurality_at_zero"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.binary_two_first"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.strict_readable_winner"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.some_label_count"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.binary_three_majority"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.readableBernoulli_no_abstention"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.binary_vote_three_probability"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.binary_vote_first_probability"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.binary_vote_one_probability"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.binary_vote_two_probability"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.posted_vote_increasing_marginals"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.fixedTwoRescueLaw_correctness"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.binary_prefix_two"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.fixed_two_rescue_zero"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.fixed_two_rescue_one"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.fixed_two_rescue_two"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.fixed_benchmark_increasing_marginals"
+  },
+  {
+    "module": "InnovationArrival",
+    "name": "SEKernel.InnovationArrival.avoids_zero"
+  },
+  {
+    "module": "InnovationArrival",
+    "name": "SEKernel.InnovationArrival.avoids_succ"
+  },
+  {
+    "module": "InnovationArrival",
+    "name": "SEKernel.InnovationArrival.absence_partition"
+  },
+  {
+    "module": "InnovationArrival",
+    "name": "SEKernel.InnovationArrival.first_creation_mass"
+  },
+  {
+    "module": "InnovationArrival",
+    "name": "SEKernel.InnovationArrival.absence_le_of_conditional_lower"
+  },
+  {
+    "module": "InnovationArrival",
+    "name": "SEKernel.InnovationArrival.absence_ge_of_conditional_upper"
+  },
+  {
+    "module": "InnovationArrival",
+    "name": "SEKernel.InnovationArrival.absence_eq_of_conditional"
+  },
+  {
+    "module": "InnovationArrival",
+    "name": "SEKernel.InnovationArrival.one_sub_pow_le_mul"
+  },
+  {
+    "module": "InnovationArrival",
+    "name": "SEKernel.InnovationArrival.appearance_le_trials_mul"
+  },
+  {
+    "module": "InnovationArrival",
+    "name": "SEKernel.InnovationArrival.independent_no_appearance"
+  },
+  {
+    "module": "InnovationArrival",
+    "name": "SEKernel.InnovationArrival.independent_appearance"
+  },
+  {
+    "module": "InnovationArrival",
+    "name": "SEKernel.InnovationArrival.independent_appearance_le"
+  },
+  {
+    "module": "InnovationArrival",
+    "name": "SEKernel.InnovationArrival.presence_le_appearance"
+  },
+  {
+    "module": "InnovationArrival",
+    "name": "SEKernel.InnovationArrival.selection_zero"
+  },
+  {
+    "module": "InnovationArrival",
+    "name": "SEKernel.InnovationArrival.selectionIter_zero"
+  }
+]

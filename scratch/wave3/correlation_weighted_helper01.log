@@ -1,0 +1,70 @@
+scratch/wave3/correlation_weighted_helper.lean:16:2: error: Tactic `apply` failed: could not unify the conclusion of `@funext`
+  ?f = ?g
+with the goal
+  (L.expect fun ω => ((fun ω => a * X ω) ω - L.expect fun ω => a * X ω) * ((fun ω => b * Y ω) ω - b * L.expect Y)) =
+    a * b * L.expect fun ω => (X ω - L.expect X) * (Y ω - L.expect Y)
+
+Note: The full type of `@funext` is
+  ∀ {α : Sort ?u.1173} {β : α → Sort ?u.1172} {f g : (x : α) → β x}, (∀ (x : α), f x = g x) → f = g
+
+Ω : Type u_1
+inst✝ : Fintype Ω
+L : Law Ω
+a b : ℝ
+X Y : Ω → ℝ
+⊢ (L.expect fun ω => ((fun ω => a * X ω) ω - L.expect fun ω => a * X ω) * ((fun ω => b * Y ω) ω - b * L.expect Y)) =
+    a * b * L.expect fun ω => (X ω - L.expect X) * (Y ω - L.expect Y)
+scratch/wave3/correlation_weighted_helper.lean:33:13: error: Tactic `simp` failed with a nested error:
+maximum recursion depth has been reached
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information
+scratch/wave3/correlation_weighted_helper.lean:66:4: error: Tactic `apply` failed: could not unify the conclusion of `Finset.sum_congr rfl`
+  Finset.sum ?m.101 ?m.98 = Finset.sum ?m.101 ?m.99
+with the goal
+  ∑ x, w x ^ 2 * (p * (1 - p)) = p * (1 - p) * ∑ i, w i ^ 2
+
+Note: The full type of `Finset.sum_congr rfl` is
+  (∀ x ∈ ?m.101, ?m.98 x = ?m.99 x) → Finset.sum ?m.101 ?m.98 = Finset.sum ?m.101 ?m.99
+
+case e_a
+Ω : Type u_1
+inst✝ : Fintype Ω
+n : ℕ
+L : Law Ω
+X : Fin n → Ω → ℝ
+p : ℝ
+hp : 0 < p
+hp' : p < 1
+hX : ∀ (i : Fin n) (ω : Ω), X i ω = 0 ∨ X i ω = 1
+hm : ∀ (i : Fin n), L.expect (X i) = p
+w : Fin n → ℝ
+⊢ ∑ x, w x ^ 2 * (p * (1 - p)) = p * (1 - p) * ∑ i, w i ^ 2
+scratch/wave3/correlation_weighted_helper.lean:71:4: error: Tactic `apply` failed: could not unify the conclusion of `Finset.sum_congr rfl`
+  Finset.sum ?m.124 ?m.121 = Finset.sum ?m.124 ?m.122
+with the goal
+  (∑ i, 2 * ∑ j, if i < j then w i * w j * L.covariance (X i) (X j) else 0) =
+    p * ((1 - p) * ∑ i, 2 * ∑ j, if i < j then w i * w j * (L.covariance (X i) (X j) / (p * (1 - p))) else 0)
+
+Note: The full type of `Finset.sum_congr rfl` is
+  (∀ x ∈ ?m.124, ?m.121 x = ?m.122 x) → Finset.sum ?m.124 ?m.121 = Finset.sum ?m.124 ?m.122
+
+case e_a
+Ω : Type u_1
+inst✝ : Fintype Ω
+n : ℕ
+L : Law Ω
+X : Fin n → Ω → ℝ
+p : ℝ
+hp : 0 < p
+hp' : p < 1
+hX : ∀ (i : Fin n) (ω : Ω), X i ω = 0 ∨ X i ω = 1
+hm : ∀ (i : Fin n), L.expect (X i) = p
+w : Fin n → ℝ
+⊢ (∑ i, 2 * ∑ j, if i < j then w i * w j * L.covariance (X i) (X j) else 0) =
+    p * ((1 - p) * ∑ i, 2 * ∑ j, if i < j then w i * w j * (L.covariance (X i) (X j) / (p * (1 - p))) else 0)
+scratch/wave3/correlation_weighted_helper.lean:88:21: warning: unused variable `hw`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+scratch/wave3/correlation_weighted_helper.lean:88:39: warning: unused variable `hsum`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`

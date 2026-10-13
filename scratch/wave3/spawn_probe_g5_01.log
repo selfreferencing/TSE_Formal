@@ -1,0 +1,5 @@
+scratch/wave3/spawn_probe_g5_01.lean:7:4: error: Tactic `simp` failed with a nested error:
+Tactic `simp` failed with a nested error:
+maximum recursion depth has been reached
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information

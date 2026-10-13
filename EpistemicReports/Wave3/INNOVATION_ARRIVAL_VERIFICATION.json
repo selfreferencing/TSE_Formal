@@ -1,0 +1,7 @@
+{
+  "command": "lake env lean scratch/wave3/arrival_axioms.lean",
+  "exit_code": 0,
+  "seconds": 9.5,
+  "source_sha256": "4703707e095c3ae3e4cd56498ada7cd58fa7c44e7aaaf189485c6d040751bffe",
+  "theorems": 15
+}

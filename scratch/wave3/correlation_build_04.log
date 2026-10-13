@@ -1,0 +1,139 @@
+⚠ [7891/7893] Replayed SEKernel.MutationBaseline
+warning: SEKernel/MutationBaseline.lean:127:5: unused variable `hu`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SEKernel/MutationBaseline.lean:127:32: unused variable `hd`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SEKernel/MutationBaseline.lean:176:50: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: SEKernel/MutationBaseline.lean:176:50: 'positivity' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SEKernel/MutationBaseline.lean:196:37: This simp argument is unused:
+  ha
+
+Hint: Omit it from the simp argument list.
+  simp [Law.prob, sixAlleleMutation, h̵a̵,̵ ̵Ne.symm ha]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✖ [7893/7893] Building SEKernel.CorrelatedAnswers (27s)
+trace: .> LEAN_PATH=/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/Cli/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/batteries/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/Qq/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/aesop/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/importGraph/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/plausible/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/mathlib/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/lib/lean /Users/kvallier/.elan/toolchains/leanprover--lean4---v4.28.0-rc1/bin/lean /Users/kvallier/Desktop/TSE_Formal_chile/SEKernel/CorrelatedAnswers.lean -o /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/lib/lean/SEKernel/CorrelatedAnswers.olean -i /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/lib/lean/SEKernel/CorrelatedAnswers.ilean -c /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/ir/SEKernel/CorrelatedAnswers.c --setup /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/ir/SEKernel/CorrelatedAnswers.setup.json --json
+warning: SEKernel/CorrelatedAnswers.lean:32:0: automatically included section variable(s) unused in theorem `SEKernel.CorrelatedAnswers.pair_square_identity`:
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: SEKernel/CorrelatedAnswers.lean:126:20: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: SEKernel/CorrelatedAnswers.lean:140:0: automatically included section variable(s) unused in theorem `SEKernel.CorrelatedAnswers.variance_sum_covariance`:
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: SEKernel/CorrelatedAnswers.lean:180:37: unused variable `hn`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SEKernel/CorrelatedAnswers.lean:200:53: This simp argument is unused:
+  Finset.sum_ite_eq'
+
+Hint: Omit it from the simp argument list.
+  simp only [Finset.sum_add_distrib, F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵i̵t̵e̵_̵e̵q̵'̵,̵ ̵Finset.sum_ite_eq, Finset.mem_univ, if_true,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲Finset.sum_const, Finset.card_univ, Fintype.card_fin, nsmul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SEKernel/CorrelatedAnswers.lean:209:82: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+error: SEKernel/CorrelatedAnswers.lean:247:43: Application type mismatch: The argument
+  h
+has type
+  i = j
+but is expected to have type
+  i ≠ j
+in the application
+  hρ i j h
+error: SEKernel/CorrelatedAnswers.lean:262:2: No goals to be solved
+error: SEKernel/CorrelatedAnswers.lean:294:4: No goals to be solved
+error: SEKernel/CorrelatedAnswers.lean:294:4: No goals to be solved
+error: SEKernel/CorrelatedAnswers.lean:294:4: No goals to be solved
+error: SEKernel/CorrelatedAnswers.lean:294:4: No goals to be solved
+error: SEKernel/CorrelatedAnswers.lean:294:4: No goals to be solved
+error: SEKernel/CorrelatedAnswers.lean:294:4: No goals to be solved
+error: SEKernel/CorrelatedAnswers.lean:294:4: No goals to be solved
+error: SEKernel/CorrelatedAnswers.lean:294:4: No goals to be solved
+error: SEKernel/CorrelatedAnswers.lean:294:4: No goals to be solved
+error: SEKernel/CorrelatedAnswers.lean:294:4: No goals to be solved
+error: SEKernel/CorrelatedAnswers.lean:294:4: No goals to be solved
+error: SEKernel/CorrelatedAnswers.lean:294:4: No goals to be solved
+error: SEKernel/CorrelatedAnswers.lean:300:4: No goals to be solved
+error: SEKernel/CorrelatedAnswers.lean:300:4: No goals to be solved
+error: SEKernel/CorrelatedAnswers.lean:300:4: No goals to be solved
+error: SEKernel/CorrelatedAnswers.lean:306:68: unsolved goals
+⊢ (if 2 ≤ {x | ![false, false, false] x = true}.card then 1 / 4 else 0) +
+        ((if 2 ≤ {x | ![false, true, true] x = true}.card then 1 / 4 else 0) +
+          ((if 2 ≤ {x | ![true, false, true] x = true}.card then 1 / 4 else 0) +
+            if 2 ≤ {x | ![true, true, false] x = true}.card then 1 / 4 else 0)) =
+      3 / 4 ∧
+    (if 2 ≤ {x | ![false, false, false] x = false}.card then 1 / 4 else 0) +
+        ((if 2 ≤ {x | ![false, true, true] x = false}.card then 1 / 4 else 0) +
+          ((if 2 ≤ {x | ![true, false, true] x = false}.card then 1 / 4 else 0) +
+            if 2 ≤ {x | ![true, true, false] x = false}.card then 1 / 4 else 0)) =
+      1 / 4
+error: SEKernel/CorrelatedAnswers.lean:336:2: unsolved goals
+case left.«2»
+⊢ ¬2 = 0
+error: SEKernel/CorrelatedAnswers.lean:339:4: unsolved goals
+case right.left.convert_1
+⊢ 1 ∈ Epistemic.candidatePositions ![some 0, some 1, some 1]
+error: SEKernel/CorrelatedAnswers.lean:340:4: unsolved goals
+case right.left.convert_2
+⊢ (¬some 0 = none →
+      ¬some 1 = none ∧
+        {x | ![some 0, some 1, some 1] x = some 0}.card < {x | ![some 0, some 1, some 1] x = some 1}.card) ∧
+    (¬some 1 = none →
+      (¬some 0 = none →
+          {x | ![some 0, some 1, some 1] x = some 0}.card ≤ {x | ![some 0, some 1, some 1] x = some 1}.card) →
+        1 ≤ 2)
+error: SEKernel/CorrelatedAnswers.lean:342:4: No goals to be solved
+error: SEKernel/CorrelatedAnswers.lean:346:4: unsolved goals
+case right.right.convert_1
+⊢ 0 ∈ Epistemic.candidatePositions ![some 0, some 1, some 2]
+error: SEKernel/CorrelatedAnswers.lean:349:4: No goals to be solved
+error: SEKernel/CorrelatedAnswers.lean:375:8: failed to synthesize instance of type class
+  Decidable (z i = a)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: SEKernel/CorrelatedAnswers.lean:378:23: failed to synthesize instance of type class
+  Decidable (x = a)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: SEKernel/CorrelatedAnswers.lean:378:63: unsolved goals
+A : Type u_3
+inst✝ : Fintype A
+π : Law A
+a : A
+⊢ ∑ x, π.mass x * sorry () = π.mass a
+warning: SEKernel/CorrelatedAnswers.lean:391:14: declaration uses `sorry`
+warning: SEKernel/CorrelatedAnswers.lean:382:8: declaration uses `sorry`
+warning: SEKernel/CorrelatedAnswers.lean:382:59: unused variable `hN`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+error: SEKernel/CorrelatedAnswers.lean:403:4: Type mismatch
+  hm.right
+has type
+  ((Law.pi fun x => π).variance fun z => empiricalFrequency z a) = π.mass a * (1 - π.mass a) / ↑N
+but is expected to have type
+  ((Law.pi fun x => π).expect fun z =>
+      (empiricalFrequency z a - (Law.pi fun x => π).expect fun z => empiricalFrequency z a) ^ 2) =
+    ((Law.pi fun x => π).expect fun z => empiricalFrequency z a) *
+        (1 - (Law.pi fun x => π).expect fun z => empiricalFrequency z a) /
+      ↑N
+error: Lean exited with code 1
+Some required targets logged failures:
+- SEKernel.CorrelatedAnswers
+error: build failed

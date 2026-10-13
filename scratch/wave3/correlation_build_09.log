@@ -1,0 +1,256 @@
+⚠ [7891/7893] Replayed SEKernel.MutationBaseline
+warning: SEKernel/MutationBaseline.lean:127:5: unused variable `hu`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SEKernel/MutationBaseline.lean:127:32: unused variable `hd`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SEKernel/MutationBaseline.lean:176:50: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: SEKernel/MutationBaseline.lean:176:50: 'positivity' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SEKernel/MutationBaseline.lean:196:37: This simp argument is unused:
+  ha
+
+Hint: Omit it from the simp argument list.
+  simp [Law.prob, sixAlleleMutation, h̵a̵,̵ ̵Ne.symm ha]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✖ [7893/7893] Building SEKernel.CorrelatedAnswers (11s)
+trace: .> LEAN_PATH=/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/Cli/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/batteries/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/Qq/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/aesop/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/importGraph/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/plausible/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/mathlib/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/lib/lean /Users/kvallier/.elan/toolchains/leanprover--lean4---v4.28.0-rc1/bin/lean /Users/kvallier/Desktop/TSE_Formal_chile/SEKernel/CorrelatedAnswers.lean -o /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/lib/lean/SEKernel/CorrelatedAnswers.olean -i /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/lib/lean/SEKernel/CorrelatedAnswers.ilean -c /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/ir/SEKernel/CorrelatedAnswers.c --setup /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/ir/SEKernel/CorrelatedAnswers.setup.json --json
+warning: SEKernel/CorrelatedAnswers.lean:32:0: automatically included section variable(s) unused in theorem `SEKernel.CorrelatedAnswers.pair_square_identity`:
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: SEKernel/CorrelatedAnswers.lean:126:20: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: SEKernel/CorrelatedAnswers.lean:140:0: automatically included section variable(s) unused in theorem `SEKernel.CorrelatedAnswers.variance_sum_covariance`:
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: SEKernel/CorrelatedAnswers.lean:180:37: unused variable `hn`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SEKernel/CorrelatedAnswers.lean:200:53: This simp argument is unused:
+  Finset.sum_ite_eq'
+
+Hint: Omit it from the simp argument list.
+  simp only [Finset.sum_add_distrib, F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵i̵t̵e̵_̵e̵q̵'̵,̵ ̵Finset.sum_ite_eq, Finset.mem_univ, if_true,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲Finset.sum_const, Finset.card_univ, Fintype.card_fin, nsmul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SEKernel/CorrelatedAnswers.lean:209:82: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: SEKernel/CorrelatedAnswers.lean:232:5: unused variable `hbr`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SEKernel/CorrelatedAnswers.lean:263:17: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: SEKernel/CorrelatedAnswers.lean:263:17: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+error: SEKernel/CorrelatedAnswers.lean:343:73: unsolved goals
+⊢ ¬some 1 = none
+warning: SEKernel/CorrelatedAnswers.lean:355:40: Try `simp at hj` instead of `simpa using hj`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+error: SEKernel/CorrelatedAnswers.lean:357:69: unsolved goals
+⊢ ¬some 0 = none
+warning: SEKernel/CorrelatedAnswers.lean:346:23: This simp argument is unused:
+  Matrix.cons_val_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [̵E̵p̵i̵s̵t̵e̵m̵i̵c̵.̵c̵a̵n̵d̵i̵d̵a̵t̵e̵P̵o̵s̵i̵t̵i̵o̵n̵s̵,̵F̵i̵n̵s̵e̵t̵.̵m̵e̵m̵_̵f̵i̵l̵t̵e̵r̵,̵F̵i̵n̵s̵e̵t̵.̵m̵e̵m̵_̵u̵n̵i̵v̵,̵t̵r̵u̵e̵_̵a̵n̵d̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵E̵p̵i̵s̵t̵e̵m̵i̵c̵.̵l̵a̵b̵e̵l̵C̵o̵u̵n̵t̵_̵e̵q̵_̵s̵u̵m̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵s̵u̵c̵c̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵d̵u̵p̵l̵i̵c̵a̵t̵e̵W̵r̵o̵n̵g̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵z̵e̵r̵o̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵o̵n̵e̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵t̵w̵o̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵O̵p̵t̵i̵o̵n̵.̵s̵o̵m̵e̵_̵n̵e̵_̵n̵o̵n̵e̵,̵n̵o̵t̵_̵f̵a̵l̵s̵e̵_̵e̵q̵_̵t̵r̵u̵e̵]̵[̲E̲p̲i̲s̲t̲e̲m̲i̲c̲.̲c̲a̲n̲d̲i̲d̲a̲t̲e̲P̲o̲s̲i̲t̲i̲o̲n̲s̲,̲ ̲F̲i̲n̲s̲e̲t̲.̲m̲e̲m̲_̲f̲i̲l̲t̲e̲r̲,̲ ̲F̲i̲n̲s̲e̲t̲.̲m̲e̲m̲_̲u̲n̲i̲v̲,̲ ̲t̲r̲u̲e̲_̲a̲n̲d̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲E̲p̲i̲s̲t̲e̲m̲i̲c̲.̲l̲a̲b̲e̲l̲C̲o̲u̲n̲t̲_̲e̲q̲_̲s̲u̲m̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲s̲u̲m̲_̲u̲n̲i̲v̲_̲s̲u̲c̲c̲,̲ ̲d̲u̲p̲l̲i̲c̲a̲t̲e̲W̲r̲o̲n̲g̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲o̲n̲e̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲t̲w̲o̲,̲ ̲O̲p̲t̲i̲o̲n̲.̲s̲o̲m̲e̲_̲n̲e̲_̲n̲o̲n̲e̲,̲ ̲n̲o̲t̲_̲f̲a̲l̲s̲e̲_̲e̲q̲_̲t̲r̲u̲e̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SEKernel/CorrelatedAnswers.lean:346:44: This simp argument is unused:
+  Matrix.cons_val_one
+
+Hint: Omit it from the simp argument list.
+  simp only [̵E̵p̵i̵s̵t̵e̵m̵i̵c̵.̵c̵a̵n̵d̵i̵d̵a̵t̵e̵P̵o̵s̵i̵t̵i̵o̵n̵s̵,̵F̵i̵n̵s̵e̵t̵.̵m̵e̵m̵_̵f̵i̵l̵t̵e̵r̵,̵F̵i̵n̵s̵e̵t̵.̵m̵e̵m̵_̵u̵n̵i̵v̵,̵t̵r̵u̵e̵_̵a̵n̵d̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵E̵p̵i̵s̵t̵e̵m̵i̵c̵.̵l̵a̵b̵e̵l̵C̵o̵u̵n̵t̵_̵e̵q̵_̵s̵u̵m̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵s̵u̵c̵c̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵d̵u̵p̵l̵i̵c̵a̵t̵e̵W̵r̵o̵n̵g̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵z̵e̵r̵o̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵o̵n̵e̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵t̵w̵o̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵O̵p̵t̵i̵o̵n̵.̵s̵o̵m̵e̵_̵n̵e̵_̵n̵o̵n̵e̵,̵n̵o̵t̵_̵f̵a̵l̵s̵e̵_̵e̵q̵_̵t̵r̵u̵e̵]̵[̲E̲p̲i̲s̲t̲e̲m̲i̲c̲.̲c̲a̲n̲d̲i̲d̲a̲t̲e̲P̲o̲s̲i̲t̲i̲o̲n̲s̲,̲ ̲F̲i̲n̲s̲e̲t̲.̲m̲e̲m̲_̲f̲i̲l̲t̲e̲r̲,̲ ̲F̲i̲n̲s̲e̲t̲.̲m̲e̲m̲_̲u̲n̲i̲v̲,̲ ̲t̲r̲u̲e̲_̲a̲n̲d̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲E̲p̲i̲s̲t̲e̲m̲i̲c̲.̲l̲a̲b̲e̲l̲C̲o̲u̲n̲t̲_̲e̲q̲_̲s̲u̲m̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲s̲u̲m̲_̲u̲n̲i̲v̲_̲s̲u̲c̲c̲,̲ ̲d̲u̲p̲l̲i̲c̲a̲t̲e̲W̲r̲o̲n̲g̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲z̲e̲r̲o̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲t̲w̲o̲,̲ ̲O̲p̲t̲i̲o̲n̲.̲s̲o̲m̲e̲_̲n̲e̲_̲n̲o̲n̲e̲,̲ ̲n̲o̲t̲_̲f̲a̲l̲s̲e̲_̲e̲q̲_̲t̲r̲u̲e̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SEKernel/CorrelatedAnswers.lean:346:64: This simp argument is unused:
+  Matrix.cons_val_two
+
+Hint: Omit it from the simp argument list.
+  simp only [̵E̵p̵i̵s̵t̵e̵m̵i̵c̵.̵c̵a̵n̵d̵i̵d̵a̵t̵e̵P̵o̵s̵i̵t̵i̵o̵n̵s̵,̵F̵i̵n̵s̵e̵t̵.̵m̵e̵m̵_̵f̵i̵l̵t̵e̵r̵,̵F̵i̵n̵s̵e̵t̵.̵m̵e̵m̵_̵u̵n̵i̵v̵,̵t̵r̵u̵e̵_̵a̵n̵d̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵E̵p̵i̵s̵t̵e̵m̵i̵c̵.̵l̵a̵b̵e̵l̵C̵o̵u̵n̵t̵_̵e̵q̵_̵s̵u̵m̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵s̵u̵c̵c̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵d̵u̵p̵l̵i̵c̵a̵t̵e̵W̵r̵o̵n̵g̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵z̵e̵r̵o̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵o̵n̵e̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵t̵w̵o̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵O̵p̵t̵i̵o̵n̵.̵s̵o̵m̵e̵_̵n̵e̵_̵n̵o̵n̵e̵,̵n̵o̵t̵_̵f̵a̵l̵s̵e̵_̵e̵q̵_̵t̵r̵u̵e̵]̵[̲E̲p̲i̲s̲t̲e̲m̲i̲c̲.̲c̲a̲n̲d̲i̲d̲a̲t̲e̲P̲o̲s̲i̲t̲i̲o̲n̲s̲,̲ ̲F̲i̲n̲s̲e̲t̲.̲m̲e̲m̲_̲f̲i̲l̲t̲e̲r̲,̲ ̲F̲i̲n̲s̲e̲t̲.̲m̲e̲m̲_̲u̲n̲i̲v̲,̲ ̲t̲r̲u̲e̲_̲a̲n̲d̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲E̲p̲i̲s̲t̲e̲m̲i̲c̲.̲l̲a̲b̲e̲l̲C̲o̲u̲n̲t̲_̲e̲q̲_̲s̲u̲m̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲s̲u̲m̲_̲u̲n̲i̲v̲_̲s̲u̲c̲c̲,̲ ̲d̲u̲p̲l̲i̲c̲a̲t̲e̲W̲r̲o̲n̲g̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲z̲e̲r̲o̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲o̲n̲e̲,̲ ̲O̲p̲t̲i̲o̲n̲.̲s̲o̲m̲e̲_̲n̲e̲_̲n̲o̲n̲e̲,̲ ̲n̲o̲t̲_̲f̲a̲l̲s̲e̲_̲e̲q̲_̲t̲r̲u̲e̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SEKernel/CorrelatedAnswers.lean:347:8: This simp argument is unused:
+  Option.some_ne_none
+
+Hint: Omit it from the simp argument list.
+  simp only [̵E̵p̵i̵s̵t̵e̵m̵i̵c̵.̵c̵a̵n̵d̵i̵d̵a̵t̵e̵P̵o̵s̵i̵t̵i̵o̵n̵s̵,̵F̵i̵n̵s̵e̵t̵.̵m̵e̵m̵_̵f̵i̵l̵t̵e̵r̵,̵F̵i̵n̵s̵e̵t̵.̵m̵e̵m̵_̵u̵n̵i̵v̵,̵t̵r̵u̵e̵_̵a̵n̵d̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵E̵p̵i̵s̵t̵e̵m̵i̵c̵.̵l̵a̵b̵e̵l̵C̵o̵u̵n̵t̵_̵e̵q̵_̵s̵u̵m̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵s̵u̵c̵c̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵d̵u̵p̵l̵i̵c̵a̵t̵e̵W̵r̵o̵n̵g̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵z̵e̵r̵o̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵o̵n̵e̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵t̵w̵o̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵O̵p̵t̵i̵o̵n̵.̵s̵o̵m̵e̵_̵n̵e̵_̵n̵o̵n̵e̵,̵n̵o̵t̵_̵f̵a̵l̵s̵e̵_̵e̵q̵_̵t̵r̵u̵e̵]̵[̲E̲p̲i̲s̲t̲e̲m̲i̲c̲.̲c̲a̲n̲d̲i̲d̲a̲t̲e̲P̲o̲s̲i̲t̲i̲o̲n̲s̲,̲ ̲F̲i̲n̲s̲e̲t̲.̲m̲e̲m̲_̲f̲i̲l̲t̲e̲r̲,̲ ̲F̲i̲n̲s̲e̲t̲.̲m̲e̲m̲_̲u̲n̲i̲v̲,̲ ̲t̲r̲u̲e̲_̲a̲n̲d̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲E̲p̲i̲s̲t̲e̲m̲i̲c̲.̲l̲a̲b̲e̲l̲C̲o̲u̲n̲t̲_̲e̲q̲_̲s̲u̲m̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲s̲u̲m̲_̲u̲n̲i̲v̲_̲s̲u̲c̲c̲,̲ ̲d̲u̲p̲l̲i̲c̲a̲t̲e̲W̲r̲o̲n̲g̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲z̲e̲r̲o̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲o̲n̲e̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲t̲w̲o̲,̲ ̲n̲o̲t̲_̲f̲a̲l̲s̲e̲_̲e̲q̲_̲t̲r̲u̲e̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SEKernel/CorrelatedAnswers.lean:347:28: This simp argument is unused:
+  not_false_eq_true
+
+Hint: Omit it from the simp argument list.
+  simp only [̵E̵p̵i̵s̵t̵e̵m̵i̵c̵.̵c̵a̵n̵d̵i̵d̵a̵t̵e̵P̵o̵s̵i̵t̵i̵o̵n̵s̵,̵F̵i̵n̵s̵e̵t̵.̵m̵e̵m̵_̵f̵i̵l̵t̵e̵r̵,̵F̵i̵n̵s̵e̵t̵.̵m̵e̵m̵_̵u̵n̵i̵v̵,̵t̵r̵u̵e̵_̵a̵n̵d̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵E̵p̵i̵s̵t̵e̵m̵i̵c̵.̵l̵a̵b̵e̵l̵C̵o̵u̵n̵t̵_̵e̵q̵_̵s̵u̵m̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵s̵u̵c̵c̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵d̵u̵p̵l̵i̵c̵a̵t̵e̵W̵r̵o̵n̵g̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵z̵e̵r̵o̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵o̵n̵e̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵t̵w̵o̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵O̵p̵t̵i̵o̵n̵.̵s̵o̵m̵e̵_̵n̵e̵_̵n̵o̵n̵e̵,̵n̵o̵t̵_̵f̵a̵l̵s̵e̵_̵e̵q̵_̵t̵r̵u̵e̵]̵[̲E̲p̲i̲s̲t̲e̲m̲i̲c̲.̲c̲a̲n̲d̲i̲d̲a̲t̲e̲P̲o̲s̲i̲t̲i̲o̲n̲s̲,̲ ̲F̲i̲n̲s̲e̲t̲.̲m̲e̲m̲_̲f̲i̲l̲t̲e̲r̲,̲ ̲F̲i̲n̲s̲e̲t̲.̲m̲e̲m̲_̲u̲n̲i̲v̲,̲ ̲t̲r̲u̲e̲_̲a̲n̲d̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲E̲p̲i̲s̲t̲e̲m̲i̲c̲.̲l̲a̲b̲e̲l̲C̲o̲u̲n̲t̲_̲e̲q̲_̲s̲u̲m̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲s̲u̲m̲_̲u̲n̲i̲v̲_̲s̲u̲c̲c̲,̲ ̲d̲u̲p̲l̲i̲c̲a̲t̲e̲W̲r̲o̲n̲g̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲z̲e̲r̲o̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲o̲n̲e̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲t̲w̲o̲,̲ ̲O̲p̲t̲i̲o̲n̲.̲s̲o̲m̲e̲_̲n̲e̲_̲n̲o̲n̲e̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SEKernel/CorrelatedAnswers.lean:353:41: This simp argument is unused:
+  Matrix.cons_val_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [̵E̵p̵i̵s̵t̵e̵m̵i̵c̵.̵c̵a̵n̵d̵i̵d̵a̵t̵e̵P̵o̵s̵i̵t̵i̵o̵n̵s̵,̵F̵i̵n̵s̵e̵t̵.̵m̵e̵m̵_̵f̵i̵l̵t̵e̵r̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵F̵i̵n̵s̵e̵t̵.̵m̵e̵m̵_̵u̵n̵i̵v̵,̵t̵r̵u̵e̵_̵a̵n̵d̵,̵E̵p̵i̵s̵t̵e̵m̵i̵c̵.̵l̵a̵b̵e̵l̵C̵o̵u̵n̵t̵_̵e̵q̵_̵s̵u̵m̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵s̵u̵c̵c̵,̵d̵u̵p̵l̵i̵c̵a̵t̵e̵W̵r̵o̵n̵g̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵z̵e̵r̵o̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵o̵n̵e̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵t̵w̵o̵,̵O̵p̵t̵i̵o̵n̵.̵s̵o̵m̵e̵_̵n̵e̵_̵n̵o̵n̵e̵,̵n̵o̵t̵_̵f̵a̵l̵s̵e̵_̵e̵q̵_̵t̵r̵u̵e̵]̵[̲E̲p̲i̲s̲t̲e̲m̲i̲c̲.̲c̲a̲n̲d̲i̲d̲a̲t̲e̲P̲o̲s̲i̲t̲i̲o̲n̲s̲,̲ ̲F̲i̲n̲s̲e̲t̲.̲m̲e̲m̲_̲f̲i̲l̲t̲e̲r̲,̲ ̲F̲i̲n̲s̲e̲t̲.̲m̲e̲m̲_̲u̲n̲i̲v̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲t̲r̲u̲e̲_̲a̲n̲d̲,̲ ̲E̲p̲i̲s̲t̲e̲m̲i̲c̲.̲l̲a̲b̲e̲l̲C̲o̲u̲n̲t̲_̲e̲q̲_̲s̲u̲m̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲s̲u̲m̲_̲u̲n̲i̲v̲_̲s̲u̲c̲c̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲d̲u̲p̲l̲i̲c̲a̲t̲e̲W̲r̲o̲n̲g̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲o̲n̲e̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲t̲w̲o̲,̲ ̲O̲p̲t̲i̲o̲n̲.̲s̲o̲m̲e̲_̲n̲e̲_̲n̲o̲n̲e̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲n̲o̲t̲_̲f̲a̲l̲s̲e̲_̲e̲q̲_̲t̲r̲u̲e̲]̲ at hj
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SEKernel/CorrelatedAnswers.lean:353:62: This simp argument is unused:
+  Matrix.cons_val_one
+
+Hint: Omit it from the simp argument list.
+  simp only [̵E̵p̵i̵s̵t̵e̵m̵i̵c̵.̵c̵a̵n̵d̵i̵d̵a̵t̵e̵P̵o̵s̵i̵t̵i̵o̵n̵s̵,̵F̵i̵n̵s̵e̵t̵.̵m̵e̵m̵_̵f̵i̵l̵t̵e̵r̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵F̵i̵n̵s̵e̵t̵.̵m̵e̵m̵_̵u̵n̵i̵v̵,̵t̵r̵u̵e̵_̵a̵n̵d̵,̵E̵p̵i̵s̵t̵e̵m̵i̵c̵.̵l̵a̵b̵e̵l̵C̵o̵u̵n̵t̵_̵e̵q̵_̵s̵u̵m̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵s̵u̵c̵c̵,̵d̵u̵p̵l̵i̵c̵a̵t̵e̵W̵r̵o̵n̵g̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵z̵e̵r̵o̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵o̵n̵e̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵t̵w̵o̵,̵O̵p̵t̵i̵o̵n̵.̵s̵o̵m̵e̵_̵n̵e̵_̵n̵o̵n̵e̵,̵n̵o̵t̵_̵f̵a̵l̵s̵e̵_̵e̵q̵_̵t̵r̵u̵e̵]̵[̲E̲p̲i̲s̲t̲e̲m̲i̲c̲.̲c̲a̲n̲d̲i̲d̲a̲t̲e̲P̲o̲s̲i̲t̲i̲o̲n̲s̲,̲ ̲F̲i̲n̲s̲e̲t̲.̲m̲e̲m̲_̲f̲i̲l̲t̲e̲r̲,̲ ̲F̲i̲n̲s̲e̲t̲.̲m̲e̲m̲_̲u̲n̲i̲v̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲t̲r̲u̲e̲_̲a̲n̲d̲,̲ ̲E̲p̲i̲s̲t̲e̲m̲i̲c̲.̲l̲a̲b̲e̲l̲C̲o̲u̲n̲t̲_̲e̲q̲_̲s̲u̲m̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲s̲u̲m̲_̲u̲n̲i̲v̲_̲s̲u̲c̲c̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲d̲u̲p̲l̲i̲c̲a̲t̲e̲W̲r̲o̲n̲g̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲z̲e̲r̲o̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲t̲w̲o̲,̲ ̲O̲p̲t̲i̲o̲n̲.̲s̲o̲m̲e̲_̲n̲e̲_̲n̲o̲n̲e̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲n̲o̲t̲_̲f̲a̲l̲s̲e̲_̲e̲q̲_̲t̲r̲u̲e̲]̲ at hj
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SEKernel/CorrelatedAnswers.lean:354:8: This simp argument is unused:
+  Matrix.cons_val_two
+
+Hint: Omit it from the simp argument list.
+  simp only [̵E̵p̵i̵s̵t̵e̵m̵i̵c̵.̵c̵a̵n̵d̵i̵d̵a̵t̵e̵P̵o̵s̵i̵t̵i̵o̵n̵s̵,̵F̵i̵n̵s̵e̵t̵.̵m̵e̵m̵_̵f̵i̵l̵t̵e̵r̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵F̵i̵n̵s̵e̵t̵.̵m̵e̵m̵_̵u̵n̵i̵v̵,̵t̵r̵u̵e̵_̵a̵n̵d̵,̵E̵p̵i̵s̵t̵e̵m̵i̵c̵.̵l̵a̵b̵e̵l̵C̵o̵u̵n̵t̵_̵e̵q̵_̵s̵u̵m̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵s̵u̵c̵c̵,̵d̵u̵p̵l̵i̵c̵a̵t̵e̵W̵r̵o̵n̵g̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵z̵e̵r̵o̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵o̵n̵e̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵t̵w̵o̵,̵O̵p̵t̵i̵o̵n̵.̵s̵o̵m̵e̵_̵n̵e̵_̵n̵o̵n̵e̵,̵n̵o̵t̵_̵f̵a̵l̵s̵e̵_̵e̵q̵_̵t̵r̵u̵e̵]̵[̲E̲p̲i̲s̲t̲e̲m̲i̲c̲.̲c̲a̲n̲d̲i̲d̲a̲t̲e̲P̲o̲s̲i̲t̲i̲o̲n̲s̲,̲ ̲F̲i̲n̲s̲e̲t̲.̲m̲e̲m̲_̲f̲i̲l̲t̲e̲r̲,̲ ̲F̲i̲n̲s̲e̲t̲.̲m̲e̲m̲_̲u̲n̲i̲v̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲t̲r̲u̲e̲_̲a̲n̲d̲,̲ ̲E̲p̲i̲s̲t̲e̲m̲i̲c̲.̲l̲a̲b̲e̲l̲C̲o̲u̲n̲t̲_̲e̲q̲_̲s̲u̲m̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲s̲u̲m̲_̲u̲n̲i̲v̲_̲s̲u̲c̲c̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲d̲u̲p̲l̲i̲c̲a̲t̲e̲W̲r̲o̲n̲g̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲z̲e̲r̲o̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲o̲n̲e̲,̲ ̲O̲p̲t̲i̲o̲n̲.̲s̲o̲m̲e̲_̲n̲e̲_̲n̲o̲n̲e̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲n̲o̲t̲_̲f̲a̲l̲s̲e̲_̲e̲q̲_̲t̲r̲u̲e̲]̲ at hj
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SEKernel/CorrelatedAnswers.lean:354:28: This simp argument is unused:
+  Option.some_ne_none
+
+Hint: Omit it from the simp argument list.
+  simp only [̵E̵p̵i̵s̵t̵e̵m̵i̵c̵.̵c̵a̵n̵d̵i̵d̵a̵t̵e̵P̵o̵s̵i̵t̵i̵o̵n̵s̵,̵F̵i̵n̵s̵e̵t̵.̵m̵e̵m̵_̵f̵i̵l̵t̵e̵r̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵F̵i̵n̵s̵e̵t̵.̵m̵e̵m̵_̵u̵n̵i̵v̵,̵t̵r̵u̵e̵_̵a̵n̵d̵,̵E̵p̵i̵s̵t̵e̵m̵i̵c̵.̵l̵a̵b̵e̵l̵C̵o̵u̵n̵t̵_̵e̵q̵_̵s̵u̵m̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵s̵u̵c̵c̵,̵d̵u̵p̵l̵i̵c̵a̵t̵e̵W̵r̵o̵n̵g̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵z̵e̵r̵o̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵o̵n̵e̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵t̵w̵o̵,̵O̵p̵t̵i̵o̵n̵.̵s̵o̵m̵e̵_̵n̵e̵_̵n̵o̵n̵e̵,̵n̵o̵t̵_̵f̵a̵l̵s̵e̵_̵e̵q̵_̵t̵r̵u̵e̵]̵[̲E̲p̲i̲s̲t̲e̲m̲i̲c̲.̲c̲a̲n̲d̲i̲d̲a̲t̲e̲P̲o̲s̲i̲t̲i̲o̲n̲s̲,̲ ̲F̲i̲n̲s̲e̲t̲.̲m̲e̲m̲_̲f̲i̲l̲t̲e̲r̲,̲ ̲F̲i̲n̲s̲e̲t̲.̲m̲e̲m̲_̲u̲n̲i̲v̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲t̲r̲u̲e̲_̲a̲n̲d̲,̲ ̲E̲p̲i̲s̲t̲e̲m̲i̲c̲.̲l̲a̲b̲e̲l̲C̲o̲u̲n̲t̲_̲e̲q̲_̲s̲u̲m̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲s̲u̲m̲_̲u̲n̲i̲v̲_̲s̲u̲c̲c̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲d̲u̲p̲l̲i̲c̲a̲t̲e̲W̲r̲o̲n̲g̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲z̲e̲r̲o̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲o̲n̲e̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲t̲w̲o̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲n̲o̲t̲_̲f̲a̲l̲s̲e̲_̲e̲q̲_̲t̲r̲u̲e̲]̲ at hj
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SEKernel/CorrelatedAnswers.lean:354:48: This simp argument is unused:
+  not_false_eq_true
+
+Hint: Omit it from the simp argument list.
+  simp only [̵E̵p̵i̵s̵t̵e̵m̵i̵c̵.̵c̵a̵n̵d̵i̵d̵a̵t̵e̵P̵o̵s̵i̵t̵i̵o̵n̵s̵,̵F̵i̵n̵s̵e̵t̵.̵m̵e̵m̵_̵f̵i̵l̵t̵e̵r̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵F̵i̵n̵s̵e̵t̵.̵m̵e̵m̵_̵u̵n̵i̵v̵,̵t̵r̵u̵e̵_̵a̵n̵d̵,̵E̵p̵i̵s̵t̵e̵m̵i̵c̵.̵l̵a̵b̵e̵l̵C̵o̵u̵n̵t̵_̵e̵q̵_̵s̵u̵m̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵s̵u̵c̵c̵,̵d̵u̵p̵l̵i̵c̵a̵t̵e̵W̵r̵o̵n̵g̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵z̵e̵r̵o̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵o̵n̵e̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵t̵w̵o̵,̵O̵p̵t̵i̵o̵n̵.̵s̵o̵m̵e̵_̵n̵e̵_̵n̵o̵n̵e̵,̵n̵o̵t̵_̵f̵a̵l̵s̵e̵_̵e̵q̵_̵t̵r̵u̵e̵]̵[̲E̲p̲i̲s̲t̲e̲m̲i̲c̲.̲c̲a̲n̲d̲i̲d̲a̲t̲e̲P̲o̲s̲i̲t̲i̲o̲n̲s̲,̲ ̲F̲i̲n̲s̲e̲t̲.̲m̲e̲m̲_̲f̲i̲l̲t̲e̲r̲,̲ ̲F̲i̲n̲s̲e̲t̲.̲m̲e̲m̲_̲u̲n̲i̲v̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲t̲r̲u̲e̲_̲a̲n̲d̲,̲ ̲E̲p̲i̲s̲t̲e̲m̲i̲c̲.̲l̲a̲b̲e̲l̲C̲o̲u̲n̲t̲_̲e̲q̲_̲s̲u̲m̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲s̲u̲m̲_̲u̲n̲i̲v̲_̲s̲u̲c̲c̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲d̲u̲p̲l̲i̲c̲a̲t̲e̲W̲r̲o̲n̲g̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲z̲e̲r̲o̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲o̲n̲e̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲t̲w̲o̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲O̲p̲t̲i̲o̲n̲.̲s̲o̲m̲e̲_̲n̲e̲_̲n̲o̲n̲e̲]̲ at hj
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SEKernel/CorrelatedAnswers.lean:360:19: This simp argument is unused:
+  Matrix.cons_val_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [̵E̵p̵i̵s̵t̵e̵m̵i̵c̵.̵c̵a̵n̵d̵i̵d̵a̵t̵e̵P̵o̵s̵i̵t̵i̵o̵n̵s̵,̵F̵i̵n̵s̵e̵t̵.̵m̵e̵m̵_̵f̵i̵l̵t̵e̵r̵,̵F̵i̵n̵s̵e̵t̵.̵m̵e̵m̵_̵u̵n̵i̵v̵,̵t̵r̵u̵e̵_̵a̵n̵d̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵E̵p̵i̵s̵t̵e̵m̵i̵c̵.̵l̵a̵b̵e̵l̵C̵o̵u̵n̵t̵_̵e̵q̵_̵s̵u̵m̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵s̵u̵c̵c̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵s̵p̵l̵i̵t̵W̵r̵o̵n̵g̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵z̵e̵r̵o̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵o̵n̵e̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵t̵w̵o̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵O̵p̵t̵i̵o̵n̵.̵s̵o̵m̵e̵_̵n̵e̵_̵n̵o̵n̵e̵,̵n̵o̵t̵_̵f̵a̵l̵s̵e̵_̵e̵q̵_̵t̵r̵u̵e̵]̵[̲E̲p̲i̲s̲t̲e̲m̲i̲c̲.̲c̲a̲n̲d̲i̲d̲a̲t̲e̲P̲o̲s̲i̲t̲i̲o̲n̲s̲,̲ ̲F̲i̲n̲s̲e̲t̲.̲m̲e̲m̲_̲f̲i̲l̲t̲e̲r̲,̲ ̲F̲i̲n̲s̲e̲t̲.̲m̲e̲m̲_̲u̲n̲i̲v̲,̲ ̲t̲r̲u̲e̲_̲a̲n̲d̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲E̲p̲i̲s̲t̲e̲m̲i̲c̲.̲l̲a̲b̲e̲l̲C̲o̲u̲n̲t̲_̲e̲q̲_̲s̲u̲m̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲s̲u̲m̲_̲u̲n̲i̲v̲_̲s̲u̲c̲c̲,̲ ̲s̲p̲l̲i̲t̲W̲r̲o̲n̲g̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲o̲n̲e̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲t̲w̲o̲,̲ ̲O̲p̲t̲i̲o̲n̲.̲s̲o̲m̲e̲_̲n̲e̲_̲n̲o̲n̲e̲,̲ ̲n̲o̲t̲_̲f̲a̲l̲s̲e̲_̲e̲q̲_̲t̲r̲u̲e̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SEKernel/CorrelatedAnswers.lean:360:40: This simp argument is unused:
+  Matrix.cons_val_one
+
+Hint: Omit it from the simp argument list.
+  simp only [̵E̵p̵i̵s̵t̵e̵m̵i̵c̵.̵c̵a̵n̵d̵i̵d̵a̵t̵e̵P̵o̵s̵i̵t̵i̵o̵n̵s̵,̵F̵i̵n̵s̵e̵t̵.̵m̵e̵m̵_̵f̵i̵l̵t̵e̵r̵,̵F̵i̵n̵s̵e̵t̵.̵m̵e̵m̵_̵u̵n̵i̵v̵,̵t̵r̵u̵e̵_̵a̵n̵d̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵E̵p̵i̵s̵t̵e̵m̵i̵c̵.̵l̵a̵b̵e̵l̵C̵o̵u̵n̵t̵_̵e̵q̵_̵s̵u̵m̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵s̵u̵c̵c̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵s̵p̵l̵i̵t̵W̵r̵o̵n̵g̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵z̵e̵r̵o̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵o̵n̵e̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵t̵w̵o̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵O̵p̵t̵i̵o̵n̵.̵s̵o̵m̵e̵_̵n̵e̵_̵n̵o̵n̵e̵,̵n̵o̵t̵_̵f̵a̵l̵s̵e̵_̵e̵q̵_̵t̵r̵u̵e̵]̵[̲E̲p̲i̲s̲t̲e̲m̲i̲c̲.̲c̲a̲n̲d̲i̲d̲a̲t̲e̲P̲o̲s̲i̲t̲i̲o̲n̲s̲,̲ ̲F̲i̲n̲s̲e̲t̲.̲m̲e̲m̲_̲f̲i̲l̲t̲e̲r̲,̲ ̲F̲i̲n̲s̲e̲t̲.̲m̲e̲m̲_̲u̲n̲i̲v̲,̲ ̲t̲r̲u̲e̲_̲a̲n̲d̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲E̲p̲i̲s̲t̲e̲m̲i̲c̲.̲l̲a̲b̲e̲l̲C̲o̲u̲n̲t̲_̲e̲q̲_̲s̲u̲m̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲s̲u̲m̲_̲u̲n̲i̲v̲_̲s̲u̲c̲c̲,̲ ̲s̲p̲l̲i̲t̲W̲r̲o̲n̲g̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲z̲e̲r̲o̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲t̲w̲o̲,̲ ̲O̲p̲t̲i̲o̲n̲.̲s̲o̲m̲e̲_̲n̲e̲_̲n̲o̲n̲e̲,̲ ̲n̲o̲t̲_̲f̲a̲l̲s̲e̲_̲e̲q̲_̲t̲r̲u̲e̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SEKernel/CorrelatedAnswers.lean:360:60: This simp argument is unused:
+  Matrix.cons_val_two
+
+Hint: Omit it from the simp argument list.
+  simp only [̵E̵p̵i̵s̵t̵e̵m̵i̵c̵.̵c̵a̵n̵d̵i̵d̵a̵t̵e̵P̵o̵s̵i̵t̵i̵o̵n̵s̵,̵F̵i̵n̵s̵e̵t̵.̵m̵e̵m̵_̵f̵i̵l̵t̵e̵r̵,̵F̵i̵n̵s̵e̵t̵.̵m̵e̵m̵_̵u̵n̵i̵v̵,̵t̵r̵u̵e̵_̵a̵n̵d̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵E̵p̵i̵s̵t̵e̵m̵i̵c̵.̵l̵a̵b̵e̵l̵C̵o̵u̵n̵t̵_̵e̵q̵_̵s̵u̵m̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵s̵u̵c̵c̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵s̵p̵l̵i̵t̵W̵r̵o̵n̵g̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵z̵e̵r̵o̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵o̵n̵e̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵t̵w̵o̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵O̵p̵t̵i̵o̵n̵.̵s̵o̵m̵e̵_̵n̵e̵_̵n̵o̵n̵e̵,̵n̵o̵t̵_̵f̵a̵l̵s̵e̵_̵e̵q̵_̵t̵r̵u̵e̵]̵[̲E̲p̲i̲s̲t̲e̲m̲i̲c̲.̲c̲a̲n̲d̲i̲d̲a̲t̲e̲P̲o̲s̲i̲t̲i̲o̲n̲s̲,̲ ̲F̲i̲n̲s̲e̲t̲.̲m̲e̲m̲_̲f̲i̲l̲t̲e̲r̲,̲ ̲F̲i̲n̲s̲e̲t̲.̲m̲e̲m̲_̲u̲n̲i̲v̲,̲ ̲t̲r̲u̲e̲_̲a̲n̲d̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲E̲p̲i̲s̲t̲e̲m̲i̲c̲.̲l̲a̲b̲e̲l̲C̲o̲u̲n̲t̲_̲e̲q̲_̲s̲u̲m̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲s̲u̲m̲_̲u̲n̲i̲v̲_̲s̲u̲c̲c̲,̲ ̲s̲p̲l̲i̲t̲W̲r̲o̲n̲g̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲z̲e̲r̲o̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲o̲n̲e̲,̲ ̲O̲p̲t̲i̲o̲n̲.̲s̲o̲m̲e̲_̲n̲e̲_̲n̲o̲n̲e̲,̲ ̲n̲o̲t̲_̲f̲a̲l̲s̲e̲_̲e̲q̲_̲t̲r̲u̲e̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SEKernel/CorrelatedAnswers.lean:361:8: This simp argument is unused:
+  Option.some_ne_none
+
+Hint: Omit it from the simp argument list.
+  simp only [̵E̵p̵i̵s̵t̵e̵m̵i̵c̵.̵c̵a̵n̵d̵i̵d̵a̵t̵e̵P̵o̵s̵i̵t̵i̵o̵n̵s̵,̵F̵i̵n̵s̵e̵t̵.̵m̵e̵m̵_̵f̵i̵l̵t̵e̵r̵,̵F̵i̵n̵s̵e̵t̵.̵m̵e̵m̵_̵u̵n̵i̵v̵,̵t̵r̵u̵e̵_̵a̵n̵d̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵E̵p̵i̵s̵t̵e̵m̵i̵c̵.̵l̵a̵b̵e̵l̵C̵o̵u̵n̵t̵_̵e̵q̵_̵s̵u̵m̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵s̵u̵c̵c̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵s̵p̵l̵i̵t̵W̵r̵o̵n̵g̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵z̵e̵r̵o̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵o̵n̵e̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵t̵w̵o̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵O̵p̵t̵i̵o̵n̵.̵s̵o̵m̵e̵_̵n̵e̵_̵n̵o̵n̵e̵,̵n̵o̵t̵_̵f̵a̵l̵s̵e̵_̵e̵q̵_̵t̵r̵u̵e̵]̵[̲E̲p̲i̲s̲t̲e̲m̲i̲c̲.̲c̲a̲n̲d̲i̲d̲a̲t̲e̲P̲o̲s̲i̲t̲i̲o̲n̲s̲,̲ ̲F̲i̲n̲s̲e̲t̲.̲m̲e̲m̲_̲f̲i̲l̲t̲e̲r̲,̲ ̲F̲i̲n̲s̲e̲t̲.̲m̲e̲m̲_̲u̲n̲i̲v̲,̲ ̲t̲r̲u̲e̲_̲a̲n̲d̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲E̲p̲i̲s̲t̲e̲m̲i̲c̲.̲l̲a̲b̲e̲l̲C̲o̲u̲n̲t̲_̲e̲q̲_̲s̲u̲m̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲s̲u̲m̲_̲u̲n̲i̲v̲_̲s̲u̲c̲c̲,̲ ̲s̲p̲l̲i̲t̲W̲r̲o̲n̲g̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲z̲e̲r̲o̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲o̲n̲e̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲t̲w̲o̲,̲ ̲n̲o̲t̲_̲f̲a̲l̲s̲e̲_̲e̲q̲_̲t̲r̲u̲e̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SEKernel/CorrelatedAnswers.lean:361:28: This simp argument is unused:
+  not_false_eq_true
+
+Hint: Omit it from the simp argument list.
+  simp only [̵E̵p̵i̵s̵t̵e̵m̵i̵c̵.̵c̵a̵n̵d̵i̵d̵a̵t̵e̵P̵o̵s̵i̵t̵i̵o̵n̵s̵,̵F̵i̵n̵s̵e̵t̵.̵m̵e̵m̵_̵f̵i̵l̵t̵e̵r̵,̵F̵i̵n̵s̵e̵t̵.̵m̵e̵m̵_̵u̵n̵i̵v̵,̵t̵r̵u̵e̵_̵a̵n̵d̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵E̵p̵i̵s̵t̵e̵m̵i̵c̵.̵l̵a̵b̵e̵l̵C̵o̵u̵n̵t̵_̵e̵q̵_̵s̵u̵m̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵s̵u̵c̵c̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵s̵p̵l̵i̵t̵W̵r̵o̵n̵g̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵z̵e̵r̵o̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵o̵n̵e̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵t̵w̵o̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵O̵p̵t̵i̵o̵n̵.̵s̵o̵m̵e̵_̵n̵e̵_̵n̵o̵n̵e̵,̵n̵o̵t̵_̵f̵a̵l̵s̵e̵_̵e̵q̵_̵t̵r̵u̵e̵]̵[̲E̲p̲i̲s̲t̲e̲m̲i̲c̲.̲c̲a̲n̲d̲i̲d̲a̲t̲e̲P̲o̲s̲i̲t̲i̲o̲n̲s̲,̲ ̲F̲i̲n̲s̲e̲t̲.̲m̲e̲m̲_̲f̲i̲l̲t̲e̲r̲,̲ ̲F̲i̲n̲s̲e̲t̲.̲m̲e̲m̲_̲u̲n̲i̲v̲,̲ ̲t̲r̲u̲e̲_̲a̲n̲d̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲E̲p̲i̲s̲t̲e̲m̲i̲c̲.̲l̲a̲b̲e̲l̲C̲o̲u̲n̲t̲_̲e̲q̲_̲s̲u̲m̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲s̲u̲m̲_̲u̲n̲i̲v̲_̲s̲u̲c̲c̲,̲ ̲s̲p̲l̲i̲t̲W̲r̲o̲n̲g̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲z̲e̲r̲o̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲o̲n̲e̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲t̲w̲o̲,̲ ̲O̲p̲t̲i̲o̲n̲.̲s̲o̲m̲e̲_̲n̲e̲_̲n̲o̲n̲e̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Lean exited with code 1
+Some required targets logged failures:
+- SEKernel.CorrelatedAnswers
+error: build failed

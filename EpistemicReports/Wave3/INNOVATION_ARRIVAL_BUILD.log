@@ -1,0 +1,40 @@
+⚠ [7891/7892] Replayed SEKernel.MutationBaseline
+warning: SEKernel/MutationBaseline.lean:127:5: unused variable `hu`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SEKernel/MutationBaseline.lean:127:32: unused variable `hd`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SEKernel/MutationBaseline.lean:176:50: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: SEKernel/MutationBaseline.lean:176:50: 'positivity' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SEKernel/MutationBaseline.lean:196:37: This simp argument is unused:
+  ha
+
+Hint: Omit it from the simp argument list.
+  simp [Law.prob, sixAlleleMutation, h̵a̵,̵ ̵Ne.symm ha]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [7892/7892] Built SEKernel.InnovationArrival (10s)
+warning: SEKernel/InnovationArrival.lean:17:0: automatically included section variable(s) unused in theorem `SEKernel.InnovationArrival.avoids_zero`:
+  [Fintype Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: SEKernel/InnovationArrival.lean:20:0: automatically included section variable(s) unused in theorem `SEKernel.InnovationArrival.avoids_succ`:
+  [Fintype Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: SEKernel/InnovationArrival.lean:59:13: unused variable `hu`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SEKernel/InnovationArrival.lean:81:13: unused variable `hu`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully (7892 jobs).

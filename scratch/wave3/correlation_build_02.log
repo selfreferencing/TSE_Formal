@@ -1,0 +1,121 @@
+⚠ [7891/7893] Replayed SEKernel.MutationBaseline
+warning: SEKernel/MutationBaseline.lean:127:5: unused variable `hu`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SEKernel/MutationBaseline.lean:127:32: unused variable `hd`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SEKernel/MutationBaseline.lean:176:50: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: SEKernel/MutationBaseline.lean:176:50: 'positivity' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SEKernel/MutationBaseline.lean:196:37: This simp argument is unused:
+  ha
+
+Hint: Omit it from the simp argument list.
+  simp [Law.prob, sixAlleleMutation, h̵a̵,̵ ̵Ne.symm ha]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✖ [7893/7893] Building SEKernel.CorrelatedAnswers (27s)
+trace: .> LEAN_PATH=/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/Cli/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/batteries/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/Qq/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/aesop/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/importGraph/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/plausible/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/mathlib/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/lib/lean /Users/kvallier/.elan/toolchains/leanprover--lean4---v4.28.0-rc1/bin/lean /Users/kvallier/Desktop/TSE_Formal_chile/SEKernel/CorrelatedAnswers.lean -o /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/lib/lean/SEKernel/CorrelatedAnswers.olean -i /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/lib/lean/SEKernel/CorrelatedAnswers.ilean -c /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/ir/SEKernel/CorrelatedAnswers.c --setup /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/ir/SEKernel/CorrelatedAnswers.setup.json --json
+error: SEKernel/CorrelatedAnswers.lean:38:6: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∑ i ∈ ?s, ?f i * ?a
+in the target expression
+  ↑(Fintype.card ι) * ∑ i, k i ^ 2 - (∑ i, 2 * k i) * ∑ i, k i + ↑(Fintype.card ι) * ∑ i, k i ^ 2 =
+    2 * (↑(Fintype.card ι) * ∑ i, k i ^ 2 - (∑ i, k i) ^ 2)
+
+ι : Type u_1
+inst✝¹ : Fintype ι
+inst✝ : DecidableEq ι
+k : ι → ℝ
+⊢ ↑(Fintype.card ι) * ∑ i, k i ^ 2 - (∑ i, 2 * k i) * ∑ i, k i + ↑(Fintype.card ι) * ∑ i, k i ^ 2 =
+    2 * (↑(Fintype.card ι) * ∑ i, k i ^ 2 - (∑ i, k i) ^ 2)
+warning: SEKernel/CorrelatedAnswers.lean:126:20: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: SEKernel/CorrelatedAnswers.lean:140:0: automatically included section variable(s) unused in theorem `SEKernel.CorrelatedAnswers.variance_sum_covariance`:
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+error: SEKernel/CorrelatedAnswers.lean:200:15: unsolved goals
+Ω : Type u_2
+inst✝ : Fintype Ω
+n : ℕ
+hn : 0 < n
+L : Law Ω
+X : Fin n → Ω → ℝ
+p : ℝ
+hp : 0 < p
+hp' : p < 1
+hX : ∀ (i : Fin n) (ω : Ω), X i ω = 0 ∨ X i ω = 1
+hm : ∀ (i : Fin n), L.expect (X i) = p
+hdiag : ∀ (i : Fin n), L.covariance (X i) (X i) = p * (1 - p)
+hpoint :
+  ∀ (i j : Fin n),
+    L.covariance (X i) (X j) = (if i = j then p * (1 - p) else 0) + if i = j then 0 else L.covariance (X i) (X j)
+⊢ ((∑ x, ∑ x_1, if x = x_1 then p * (1 - p) else 0) + ∑ x, ∑ x_1, if x = x_1 then 0 else L.covariance (X x) (X x_1)) =
+    ↑n * (p * (1 - p)) + ∑ x, ∑ x_1, if x = x_1 then 0 else L.covariance (X x) (X x_1)
+warning: SEKernel/CorrelatedAnswers.lean:200:53: This simp argument is unused:
+  Finset.sum_ite_eq'
+
+Hint: Omit it from the simp argument list.
+  simp only [Finset.sum_add_distrib, F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵i̵t̵e̵_̵e̵q̵'̵,̵Finset.mem_univ, if_true, Finset.sum_const,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲Finset.card_univ, Fintype.card_fin, nsmul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SEKernel/CorrelatedAnswers.lean:201:8: This simp argument is unused:
+  Finset.mem_univ
+
+Hint: Omit it from the simp argument list.
+  simp only [Finset.sum_add_distrib, Finset.sum_ite_eq', F̵i̵n̵s̵e̵t̵.̵m̵e̵m̵_̵u̵n̵i̵v̵,̵ ̵if_true, Finset.sum_const,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲Finset.card_univ, Fintype.card_fin, nsmul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SEKernel/CorrelatedAnswers.lean:201:25: This simp argument is unused:
+  if_true
+
+Hint: Omit it from the simp argument list.
+  simp only [Finset.sum_add_distrib, Finset.sum_ite_eq', Finset.mem_univ,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲i̵f̵_̵t̵r̵u̵e̵,̵ ̵Finset.sum_const, Finset.card_univ, Fintype.card_fin, nsmul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SEKernel/CorrelatedAnswers.lean:201:34: This simp argument is unused:
+  Finset.sum_const
+
+Hint: Omit it from the simp argument list.
+  simp only [Finset.sum_add_distrib, Finset.sum_ite_eq', Finset.mem_univ, if_true,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵c̵o̵n̵s̵t̵,̵ ̵Finset.card_univ, Fintype.card_fin, nsmul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SEKernel/CorrelatedAnswers.lean:201:52: This simp argument is unused:
+  Finset.card_univ
+
+Hint: Omit it from the simp argument list.
+  simp only [Finset.sum_add_distrib, Finset.sum_ite_eq', Finset.mem_univ, if_true,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲Finset.sum_const, F̵i̵n̵s̵e̵t̵.̵c̵a̵r̵d̵_̵u̵n̵i̵v̵,̵Fintype.card_fin, nsmul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SEKernel/CorrelatedAnswers.lean:202:8: This simp argument is unused:
+  Fintype.card_fin
+
+Hint: Omit it from the simp argument list.
+  simp only [Finset.sum_add_distrib, Finset.sum_ite_eq', Finset.mem_univ, if_true,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲Finset.sum_const, Finset.card_univ, F̵i̵n̵t̵y̵p̵e̵.̵c̵a̵r̵d̵_̵f̵i̵n̵,̵ ̵nsmul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SEKernel/CorrelatedAnswers.lean:202:26: This simp argument is unused:
+  nsmul_eq_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [Finset.sum_add_distrib, Finset.sum_ite_eq', Finset.mem_univ, if_true,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲Finset.sum_const, Finset.card_univ, F̵i̵n̵t̵y̵p̵e̵.̵c̵a̵r̵d̵_̵f̵i̵n̵,̵ ̵n̵s̵m̵u̵l̵_̵e̵q̵_̵m̵u̵l̵]̵F̲i̲n̲t̲y̲p̲e̲.̲c̲a̲r̲d̲_̲f̲i̲n̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Lean exited with code 1
+Some required targets logged failures:
+- SEKernel.CorrelatedAnswers
+error: build failed

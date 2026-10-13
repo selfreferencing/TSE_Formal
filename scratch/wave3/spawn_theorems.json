@@ -1,0 +1,278 @@
+[
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.reach_marginal_identity"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.reach_zero"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.reach_endpoint_zero"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.reach_endpoint_one"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.reach_marginals_nonneg"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.reach_marginals_decreasing"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.reach_telescoping"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.finite_spawning_wedge"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.itemMultiplier_nonneg"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.item_dual_feasible"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.slot_lp_dual"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.slot_certificate_value"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.slot_certificate_optimal"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.greedy_pick_dominates_unpicked"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.dominating_bset_maximum"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.rankedSlotSet_card"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.rankedSlotSet_dominates"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.selected_record_le_unselected"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.rankedSlotSet_prefix"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.dominating_set_has_certificate"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.slot_lp_dual_min"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.exists_certified_allocation"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.feasible_allocation_nonempty"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.whole_allocation_kkt"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.whole_allocation_kkt_consequences"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.certified_allocation_optimal"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.forecast_regret"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.forecast_gap_identifies"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.biased_forecast_two_task_B"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.biased_forecast_two_task_A"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.clonal_policy_support"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.clonal_policy_ratio"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.supported_within_maximizers_equal_payoff"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.redrawn_policy_unchanged"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.redrawn_with_elites"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.biased_policy_fitness_pos"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.biased_policy_ratio"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.actual_reach_payoff"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.marginal_forecast_error"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.suboptimal_mass_bound"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.initial_segment_mem_iff"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.prefix_mem_iff_taskCount"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.taskCount_le_cap"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.slot_sum_by_task"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.taskCount_sum"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.prefix_allocation_ext"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.sum_finite_prefix"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.reach_allocation_objective"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.exists_reach_certified_allocation"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.callSlot_card"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.certified_reach_optimal"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.exists_optimal_reach_allocation"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.plurality_at_zero"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.binary_two_first"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.strict_readable_winner"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.some_label_count"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.binary_three_majority"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.readableBernoulli_no_abstention"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.binary_vote_three_probability"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.binary_vote_first_probability"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.binary_vote_one_probability"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.binary_vote_two_probability"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.posted_vote_increasing_marginals"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.fixedTwoRescueLaw_correctness"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.binary_prefix_two"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.fixed_two_rescue_zero"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.fixed_two_rescue_one"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.fixed_two_rescue_two"
+  },
+  {
+    "module": "SpawnAllocation",
+    "name": "SEKernel.SpawnAllocation.fixed_benchmark_increasing_marginals"
+  }
+]

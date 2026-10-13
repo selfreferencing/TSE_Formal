@@ -1,0 +1,144 @@
+⚠ [7891/7893] Replayed SEKernel.MutationBaseline
+warning: SEKernel/MutationBaseline.lean:127:5: unused variable `hu`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SEKernel/MutationBaseline.lean:127:32: unused variable `hd`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SEKernel/MutationBaseline.lean:176:50: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: SEKernel/MutationBaseline.lean:176:50: 'positivity' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SEKernel/MutationBaseline.lean:196:37: This simp argument is unused:
+  ha
+
+Hint: Omit it from the simp argument list.
+  simp [Law.prob, sixAlleleMutation, h̵a̵,̵ ̵Ne.symm ha]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✖ [7893/7893] Building SEKernel.CorrelatedAnswers (16s)
+trace: .> LEAN_PATH=/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/Cli/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/batteries/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/Qq/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/aesop/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/importGraph/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/plausible/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/mathlib/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/lib/lean /Users/kvallier/.elan/toolchains/leanprover--lean4---v4.28.0-rc1/bin/lean /Users/kvallier/Desktop/TSE_Formal_chile/SEKernel/CorrelatedAnswers.lean -o /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/lib/lean/SEKernel/CorrelatedAnswers.olean -i /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/lib/lean/SEKernel/CorrelatedAnswers.ilean -c /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/ir/SEKernel/CorrelatedAnswers.c --setup /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/ir/SEKernel/CorrelatedAnswers.setup.json --json
+error: SEKernel/CorrelatedAnswers.lean:18:2: `simp` made no progress
+info: SEKernel/CorrelatedAnswers.lean:38:2: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+error: SEKernel/CorrelatedAnswers.lean:34:60: unsolved goals
+ι : Type u_1
+inst✝¹ : Fintype ι
+inst✝ : DecidableEq ι
+k : ι → ℝ
+⊢ (↑(Fintype.card ι) * ∑ x, k x ^ 2) * 2 - (∑ x, k x * 2) * ∑ i, k i =
+    (↑(Fintype.card ι) * ∑ x, k x ^ 2) * 2 - (∑ i, k i) ^ 2 * 2
+error: SEKernel/CorrelatedAnswers.lean:68:48: `simp` made no progress
+error: SEKernel/CorrelatedAnswers.lean:108:30: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (Law.pi ?Ls).variance fun z => ∑ i, ?X i (z i)
+in the target expression
+  ((∑ i, k i)⁻¹ ^ 2 *
+      (Law.pi fun x => MutationBaseline.bernoulli p hp hp').variance fun z => ∑ i, k i * bitValue (z i)) =
+    (p * (1 - p) * ∑ i, k i ^ 2) * ((∑ i, k i) ^ 2)⁻¹
+
+ι : Type u_1
+inst✝¹ : Fintype ι
+inst✝ : DecidableEq ι
+k : ι → ℝ
+p : ℝ
+hp : 0 ≤ p
+hp' : p ≤ 1
+⊢ ((∑ i, k i)⁻¹ ^ 2 *
+      (Law.pi fun x => MutationBaseline.bernoulli p hp hp').variance fun z => ∑ i, k i * bitValue (z i)) =
+    (p * (1 - p) * ∑ i, k i ^ 2) * ((∑ i, k i) ^ 2)⁻¹
+warning: SEKernel/CorrelatedAnswers.lean:120:20: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: SEKernel/CorrelatedAnswers.lean:134:0: automatically included section variable(s) unused in theorem `SEKernel.CorrelatedAnswers.variance_sum_covariance`:
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+error: SEKernel/CorrelatedAnswers.lean:163:15: unexpected token 'then'; expected term
+error: SEKernel/CorrelatedAnswers.lean:163:12: Application type mismatch: The argument
+  j
+has type
+  Fin n
+of sort `Type` but is expected to have type
+  Type ?u.27579
+of sort `Type (?u.27579 + 1)` in the application
+  @PrincipalSeg j
+error: SEKernel/CorrelatedAnswers.lean:160:67: unsolved goals
+case hpoint
+Ω : Type u_2
+inst✝ : Fintype Ω
+n : ℕ
+L : Law Ω
+X : Fin n → Ω → ℝ
+i j : Fin n
+⊢ (if i = j then 0 else L.covariance (X i) (X j)) = (if i < j then L.covariance (X i) (X j) else 0) + sorry
+
+Ω : Type u_2
+inst✝ : Fintype Ω
+n : ℕ
+L : Law Ω
+X : Fin n → Ω → ℝ
+hpoint :
+  ∀ (i j : Fin n),
+    (if i = j then 0 else L.covariance (X i) (X j)) = (if i < j then L.covariance (X i) (X j) else 0) + sorry
+⊢ (∑ i, ∑ j, if i = j then 0 else L.covariance (X i) (X j)) =
+    2 * ∑ i, ∑ j, if i < j then L.covariance (X i) (X j) else 0
+error: SEKernel/CorrelatedAnswers.lean:186:13: Tactic `simp` failed with a nested error:
+maximum recursion depth has been reached
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information
+error: SEKernel/CorrelatedAnswers.lean:189:38: unsolved goals
+case pos
+Ω : Type u_2
+inst✝ : Fintype Ω
+n : ℕ
+hn : 0 < n
+L : Law Ω
+X : Fin n → Ω → ℝ
+p : ℝ
+hp : 0 < p
+hp' : p < 1
+hX : ∀ (i : Fin n) (ω : Ω), X i ω = 0 ∨ X i ω = 1
+hm : ∀ (i : Fin n), L.expect (X i) = p
+hdiag : ∀ (i : Fin n), L.covariance (X i) (X i) = p * (1 - p)
+hsplit :
+  ∑ i, ∑ j, L.covariance (X i) (X j) = ↑n * (p * (1 - p)) + ∑ i, ∑ j, if i = j then 0 else L.covariance (X i) (X j)
+i : Fin n
+a✝¹ : i ∈ Finset.univ
+j : Fin n
+a✝ : j ∈ Finset.univ
+h✝ : i < j
+⊢ L.covariance (X i) (X j) = L.covariance (X i) (X j) * (1 - p) / (1 - p)
+
+case neg
+Ω : Type u_2
+inst✝ : Fintype Ω
+n : ℕ
+hn : 0 < n
+L : Law Ω
+X : Fin n → Ω → ℝ
+p : ℝ
+hp : 0 < p
+hp' : p < 1
+hX : ∀ (i : Fin n) (ω : Ω), X i ω = 0 ∨ X i ω = 1
+hm : ∀ (i : Fin n), L.expect (X i) = p
+hdiag : ∀ (i : Fin n), L.covariance (X i) (X i) = p * (1 - p)
+hsplit :
+  ∑ i, ∑ j, L.covariance (X i) (X j) = ↑n * (p * (1 - p)) + ∑ i, ∑ j, if i = j then 0 else L.covariance (X i) (X j)
+i : Fin n
+a✝¹ : i ∈ Finset.univ
+j : Fin n
+a✝ : j ∈ Finset.univ
+h✝ : ¬i < j
+⊢ 0 = 0 * p * (1 - p)
+error: Lean exited with code 1
+Some required targets logged failures:
+- SEKernel.CorrelatedAnswers
+error: build failed

@@ -1,0 +1,14 @@
+{
+  "path": "/Users/kvallier/Desktop/TSE_Formal_chile/SEKernel/SpawnAllocation.lean",
+  "sha256": "d22db8eeb6be85f4d0016bb6061f9b8a83f7770330cb8570a340a4de1b67ca74",
+  "theorem_count": 69,
+  "build_log": "scratch/wave3/spawn_build_15.log",
+  "build_result": "Build completed successfully (7902 jobs).",
+  "audit_output_sha256": "4e4c009b63285ba57672afb23a1fe1717d4ad0cbeac8d8af8e88273a60758c57",
+  "audit_count": 69,
+  "axiom_counts": {
+    "propext,Classical.choice,Quot.sound": 67,
+    "propext,Quot.sound": 2
+  },
+  "report": "EpistemicReports/Wave3/SPAWN_ALLOCATION.md"
+}
