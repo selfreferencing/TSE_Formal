@@ -1,0 +1,778 @@
+[
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.expect_const"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.expect_add"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.expect_sub"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.expect_mul_const"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.expect_const_mul"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.expect_finset_sum"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.expect_sum"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.expect_centered"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.expect_mono"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.expect_nonneg"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.prob_false"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.prob_true"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.prob_nonneg"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.prob_mono"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.prob_le_one"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.prob_compl"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.prob_union_le"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.prob_exists_le"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.expect_indicator"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.mass_eq_zero_of_prob_eq_zero"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.cellExpect_eq_zero_of_prob_eq_zero"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.prob_mul_conditionalMean"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.total_expectation"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.variance_nonneg"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.variance_eq"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.prob_le_expect"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.markov"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.markov_mul"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.chebyshev"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.shifted_square"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.cantelli"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.prod_mass"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.expect_pi_prod"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.expect_pi_coord"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.expect_pi_coord_mul"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.variance_sum_of_uncorrelated"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.variance_pi_sum"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.variance_const_mul"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.iid_average"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.expect_bind"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.expect_map"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.expect_prod_mul"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.expect_prod_fst"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.expect_prod_snd"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Law.variance_prod_add"
+  },
+  {
+    "module": "FiniteProbability",
+    "name": "SEKernel.FiniteProbability.Kernel.comp_mass"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.labelCount_eq_sum"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.labelCount_pos_iff"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.labelCount_relabel"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.candidatePositions_relabel"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.plurality_relabel"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.candidatePositions_nonempty_iff"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.plurality_eq_none_iff"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.plurality_empty"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.plurality_mem_word"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.plurality_maximal_count"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.plurality_dominates_readable"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.plurality_first_maximal"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.plurality_unique_readable"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.postedWord_reaches_full"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.postedWord_labelCount"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.comparatorCell_keep_iff"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.comparatorCell_posted_iff"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.comparatorCell_absent_iff"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.reaches_zero"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.correctVote_reaches_full"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.correctVote_need_not_reach_prefix"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.labelCount_le_length"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.labelCount_disjoint_sum_le_length"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.consensus_unique"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.falseConsensus_not_correct"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.consensusCell_correct_iff"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.consensusCell_wrongPosted_iff"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.consensusCell_wrongAbsent_iff"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.consensusCell_noConsensus_iff"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.consensusCellProbability_total"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.prefix_consensus_unique"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.prefixConsensusCell_correct_iff"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.prefixConsensusCell_wrongPosted_iff"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.prefixConsensusCell_wrongAbsent_iff"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.prefixConsensusCell_noConsensus_iff"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.prefixConsensusCellProbability_total"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.prefix_falseConsensus_probability_cells"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.falseConsensus_probability_cells"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.falseConsensus_probability_eq_sum"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.prob_pi_forall"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.prob_single_label_compl"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.no_appearance_probability"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.reach_full_probability"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.prefixPositions_card"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.reach_prefix_probability"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.voteAccuracy_zero"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.voteAccuracy_le_reach_full"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.zero_mass_reach"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.zero_mass_voteAccuracy"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.cellProbability_total"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.cellProbability_keep"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.jointVote_partition"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.cellProbability_posted"
+  },
+  {
+    "module": "FirstAppearancePlurality",
+    "name": "SEKernel.Epistemic.cellProbability_absent"
+  },
+  {
+    "module": "FirstTiedLabelCounting",
+    "name": "SEKernel.Epistemic.uniformLaw_prob_equiv"
+  },
+  {
+    "module": "FirstTiedLabelCounting",
+    "name": "SEKernel.Epistemic.firstActive_mem"
+  },
+  {
+    "module": "FirstTiedLabelCounting",
+    "name": "SEKernel.Epistemic.firstActive_min"
+  },
+  {
+    "module": "FirstTiedLabelCounting",
+    "name": "SEKernel.Epistemic.firstActive_eq_of_min"
+  },
+  {
+    "module": "FirstTiedLabelCounting",
+    "name": "SEKernel.Epistemic.swap_mem_active"
+  },
+  {
+    "module": "FirstTiedLabelCounting",
+    "name": "SEKernel.Epistemic.firstActive_swap"
+  },
+  {
+    "module": "FirstTiedLabelCounting",
+    "name": "SEKernel.Epistemic.firstActive_atom_equal"
+  },
+  {
+    "module": "FirstTiedLabelCounting",
+    "name": "SEKernel.Epistemic.prob_mem_eq_sum"
+  },
+  {
+    "module": "FirstTiedLabelCounting",
+    "name": "SEKernel.Epistemic.firstActive_uniform"
+  },
+  {
+    "module": "FirstTiedLabelCounting",
+    "name": "SEKernel.Epistemic.firstActive_label_probability"
+  },
+  {
+    "module": "FirstTiedLabelCounting",
+    "name": "SEKernel.Epistemic.firstTLabel_semantics"
+  },
+  {
+    "module": "FirstTiedLabelCounting",
+    "name": "SEKernel.Epistemic.firstTLabel_probability"
+  },
+  {
+    "module": "FirstTiedLabelCounting",
+    "name": "SEKernel.Epistemic.shuffledWord_labelCount"
+  },
+  {
+    "module": "PluralityBounds",
+    "name": "SEKernel.Epistemic.geometric_mul_affine_le_one"
+  },
+  {
+    "module": "PluralityBounds",
+    "name": "SEKernel.Epistemic.geometric_le_rational"
+  },
+  {
+    "module": "PluralityBounds",
+    "name": "SEKernel.Epistemic.countTailCoefficient_bounds"
+  },
+  {
+    "module": "PluralityBounds",
+    "name": "SEKernel.Epistemic.countTilt_nonneg"
+  },
+  {
+    "module": "PluralityBounds",
+    "name": "SEKernel.Epistemic.countTilt_product"
+  },
+  {
+    "module": "PluralityBounds",
+    "name": "SEKernel.Epistemic.countTilt_one_le_of_count_le"
+  },
+  {
+    "module": "PluralityBounds",
+    "name": "SEKernel.Epistemic.expect_countTilt"
+  },
+  {
+    "module": "PluralityBounds",
+    "name": "SEKernel.Epistemic.rational_tilt_moment"
+  },
+  {
+    "module": "PluralityBounds",
+    "name": "SEKernel.Epistemic.iid_count_geometric_bound"
+  },
+  {
+    "module": "PluralityBounds",
+    "name": "SEKernel.Epistemic.iid_count_rational_bound"
+  },
+  {
+    "module": "PluralityBounds",
+    "name": "SEKernel.Epistemic.readable_winner_dominates"
+  },
+  {
+    "module": "PluralityBounds",
+    "name": "SEKernel.Epistemic.wrong_mode_geometric_bound"
+  },
+  {
+    "module": "PluralityBounds",
+    "name": "SEKernel.Epistemic.wrong_mode_rational_bound"
+  },
+  {
+    "module": "PluralityBounds",
+    "name": "SEKernel.Epistemic.failed_vote_count_witness"
+  },
+  {
+    "module": "PluralityBounds",
+    "name": "SEKernel.Epistemic.correct_mode_geometric_bound"
+  },
+  {
+    "module": "PluralityBounds",
+    "name": "SEKernel.Epistemic.correct_mode_rational_bound"
+  },
+  {
+    "module": "PluralityBounds",
+    "name": "SEKernel.Epistemic.sole_readable_accuracy"
+  },
+  {
+    "module": "PluralityBounds",
+    "name": "SEKernel.Epistemic.correct_mode_common_rational_bound"
+  },
+  {
+    "module": "PluralityBounds",
+    "name": "SEKernel.Epistemic.correct_mode_cutoff"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.correctness_bounds"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.cellOf_keep_iff"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.sum_cells"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.CellModel.weight_sum"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.premium_identity"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.premium_bounds"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.premium_pos_iff"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.premium_le_post_rate"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.premium_transfer_identity"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.premium_transfer_bound"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.premium_transfer_uniform"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.premium_coarse_identity"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.responseMass_bounds"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.conditionalRate_bounds"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.mass_mul_conditional"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.partition_expectation"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.CellModel.ofLaw_accuracy"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.responseRates_bounds"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.comparatorModel_keep"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.response_conditional_cell_identity"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.response_accuracy_eq_expect"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.response_premium_eq"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.response_premium_identity"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.response_premium_bounds"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.ordered_response_premium_eq"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.hump_forms_equal"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.hump_endpoints"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.hump_positive"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.hump_reach_vote_polynomial"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.mixed_recognizer_threshold"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.mixed_recognizer_two"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.recognizer_threshold"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.small_hump_peak"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.advocate_ceiling"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.advocate_rescue_ceiling"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.nomination_identity"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.nomination_same_baseline"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.coupled_nomination_identity"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.advocate_break_even"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.four_decider_polynomial"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.correlated_uptake_differs"
+  },
+  {
+    "module": "EpistemicPayoff",
+    "name": "SEKernel.EpistemicPayoff.absent_rescue_ceiling_counterexample"
+  },
+  {
+    "module": "PluralityConcentration",
+    "name": "SEKernel.EpistemicConcentration.symbolCount_eq_sum"
+  },
+  {
+    "module": "PluralityConcentration",
+    "name": "SEKernel.EpistemicConcentration.symbolCount_sum"
+  },
+  {
+    "module": "PluralityConcentration",
+    "name": "SEKernel.EpistemicConcentration.reflect_involutive"
+  },
+  {
+    "module": "PluralityConcentration",
+    "name": "SEKernel.EpistemicConcentration.symbolCount_reflect"
+  },
+  {
+    "module": "PluralityConcentration",
+    "name": "SEKernel.EpistemicConcentration.symbolCount_reflect_low"
+  },
+  {
+    "module": "PluralityConcentration",
+    "name": "SEKernel.EpistemicConcentration.symbolCount_reflect_mid"
+  },
+  {
+    "module": "PluralityConcentration",
+    "name": "SEKernel.EpistemicConcentration.symbolCount_reflect_high"
+  },
+  {
+    "module": "PluralityConcentration",
+    "name": "SEKernel.EpistemicConcentration.wordMass_counts"
+  },
+  {
+    "module": "PluralityConcentration",
+    "name": "SEKernel.EpistemicConcentration.wordMass_nonneg"
+  },
+  {
+    "module": "PluralityConcentration",
+    "name": "SEKernel.EpistemicConcentration.power_swap_le"
+  },
+  {
+    "module": "PluralityConcentration",
+    "name": "SEKernel.EpistemicConcentration.wordMass_reflect_ge"
+  },
+  {
+    "module": "PluralityConcentration",
+    "name": "SEKernel.EpistemicConcentration.loss_count_order"
+  },
+  {
+    "module": "PluralityConcentration",
+    "name": "SEKernel.EpistemicConcentration.reflect_loss_iff_gain"
+  },
+  {
+    "module": "PluralityConcentration",
+    "name": "SEKernel.EpistemicConcentration.central_word_mass_balancing"
+  },
+  {
+    "module": "PluralityConcentration",
+    "name": "SEKernel.EpistemicConcentration.symmetric_layer_cake"
+  },
+  {
+    "module": "PluralityConcentration",
+    "name": "SEKernel.EpistemicConcentration.symmetric_word_mass_balancing"
+  },
+  {
+    "module": "PluralityConcentration",
+    "name": "SEKernel.EpistemicConcentration.central_probability_balancing"
+  },
+  {
+    "module": "PluralityConcentration",
+    "name": "SEKernel.EpistemicConcentration.symmetric_expectation_balancing"
+  },
+  {
+    "module": "PluralityConcentration",
+    "name": "SEKernel.EpistemicConcentration.zero_label_word_mass"
+  },
+  {
+    "module": "PluralityConcentration",
+    "name": "SEKernel.EpistemicConcentration.zero_label_event_restriction"
+  }
+]

@@ -1,0 +1,64 @@
+⚠ [7891/7892] Replayed SEKernel.MutationBaseline
+warning: SEKernel/MutationBaseline.lean:127:5: unused variable `hu`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SEKernel/MutationBaseline.lean:127:32: unused variable `hd`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SEKernel/MutationBaseline.lean:176:50: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: SEKernel/MutationBaseline.lean:176:50: 'positivity' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SEKernel/MutationBaseline.lean:196:37: This simp argument is unused:
+  ha
+
+Hint: Omit it from the simp argument list.
+  simp [Law.prob, sixAlleleMutation, h̵a̵,̵ ̵Ne.symm ha]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✖ [7892/7892] Building SEKernel.ScorePooling (44s)
+trace: .> LEAN_PATH=/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/Cli/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/batteries/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/Qq/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/aesop/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/importGraph/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/plausible/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/mathlib/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/lib/lean /Users/kvallier/.elan/toolchains/leanprover--lean4---v4.28.0-rc1/bin/lean /Users/kvallier/Desktop/TSE_Formal_chile/SEKernel/ScorePooling.lean -o /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/lib/lean/SEKernel/ScorePooling.olean -i /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/lib/lean/SEKernel/ScorePooling.ilean -c /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/ir/SEKernel/ScorePooling.c --setup /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/ir/SEKernel/ScorePooling.setup.json --json
+error: SEKernel/ScorePooling.lean:87:2: Tactic `simp` failed with a nested error:
+(deterministic) timeout at `isDefEq`, maximum number of heartbeats (200000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: SEKernel/ScorePooling.lean:185:6: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (Law.prod ?L ?K).prob fun ω => ?E ω.1 ∧ ?F ω.2
+in the target expression
+  ((fairBit.prod (pastLaw m)).prob fun ω => (fun b => b = true) ω.1 ∧ (fun z => ¬∀ (i : Fin m), z i = true) ω.2) =
+    1 / 2 * (1 - (1 / 2) ^ m)
+
+m : ℕ
+he : (fun ω => historicalScore ω < currentScore ω) = fun ω => ω.1 = true ∧ ¬∀ (i : Fin m), ω.2 i = true
+⊢ ((fairBit.prod (pastLaw m)).prob fun ω => (fun b => b = true) ω.1 ∧ (fun z => ¬∀ (i : Fin m), z i = true) ω.2) =
+    1 / 2 * (1 - (1 / 2) ^ m)
+error: SEKernel/ScorePooling.lean:261:44: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (Law.prod ?L ?K).expect fun ω => ?X ω.1
+in the target expression
+  (((overlapLaw m).expect fun ω => bit ω.1) + (overlapLaw m).expect fun ω => ∑ i, bit (ω.2 i)) * (↑(m + 1))⁻¹ = 1 * 2⁻¹
+
+m : ℕ
+⊢ (((overlapLaw m).expect fun ω => bit ω.1) + (overlapLaw m).expect fun ω => ∑ i, bit (ω.2 i)) * (↑(m + 1))⁻¹ = 1 * 2⁻¹
+error: SEKernel/ScorePooling.lean:272:18: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (Law.prod ?L ?K).expect fun ω => ?X ω.1
+in the target expression
+  ((fairBit.prod (pastLaw m)).expect fun ω => bit ω.1 ^ 2) - (fairBit.prod (pastLaw m)).expect currentScore ^ 2 = 1 / 4
+
+m : ℕ
+⊢ ((fairBit.prod (pastLaw m)).expect fun ω => bit ω.1 ^ 2) - (fairBit.prod (pastLaw m)).expect currentScore ^ 2 = 1 / 4
+error: SEKernel/ScorePooling.lean:284:46: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (Law.prod ?L ?K).variance fun ω => ?X ω.1 + ?Y ω.2
+in the target expression
+  ((↑m + 1)⁻¹ ^ 2 * (fairBit.prod (pastLaw m)).variance fun ω => bit ω.1 + ∑ i, bit (ω.2 i)) = 1 / (4 * (↑m + 1))
+
+m : ℕ
+he : historicalScore = fun ω => (↑m + 1)⁻¹ * (bit ω.1 + ∑ i, bit (ω.2 i))
+⊢ ((↑m + 1)⁻¹ ^ 2 * (fairBit.prod (pastLaw m)).variance fun ω => bit ω.1 + ∑ i, bit (ω.2 i)) = 1 / (4 * (↑m + 1))
+error: Lean exited with code 1
+Some required targets logged failures:
+- SEKernel.ScorePooling
+error: build failed

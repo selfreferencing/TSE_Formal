@@ -1,0 +1,35 @@
+{
+  "base_commit": "bd80f4a5b94b691168533c7dd1a8df6e7f21f285",
+  "branch": "chile-epistemic-evolution",
+  "remote": "origin\thttps://github.com/selfreferencing/TSE_Formal.git (fetch)\norigin\thttps://github.com/selfreferencing/TSE_Formal.git (push)",
+  "inputs": [
+    {
+      "path": "/Users/kvallier/Downloads/Strategic_Evolution_Epistemic_Institutions_Mathematical_Specification.md",
+      "sha256": "7be74a0dc00ed40a4248f7c92750921be745c3522354ff69f3f37baa89a7f459"
+    },
+    {
+      "path": "/Users/kvallier/Downloads/TSE_Epistemic_Evolution_Formal_Mathematics.md",
+      "sha256": "a4b59fedfeb17f48dad940a6d8b2a4a8027c2d2344cf3c88ec40970fcac09b16"
+    },
+    {
+      "path": "/Users/kvallier/Desktop/Erdos 993/TSE_Paper_scoping/GPT6_PROMPT_CHILE_FORMAL_KERNEL_20261011.md",
+      "sha256": "fca25effc570a8fde4b2e612dfe34d79f9e1090fbaa6cffe253e04e3cc817a34"
+    },
+    {
+      "path": "/Users/kvallier/Desktop/Erdos 993/TSE_Paper_scoping/gpt6_referee_checks_20261012/PROOFCHECK_A0_A5.md",
+      "sha256": "bb42324d18f27cae6115471dd57ccefb32e733b75475a4ac3af7d48676c29023"
+    },
+    {
+      "path": "/Users/kvallier/Desktop/Erdos 993/TSE_Paper_scoping/gpt6_referee_checks_20261012/PROOFCHECK_A6_A8.md",
+      "sha256": "dd51cdc5e2450c0a8277b9ca6bf59670e5f7e773c64eeee782d4fcf03b46d2b5"
+    },
+    {
+      "path": "/Users/kvallier/Desktop/Erdos 993/TSE_Paper_scoping/gpt6_referee_checks_20261012/PROOFCHECK_B.md",
+      "sha256": "657e9e8a09363165a5dd031e8743bd1400b2ca8d47c656371eb29f10693c260c"
+    },
+    {
+      "path": "/Users/kvallier/Desktop/Erdos 993/TSE_Paper_scoping/gpt6_referee_checks_20261012/PROOFCHECK_C_D_E.md",
+      "sha256": "652036b686439d81c286b723362d1c9b2001e03eb43b924ab24be13aaed9c249"
+    }
+  ]
+}

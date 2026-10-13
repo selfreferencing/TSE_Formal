@@ -1,0 +1,47 @@
+'SEKernel.Epistemic.geometric_mul_affine_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Epistemic.geometric_le_rational' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Epistemic.countTailCoefficient_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Epistemic.countTilt_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Epistemic.countTilt_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Epistemic.countTilt_one_le_of_count_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Epistemic.expect_countTilt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Epistemic.rational_tilt_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Epistemic.iid_count_geometric_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Epistemic.iid_count_rational_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Epistemic.readable_winner_dominates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Epistemic.wrong_mode_geometric_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Epistemic.wrong_mode_rational_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Epistemic.failed_vote_count_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Epistemic.correct_mode_geometric_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Epistemic.correct_mode_rational_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Epistemic.sole_readable_accuracy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Epistemic.correct_mode_common_rational_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Epistemic.correct_mode_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.EpistemicConcentration.symbolCount_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.EpistemicConcentration.symbolCount_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.EpistemicConcentration.reflect_involutive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.EpistemicConcentration.symbolCount_reflect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.EpistemicConcentration.symbolCount_reflect_low' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.EpistemicConcentration.symbolCount_reflect_mid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.EpistemicConcentration.symbolCount_reflect_high' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.EpistemicConcentration.wordMass_counts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.EpistemicConcentration.wordMass_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.EpistemicConcentration.power_swap_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.EpistemicConcentration.wordMass_reflect_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.EpistemicConcentration.loss_count_order' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.EpistemicConcentration.reflect_loss_iff_gain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.EpistemicConcentration.central_word_mass_balancing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.EpistemicConcentration.symmetric_layer_cake' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.EpistemicConcentration.symmetric_word_mass_balancing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.EpistemicConcentration.central_probability_balancing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.EpistemicConcentration.symmetric_expectation_balancing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.EpistemicConcentration.zero_label_word_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.EpistemicConcentration.zero_label_event_restriction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

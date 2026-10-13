@@ -1,0 +1,61 @@
+✖ [7891/7891] Building SEKernel.MutationBaseline (49s)
+trace: .> LEAN_PATH=/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/Cli/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/batteries/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/Qq/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/aesop/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/importGraph/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/plausible/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/mathlib/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/lib/lean /Users/kvallier/.elan/toolchains/leanprover--lean4---v4.28.0-rc1/bin/lean /Users/kvallier/Desktop/TSE_Formal_chile/SEKernel/MutationBaseline.lean -o /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/lib/lean/SEKernel/MutationBaseline.olean -i /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/lib/lean/SEKernel/MutationBaseline.ilean -c /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/ir/SEKernel/MutationBaseline.c --setup /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/ir/SEKernel/MutationBaseline.setup.json --json
+warning: SEKernel/MutationBaseline.lean:127:5: unused variable `hu`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SEKernel/MutationBaseline.lean:127:32: unused variable `hd`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+error: SEKernel/MutationBaseline.lean:156:2: linarith failed to find a contradiction
+case h1.h
+r u d initial : ℝ
+hud : u + d ≠ 0
+T : ℕ
+hT : 0 < T
+hb : 1 - r * (u + d) ≠ 1
+hg :
+  (1 - (1 - r * (u + d))) * ∑ t ∈ Finset.range T, (1 - r * (u + d)) ^ (t + 1) =
+    (1 - r * (u + d)) * (1 - (1 - r * (u + d)) ^ T)
+ht : ↑T ≠ 0
+hb' : 1 - (1 - r * (u + d)) ≠ 0
+a✝ :
+  ↑T * u + ((u + d) * initial - u) * ∑ x ∈ Finset.range T, (1 - (u + d) * r) ^ (x + 1) <
+    ↑T * u + ((u + d) * initial - u) * (1 - (u + d) * r) * (1 - (1 - (u + d) * r) ^ T) / (1 - (1 - (u + d) * r))
+⊢ False
+failed
+error: SEKernel/MutationBaseline.lean:165:2: linarith failed to find a contradiction
+case h
+r u d : ℝ
+hud : 0 < u + d
+hu : 0 ≤ u
+hb : 0 ≤ 1 - r * (u + d)
+hb' : 1 - r * (u + d) ≤ 1
+t : ℕ
+hz : 0 ≤ u / (u + d)
+hp : 0 ≤ (1 - r * (u + d)) ^ t
+a✝ :
+  u / (u + d) + (0 - u / (u + d)) * ((1 - r * (u + d)) ^ t * (1 - r * (u + d))) <
+    u / (u + d) + (0 - u / (u + d)) * (1 - r * (u + d)) ^ t
+⊢ False
+failed
+warning: SEKernel/MutationBaseline.lean:171:50: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: SEKernel/MutationBaseline.lean:171:50: 'positivity' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SEKernel/MutationBaseline.lean:191:37: This simp argument is unused:
+  ha
+
+Hint: Omit it from the simp argument list.
+  simp [Law.prob, sixAlleleMutation, h̵a̵,̵ ̵Ne.symm ha]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: SEKernel/MutationBaseline.lean:216:0: Unexpected name `SEKernel.MutationBaseline` after `end`: The current section is unnamed
+
+Hint: Delete the name `SEKernel.MutationBaseline` to end the current unnamed scope; outer named scopes can then be closed using additional `end` command(s):
+  end ̵S̵E̵K̵e̵r̵n̵e̵l̵.̵M̵u̵t̵a̵t̵i̵o̵n̵B̵a̵s̵e̵l̵i̵n̵e̵
+error: Lean exited with code 1
+Some required targets logged failures:
+- SEKernel.MutationBaseline
+error: build failed

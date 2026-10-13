@@ -1,0 +1,550 @@
+[
+  {
+    "module": "MutationBaseline",
+    "name": "SEKernel.MutationBaseline.transmission_identity"
+  },
+  {
+    "module": "MutationBaseline",
+    "name": "SEKernel.MutationBaseline.bernoulli_true"
+  },
+  {
+    "module": "MutationBaseline",
+    "name": "SEKernel.MutationBaseline.bernoulli_mean"
+  },
+  {
+    "module": "MutationBaseline",
+    "name": "SEKernel.MutationBaseline.mutationProbability_bounds"
+  },
+  {
+    "module": "MutationBaseline",
+    "name": "SEKernel.MutationBaseline.offspring_mean"
+  },
+  {
+    "module": "MutationBaseline",
+    "name": "SEKernel.MutationBaseline.finite_population_transmission"
+  },
+  {
+    "module": "MutationBaseline",
+    "name": "SEKernel.MutationBaseline.expect_affineStep"
+  },
+  {
+    "module": "MutationBaseline",
+    "name": "SEKernel.MutationBaseline.neutral_expectation"
+  },
+  {
+    "module": "MutationBaseline",
+    "name": "SEKernel.MutationBaseline.fixed_point"
+  },
+  {
+    "module": "MutationBaseline",
+    "name": "SEKernel.MutationBaseline.meanTrajectory_zero"
+  },
+  {
+    "module": "MutationBaseline",
+    "name": "SEKernel.MutationBaseline.meanTrajectory_succ"
+  },
+  {
+    "module": "MutationBaseline",
+    "name": "SEKernel.MutationBaseline.meanTrajectory_closed"
+  },
+  {
+    "module": "MutationBaseline",
+    "name": "SEKernel.MutationBaseline.meanTrajectory_distance"
+  },
+  {
+    "module": "MutationBaseline",
+    "name": "SEKernel.MutationBaseline.coefficient_bounds"
+  },
+  {
+    "module": "MutationBaseline",
+    "name": "SEKernel.MutationBaseline.geometric_sum_start_one"
+  },
+  {
+    "module": "MutationBaseline",
+    "name": "SEKernel.MutationBaseline.meanTrajectory_average"
+  },
+  {
+    "module": "MutationBaseline",
+    "name": "SEKernel.MutationBaseline.meanTrajectory_zero_monotone"
+  },
+  {
+    "module": "MutationBaseline",
+    "name": "SEKernel.MutationBaseline.sixAllele_voter_to_board"
+  },
+  {
+    "module": "MutationBaseline",
+    "name": "SEKernel.MutationBaseline.sixAllele_board_to_voter"
+  },
+  {
+    "module": "MutationBaseline",
+    "name": "SEKernel.MutationBaseline.sixAllele_fixed_point"
+  },
+  {
+    "module": "MutationBaseline",
+    "name": "SEKernel.MutationBaseline.experiment_coefficients"
+  },
+  {
+    "module": "MutationBaseline",
+    "name": "SEKernel.MutationBaseline.experiment_trajectory"
+  },
+  {
+    "module": "MutationBaseline",
+    "name": "SEKernel.MutationBaseline.experiment_seven_generation_mean"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.full_state_transition_normalized"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.rankRecord_injective"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.rankingList_nodup"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.rankingList_length"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.rankingList_lexicographic"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.survivorCount_sum"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.expectedSurvivorCount_nonneg"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.expectedSurvivorCount_sum"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.expectedSurvivorCount_absent"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.price_count_identity"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.topS_master"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.slot_tie_decomposition"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.incumbent_tie_penalty"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.pairwise_incumbent_penalty"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.balanced_fair_formula"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.balanced_incumbent_formula"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.balanced_count_geometry"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.balanced_sign"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.neutral_rare_block"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.genotype_coin_differs_from_slot_ties"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.unbiased_block_fitness_decline"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.balanced_incumbent_sign_counterexample"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.selection_transmission_environment"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.arbitrary_update_environment"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.controlled_remainder_bound"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.affine_control_contrast"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.rankingList_mem"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.lexSurvivors_topSet"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.higher_target_count"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.pooled_count_ahead"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.pooled_count_behind"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.implemented_topS_master"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.topSet_threshold"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.topSet_dominates_fractional"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.uniform_expect"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.true_top_variance_bound"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.topSet_regret"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.setMean_bounds"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.noisy_topSet_regret"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.bad_score_probability"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.noisy_top_variance_bound"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.topSet_eq_of_strict_cross"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.topSet_recovery_probability"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.recovered_topSet_mean"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.fairWinWeight_monotone"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.fairWinWeight_reflect"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.fairWin_error_le_nonpositive"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.score_error_cantelli"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.fairWin_variance_guarantee"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.expect_equiv"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.symmetric_fairWin_zero"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.location_fairWin_monotone"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.shifted_fairWin_reflect"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.signal_to_noise_identity"
+  },
+  {
+    "module": "NoisySelection",
+    "name": "SEKernel.NoisySelection.same_variance_larger_mean_fewer_wins"
+  },
+  {
+    "module": "PairedScores",
+    "name": "SEKernel.PairedScores.count_eq_sum"
+  },
+  {
+    "module": "PairedScores",
+    "name": "SEKernel.PairedScores.count_two"
+  },
+  {
+    "module": "PairedScores",
+    "name": "SEKernel.PairedScores.score_sum"
+  },
+  {
+    "module": "PairedScores",
+    "name": "SEKernel.PairedScores.flip_flip"
+  },
+  {
+    "module": "PairedScores",
+    "name": "SEKernel.PairedScores.count_flip"
+  },
+  {
+    "module": "PairedScores",
+    "name": "SEKernel.PairedScores.count_flip_plus"
+  },
+  {
+    "module": "PairedScores",
+    "name": "SEKernel.PairedScores.count_flip_minus"
+  },
+  {
+    "module": "PairedScores",
+    "name": "SEKernel.PairedScores.count_flip_zero"
+  },
+  {
+    "module": "PairedScores",
+    "name": "SEKernel.PairedScores.wordMass_counts"
+  },
+  {
+    "module": "PairedScores",
+    "name": "SEKernel.PairedScores.wordMass_total"
+  },
+  {
+    "module": "PairedScores",
+    "name": "SEKernel.PairedScores.sample_mass"
+  },
+  {
+    "module": "PairedScores",
+    "name": "SEKernel.PairedScores.outcome_probability_total"
+  },
+  {
+    "module": "PairedScores",
+    "name": "SEKernel.PairedScores.win_reflection_identity"
+  },
+  {
+    "module": "PairedScores",
+    "name": "SEKernel.PairedScores.reflected_mass_order"
+  },
+  {
+    "module": "PairedScores",
+    "name": "SEKernel.PairedScores.iid_win_ge_half"
+  },
+  {
+    "module": "PairedScores",
+    "name": "SEKernel.PairedScores.iid_win_gt_half"
+  },
+  {
+    "module": "PairedScores",
+    "name": "SEKernel.PairedScores.iid_win_swap"
+  },
+  {
+    "module": "PairedScores",
+    "name": "SEKernel.PairedScores.iid_win_sign"
+  },
+  {
+    "module": "PairedScores",
+    "name": "SEKernel.PairedScores.lossFactor_nonneg"
+  },
+  {
+    "module": "PairedScores",
+    "name": "SEKernel.PairedScores.lossFactor_reflect"
+  },
+  {
+    "module": "PairedScores",
+    "name": "SEKernel.PairedScores.win_error_sum"
+  },
+  {
+    "module": "PairedScores",
+    "name": "SEKernel.PairedScores.error_le_nonpositive_le_twice_error"
+  },
+  {
+    "module": "PairedScores",
+    "name": "SEKernel.PairedScores.loss_mass_geometric_mean"
+  },
+  {
+    "module": "PairedScores",
+    "name": "SEKernel.PairedScores.iid_sharp_error_bound"
+  },
+  {
+    "module": "PairedScores",
+    "name": "SEKernel.PairedScores.sqrt_base_le_rational"
+  },
+  {
+    "module": "PairedScores",
+    "name": "SEKernel.PairedScores.iid_sharp_rational_error_bound"
+  },
+  {
+    "module": "PairedScores",
+    "name": "SEKernel.PairedScores.iid_nonpositive_rational_bound"
+  },
+  {
+    "module": "PairedScores",
+    "name": "SEKernel.PairedScores.sum_twoWords"
+  },
+  {
+    "module": "PairedScores",
+    "name": "SEKernel.PairedScores.iid_win_two"
+  },
+  {
+    "module": "PairedScores",
+    "name": "SEKernel.PairedScores.paired_moments"
+  },
+  {
+    "module": "PairedScores",
+    "name": "SEKernel.PairedScores.iid_paired_average_moments"
+  },
+  {
+    "module": "PairedScores",
+    "name": "SEKernel.PairedScores.larger_gap_fewer_iid_wins"
+  },
+  {
+    "module": "PairedScores",
+    "name": "SEKernel.PairedScores.equal_variance_larger_gap_fewer_iid_wins"
+  },
+  {
+    "module": "ScorePooling",
+    "name": "SEKernel.ScorePooling.current_scores_equal"
+  },
+  {
+    "module": "ScorePooling",
+    "name": "SEKernel.ScorePooling.historical_composition_examples"
+  },
+  {
+    "module": "ScorePooling",
+    "name": "SEKernel.ScorePooling.topSlots_nonempty"
+  },
+  {
+    "module": "ScorePooling",
+    "name": "SEKernel.ScorePooling.fairTopLaw_count"
+  },
+  {
+    "module": "ScorePooling",
+    "name": "SEKernel.ScorePooling.fairTopLaw_three_zero"
+  },
+  {
+    "module": "ScorePooling",
+    "name": "SEKernel.ScorePooling.unequal_evaluation_probability"
+  },
+  {
+    "module": "ScorePooling",
+    "name": "SEKernel.ScorePooling.unequal_evaluation_counterexamples"
+  },
+  {
+    "module": "ScorePooling",
+    "name": "SEKernel.ScorePooling.trueCount_le"
+  },
+  {
+    "module": "ScorePooling",
+    "name": "SEKernel.ScorePooling.trueCount_eq_iff"
+  },
+  {
+    "module": "ScorePooling",
+    "name": "SEKernel.ScorePooling.historical_strict_win"
+  },
+  {
+    "module": "ScorePooling",
+    "name": "SEKernel.ScorePooling.prob_prod_rectangle"
+  },
+  {
+    "module": "ScorePooling",
+    "name": "SEKernel.ScorePooling.past_all_true_probability"
+  },
+  {
+    "module": "ScorePooling",
+    "name": "SEKernel.ScorePooling.historical_survival_probability"
+  },
+  {
+    "module": "ScorePooling",
+    "name": "SEKernel.ScorePooling.historical_expected_share"
+  },
+  {
+    "module": "ScorePooling",
+    "name": "SEKernel.ScorePooling.historical_share_exceeds_current_iff"
+  },
+  {
+    "module": "ScorePooling",
+    "name": "SEKernel.ScorePooling.current_pool_strict_win_probability"
+  },
+  {
+    "module": "ScorePooling",
+    "name": "SEKernel.ScorePooling.historical_overlap_counterexample"
+  },
+  {
+    "module": "ScorePooling",
+    "name": "SEKernel.ScorePooling.fairBit_mean"
+  },
+  {
+    "module": "ScorePooling",
+    "name": "SEKernel.ScorePooling.fairBit_variance"
+  },
+  {
+    "module": "ScorePooling",
+    "name": "SEKernel.ScorePooling.trueCount_eq_sum"
+  },
+  {
+    "module": "ScorePooling",
+    "name": "SEKernel.ScorePooling.past_sum_mean"
+  },
+  {
+    "module": "ScorePooling",
+    "name": "SEKernel.ScorePooling.past_sum_variance"
+  },
+  {
+    "module": "ScorePooling",
+    "name": "SEKernel.ScorePooling.currentScore_mean"
+  },
+  {
+    "module": "ScorePooling",
+    "name": "SEKernel.ScorePooling.historicalScore_mean"
+  },
+  {
+    "module": "ScorePooling",
+    "name": "SEKernel.ScorePooling.currentScore_variance"
+  },
+  {
+    "module": "ScorePooling",
+    "name": "SEKernel.ScorePooling.historicalScore_variance"
+  }
+]

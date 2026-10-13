@@ -1,0 +1,37 @@
+scratch/checks/count_profile_enum.lean:10:75: error: unsolved goals
+c : Option (Fin 3) → ℕ
+nx n0 n1 n2 : ℕ
+⊢ (∀ (x : Option (Fin 3)),
+      c x =
+        match x with
+        | none => nx
+        | some i => ![n0, n1, n2] i) ↔
+    c none = nx ∧ c (some 0) = n0 ∧ c (some 1) = n1 ∧ c (some 2) = n2
+scratch/checks/count_profile_enum.lean:11:32: warning: This simp argument is unused:
+  Fin.forall_fin_succ
+
+Hint: Omit it from the simp argument list.
+  simp [funext_iff, triProfile,̵ ̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+scratch/checks/count_profile_enum.lean:18:2: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  0 ≤ b ≤ 1
+  0 ≤ a ≤ 2
+where
+ a := ↑(c (some (Fin.succ 0).succ))
+ b := ↑(c (some 2))
+scratch/checks/count_profile_enum.lean:25:2: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  0 ≤ b ≤ 2
+  0 ≤ a ≤ 3
+where
+ a := ↑(c (some (Fin.succ 0).succ))
+ b := ↑(c (some 2))
+scratch/checks/count_profile_enum.lean:32:2: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  0 ≤ b ≤ 3
+  0 ≤ a ≤ 4
+where
+ a := ↑(c (some (Fin.succ 0).succ))
+ b := ↑(c (some 2))

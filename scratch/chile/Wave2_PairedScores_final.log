@@ -1,0 +1,28 @@
+⚠ [7891/7891] Built SEKernel.PairedScores (38s)
+warning: SEKernel/PairedScores.lean:301:13: This simp argument is unused:
+  Nat.ne_of_lt
+
+Hint: Omit it from the simp argument list.
+  simp [h, Nat.ne_of_l̵t̵,̵ ̵N̵a̵t̵.̵n̵e̵_̵o̵f̵_̵gt, Nat.not_lt_of_ge, le_of_lt]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SEKernel/PairedScores.lean:302:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: SEKernel/PairedScores.lean:314:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: SEKernel/PairedScores.lean:331:53: This simp argument is unused:
+  Nat.ne_of_lt
+
+Hint: Omit it from the simp argument list.
+  simp [̵h̵,̵l̵e̵_̵o̵f̵_̵l̵t̵,̵n̵o̵t̵_̵l̵e̵_̵o̵f̵_̵g̵t̵,̵N̵a̵t̵.̵n̵o̵t̵_̵l̵t̵_̵o̵f̵_̵g̵e̵,̵N̵a̵t̵.̵n̵e̵_̵o̵f̵_̵l̵t̵,̵N̵a̵t̵.̵n̵e̵_̵o̵f̵_̵g̵t̵]̵[̲h̲,̲ ̲l̲e̲_̲o̲f̲_̲l̲t̲,̲ ̲n̲o̲t̲_̲l̲e̲_̲o̲f̲_̲g̲t̲,̲ ̲N̲a̲t̲.̲n̲o̲t̲_̲l̲t̲_̲o̲f̲_̲g̲e̲,̲ ̲N̲a̲t̲.̲n̲e̲_̲o̲f̲_̲g̲t̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SEKernel/PairedScores.lean:331:80: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: SEKernel/PairedScores.lean:399:5: unused variable `htotal`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully (7891 jobs).

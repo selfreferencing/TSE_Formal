@@ -1,0 +1,72 @@
+✖ [7891/7891] Building SEKernel.EpistemicPayoff (26s)
+trace: .> LEAN_PATH=/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/Cli/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/batteries/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/Qq/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/aesop/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/importGraph/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/plausible/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/mathlib/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/lib/lean /Users/kvallier/.elan/toolchains/leanprover--lean4---v4.28.0-rc1/bin/lean /Users/kvallier/Desktop/TSE_Formal_chile/SEKernel/EpistemicPayoff.lean -o /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/lib/lean/SEKernel/EpistemicPayoff.olean -i /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/lib/lean/SEKernel/EpistemicPayoff.ilean -c /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/ir/SEKernel/EpistemicPayoff.c --setup /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/ir/SEKernel/EpistemicPayoff.setup.json --json
+error: SEKernel/EpistemicPayoff.lean:79:25: linarith failed to find a contradiction
+M : CellModel
+κ : Cell → ℝ
+⊢ False
+failed
+error: SEKernel/EpistemicPayoff.lean:90:2: linarith failed to find a contradiction
+case h
+M : CellModel
+κ : Cell → ℝ
+hκ : ∀ (c : Cell), 0 ≤ κ c ∧ κ c ≤ 1
+horder : κ Cell.absent ≤ κ Cell.post
+h : M.weight Cell.keep + M.weight Cell.post + M.weight Cell.absent = 1
+h₁ : M.weight Cell.absent * κ Cell.absent ≤ M.weight Cell.absent * κ Cell.post
+h₂ : 0 ≤ M.weight Cell.keep * κ Cell.post
+h₃ : 0 ≤ M.weight Cell.keep * (1 - κ Cell.keep)
+a✝ :
+  κ Cell.post <
+    M.weight Cell.post * κ Cell.post + M.weight Cell.absent * κ Cell.absent - M.weight Cell.keep * (1 - κ Cell.keep)
+⊢ False
+failed
+error: SEKernel/EpistemicPayoff.lean:127:13: Unknown identifier `mul_eq_mul_left`
+error: SEKernel/EpistemicPayoff.lean:154:4: Tactic `split_ifs` failed: no if-then-else conditions to split
+
+case left.h
+Ω : Type u_1
+C : Type u_2
+inst✝¹ : Fintype Ω
+inst✝ : Fintype C
+L : Law Ω
+cell : Ω → C
+w : Ω → ℝ
+hw : ∀ (ω : Ω), 0 ≤ w ω ∧ w ω ≤ 1
+c : C
+ω : Ω
+a✝ : ω ∈ univ
+⊢ 0 ≤ L.mass ω * (fun ω => if cell ω = c then w ω else 0) ω
+error: SEKernel/EpistemicPayoff.lean:160:6: Type mismatch: After simplification, term
+  mul_le_mul_of_nonneg_left (hw ω).right (L.nonneg ω)
+ has type
+  L.mass ω * w ω ≤ L.mass ω
+but is expected to have type
+  (if cell ω = c then L.mass ω * w ω else 0) ≤ L.mass ω
+error: SEKernel/EpistemicPayoff.lean:161:4: unsolved goals
+case neg
+Ω : Type u_1
+C : Type u_2
+inst✝¹ : Fintype Ω
+inst✝ : Fintype C
+L : Law Ω
+cell : Ω → C
+w : Ω → ℝ
+hw : ∀ (ω : Ω), 0 ≤ w ω ∧ w ω ≤ 1
+c : C
+ω : Ω
+a✝ : ω ∈ univ
+h✝ : ¬(fun ω => cell ω = c) ω
+⊢ (if cell ω = c then L.mass ω * w ω else 0) ≤ 0
+warning: SEKernel/EpistemicPayoff.lean:183:8: This simp argument is unused:
+  ← mul_sum
+
+Hint: Omit it from the simp argument list.
+  simp ̵[̵←̵ ̵m̵u̵l̵_̵s̵u̵m̵]̵
+
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Lean exited with code 1
+Some required targets logged failures:
+- SEKernel.EpistemicPayoff
+error: build failed

@@ -1,0 +1,58 @@
+⚠ [7891/7892] Replayed SEKernel.MutationBaseline
+warning: SEKernel/MutationBaseline.lean:127:5: unused variable `hu`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SEKernel/MutationBaseline.lean:127:32: unused variable `hd`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SEKernel/MutationBaseline.lean:176:50: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: SEKernel/MutationBaseline.lean:176:50: 'positivity' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SEKernel/MutationBaseline.lean:196:37: This simp argument is unused:
+  ha
+
+Hint: Omit it from the simp argument list.
+  simp [Law.prob, sixAlleleMutation, h̵a̵,̵ ̵Ne.symm ha]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [7892/7892] Built SEKernel.ScorePooling (36s)
+warning: SEKernel/ScorePooling.lean:80:31: This simp argument is unused:
+  forall_const
+
+Hint: Omit it from the simp argument list.
+  simp only [topSlots, Finset.mem_filter, Finset.mem_univ, true_and, Fin.forall_fin_succ,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲Matrix.cons_val_zero, Matrix.cons_val_succ, Fin.forall_fin_zero, f̵o̵r̵a̵l̵l̵_̵c̵o̵n̵s̵t̵,̵ ̵le_refl, and_true,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲Finset.mem_union, Finset.mem_singleton]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SEKernel/ScorePooling.lean:80:45: This simp argument is unused:
+  le_refl
+
+Hint: Omit it from the simp argument list.
+  simp only [topSlots, Finset.mem_filter, Finset.mem_univ, true_and, Fin.forall_fin_succ,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲Matrix.cons_val_zero, Matrix.cons_val_succ, Fin.forall_fin_zero, forall_const, l̵e̵_̵r̵e̵f̵l̵,̵ ̵and_true,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲Finset.mem_union, Finset.mem_singleton]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SEKernel/ScorePooling.lean:89:31: This simp argument is unused:
+  forall_const
+
+Hint: Omit it from the simp argument list.
+  simp only [topSlots, Finset.mem_filter, Finset.mem_univ, true_and, Fin.forall_fin_succ,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲Matrix.cons_val_zero, Matrix.cons_val_succ, Fin.forall_fin_zero, f̵o̵r̵a̵l̵l̵_̵c̵o̵n̵s̵t̵,̵ ̵le_refl, and_true,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲Finset.mem_union, Finset.mem_singleton]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SEKernel/ScorePooling.lean:89:45: This simp argument is unused:
+  le_refl
+
+Hint: Omit it from the simp argument list.
+  simp only [topSlots, Finset.mem_filter, Finset.mem_univ, true_and, Fin.forall_fin_succ,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲Matrix.cons_val_zero, Matrix.cons_val_succ, Fin.forall_fin_zero, forall_const, l̵e̵_̵r̵e̵f̵l̵,̵ ̵and_true,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲Finset.mem_union, Finset.mem_singleton]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Build completed successfully (7892 jobs).

@@ -1,0 +1,25 @@
+⚠ [7894/7896] Replayed SEKernel.IIDCountLaw
+warning: SEKernel/IIDCountLaw.lean:229:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: SEKernel/IIDCountLaw.lean:229:6: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [7895/7896] Replayed SEKernel.PluralityCountFormula
+warning: SEKernel/PluralityCountFormula.lean:37:20: This simp argument is unused:
+  Option.some_ne_none
+
+Hint: Omit it from the simp argument list.
+  simp only [candidatePositions, activePositions, Finset.mem_filter, Finset.mem_univ, true_and,
+  ̲  ̲ ̲ ̲ ̲ ̲hi, O̵p̵t̵i̵o̵n̵.̵s̵o̵m̵e̵_̵n̵e̵_̵n̵o̵n̵e̵,̵ ̵true_and, hm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [7896/7896] Built SEKernel.PluralityCountExamples (146s)
+warning: SEKernel/PluralityCountExamples.lean:112:13: This simp argument is unused:
+  hz
+
+Hint: Omit it from the simp argument list.
+  simp [h,̵ ̵h̵z̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Build completed successfully (7896 jobs).

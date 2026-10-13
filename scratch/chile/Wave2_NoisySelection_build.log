@@ -1,0 +1,114 @@
+✖ [7891/7891] Building SEKernel.NoisySelection (14s)
+trace: .> LEAN_PATH=/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/Cli/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/batteries/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/Qq/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/aesop/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/importGraph/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/plausible/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/mathlib/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/lib/lean /Users/kvallier/.elan/toolchains/leanprover--lean4---v4.28.0-rc1/bin/lean /Users/kvallier/Desktop/TSE_Formal_chile/SEKernel/NoisySelection.lean -o /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/lib/lean/SEKernel/NoisySelection.olean -i /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/lib/lean/SEKernel/NoisySelection.ilean -c /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/ir/SEKernel/NoisySelection.c --setup /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/ir/SEKernel/NoisySelection.setup.json --json
+warning: SEKernel/NoisySelection.lean:131:0: automatically included section variable(s) unused in theorem `SEKernel.NoisySelection.expectedSurvivorCount_nonneg`:
+  [Fintype G]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype G] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: SEKernel/NoisySelection.lean:185:54: unused variable `hS`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SEKernel/NoisySelection.lean:353:5: unused variable `hgain`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SEKernel/NoisySelection.lean:471:0: automatically included section variable(s) unused in theorem `SEKernel.NoisySelection.topSet_threshold`:
+  [Fintype ι]
+  [Nonempty ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype ι] [Nonempty ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: SEKernel/NoisySelection.lean:496:13: This simp argument is unused:
+  Finset.sum_filter
+
+Hint: Omit it from the simp argument list.
+  simp [I,̵ ̵F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵f̵i̵l̵t̵e̵r̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SEKernel/NoisySelection.lean:597:61: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: SEKernel/NoisySelection.lean:605:13: unused variable `hε`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SEKernel/NoisySelection.lean:628:57: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: SEKernel/NoisySelection.lean:628:57: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SEKernel/NoisySelection.lean:635:0: automatically included section variable(s) unused in theorem `SEKernel.NoisySelection.setMean_bounds`:
+  [Fintype ι]
+  [Nonempty ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype ι] [Nonempty ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: SEKernel/NoisySelection.lean:673:0: automatically included section variable(s) unused in theorem `SEKernel.NoisySelection.bad_score_probability`:
+  [Nonempty ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nonempty ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: SEKernel/NoisySelection.lean:709:0: automatically included section variable(s) unused in theorem `SEKernel.NoisySelection.topSet_eq_of_strict_cross`:
+  [Fintype ι]
+  [Nonempty ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype ι] [Nonempty ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: SEKernel/NoisySelection.lean:801:62: This simp argument is unused:
+  ne_of_gt (neg_pos.mpr hz)
+
+Hint: Omit it from the simp argument list.
+  simp [fairWinWeight, hz, not_lt_of_ge hz.le, ne_of_lt hz,̵ ̵n̵e̵_̵o̵f̵_̵g̵t̵ ̵(̵n̵e̵g̵_̵p̵o̵s̵.̵m̵p̵r̵ ̵h̵z̵)̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: SEKernel/NoisySelection.lean:877:6: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+error: SEKernel/NoisySelection.lean:874:4: unsolved goals
+case pos
+a : ℝ
+ha : 0 < a
+hlo : ¬-a < -a
+hr : 0 < a - -a
+⊢ (-1 / 2 + if 0 < a then 1 else if a = 0 then 1 / 2 else 0) = 1 / 2
+error: SEKernel/NoisySelection.lean:878:29: linarith failed to find a contradiction
+case h
+a : ℝ
+ha : 0 < a
+z : ℝ
+hlo : ¬z < -a
+helo : ¬z = -a
+a✝ : z ≤ -a
+⊢ False
+failed
+error: SEKernel/NoisySelection.lean:889:32: linarith failed to find a contradiction
+case h
+a : ℝ
+ha : 0 < a
+z : ℝ
+hlo : ¬z < -a
+helo : ¬z = -a
+hlow : -a < z
+hhi : ¬a < z
+hehi : ¬z = a
+a✝ : a ≤ z
+⊢ False
+failed
+warning: SEKernel/NoisySelection.lean:876:26: This simp argument is unused:
+  hr
+
+Hint: Omit it from the simp argument list.
+  simp [fairWinWeight,h̵r̵,̵ ̲abs_of_nonpos (neg_nonpos.mpr ha.le)]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Lean exited with code 1
+Some required targets logged failures:
+- SEKernel.NoisySelection
+error: build failed

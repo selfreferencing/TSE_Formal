@@ -1,0 +1,210 @@
+[
+  {
+    "module": "CountProfileCombinatorics",
+    "name": "SEKernel.Epistemic.wordCount_eq_labelCount"
+  },
+  {
+    "module": "CountProfileCombinatorics",
+    "name": "SEKernel.Epistemic.wordCount_eq_card_subtype"
+  },
+  {
+    "module": "CountProfileCombinatorics",
+    "name": "SEKernel.Epistemic.sum_wordCount"
+  },
+  {
+    "module": "CountProfileCombinatorics",
+    "name": "SEKernel.Epistemic.wordCount_comp_equiv"
+  },
+  {
+    "module": "CountProfileCombinatorics",
+    "name": "SEKernel.Epistemic.exists_perm_of_countProfile_eq"
+  },
+  {
+    "module": "CountProfileCombinatorics",
+    "name": "SEKernel.Epistemic.mem_count_orbit_iff"
+  },
+  {
+    "module": "CountProfileCombinatorics",
+    "name": "SEKernel.Epistemic.countFiber_card_mul_factorials"
+  },
+  {
+    "module": "CountProfileCombinatorics",
+    "name": "SEKernel.Epistemic.countFiber_card"
+  },
+  {
+    "module": "CountProfileCombinatorics",
+    "name": "SEKernel.Epistemic.exists_word_of_sum_counts"
+  },
+  {
+    "module": "CountProfileCombinatorics",
+    "name": "SEKernel.Epistemic.shuffledWord_countProfile"
+  },
+  {
+    "module": "IIDCountLaw",
+    "name": "SEKernel.Epistemic.iidAlphabetLaw_mass"
+  },
+  {
+    "module": "IIDCountLaw",
+    "name": "SEKernel.Epistemic.iid_countProfile_probability_card"
+  },
+  {
+    "module": "IIDCountLaw",
+    "name": "SEKernel.Epistemic.iid_countProfile_probability"
+  },
+  {
+    "module": "IIDCountLaw",
+    "name": "SEKernel.Epistemic.iid_countProfile_probability_factorial"
+  },
+  {
+    "module": "IIDCountLaw",
+    "name": "SEKernel.Epistemic.iidWordLaw_countProfile_probability"
+  },
+  {
+    "module": "IIDCountLaw",
+    "name": "SEKernel.Epistemic.iid_countProfile_event_probability_card"
+  },
+  {
+    "module": "IIDCountLaw",
+    "name": "SEKernel.Epistemic.shuffledWord_atom_equal"
+  },
+  {
+    "module": "IIDCountLaw",
+    "name": "SEKernel.Epistemic.shuffledWord_atom_probability"
+  },
+  {
+    "module": "IIDCountLaw",
+    "name": "SEKernel.Epistemic.shuffledWord_event_probability"
+  },
+  {
+    "module": "IIDCountLaw",
+    "name": "SEKernel.Epistemic.iid_conditional_count_uniform_shuffle"
+  },
+  {
+    "module": "IIDCountLaw",
+    "name": "SEKernel.Epistemic.iid_countProfile_event_probability_shuffle"
+  },
+  {
+    "module": "IIDCountLaw",
+    "name": "SEKernel.Epistemic.sum_boolCountProfile"
+  },
+  {
+    "module": "IIDCountLaw",
+    "name": "SEKernel.Epistemic.countProfile_bool_iff"
+  },
+  {
+    "module": "IIDCountLaw",
+    "name": "SEKernel.Epistemic.multinomial_boolCountProfile"
+  },
+  {
+    "module": "IIDCountLaw",
+    "name": "SEKernel.Epistemic.iid_binary_count_probability"
+  },
+  {
+    "module": "IIDCountLaw",
+    "name": "SEKernel.Epistemic.firstTInWord_shuffledWord"
+  },
+  {
+    "module": "IIDCountLaw",
+    "name": "SEKernel.Epistemic.iid_conditional_firstT_probability"
+  },
+  {
+    "module": "IIDCountLaw",
+    "name": "SEKernel.Epistemic.firstTInWord_univ"
+  },
+  {
+    "module": "IIDCountLaw",
+    "name": "SEKernel.Epistemic.iid_conditional_first_position_probability"
+  },
+  {
+    "module": "PluralityCountFormula",
+    "name": "SEKernel.Epistemic.candidatePositions_eq_active_modes"
+  },
+  {
+    "module": "PluralityCountFormula",
+    "name": "SEKernel.Epistemic.first_mode_iff_plurality"
+  },
+  {
+    "module": "PluralityCountFormula",
+    "name": "SEKernel.Epistemic.plurality_mem_readableModes"
+  },
+  {
+    "module": "PluralityCountFormula",
+    "name": "SEKernel.Epistemic.readableModes_equal_count"
+  },
+  {
+    "module": "PluralityCountFormula",
+    "name": "SEKernel.Epistemic.active_modes_card"
+  },
+  {
+    "module": "PluralityCountFormula",
+    "name": "SEKernel.Epistemic.shuffled_plurality_probability"
+  },
+  {
+    "module": "PluralityCountFormula",
+    "name": "SEKernel.Epistemic.iid_countProfile_vote_probability"
+  },
+  {
+    "module": "PluralityCountFormula",
+    "name": "SEKernel.Epistemic.plurality_multinomial_formula"
+  },
+  {
+    "module": "PluralityCountExamples",
+    "name": "SEKernel.Epistemic.prob_map_event"
+  },
+  {
+    "module": "PluralityCountExamples",
+    "name": "SEKernel.Epistemic.iid_map_atom_probability"
+  },
+  {
+    "module": "PluralityCountExamples",
+    "name": "SEKernel.Epistemic.law_eq_of_mass_eq"
+  },
+  {
+    "module": "PluralityCountExamples",
+    "name": "SEKernel.Epistemic.iid_map_event_probability"
+  },
+  {
+    "module": "PluralityCountExamples",
+    "name": "SEKernel.Epistemic.labelFlag_eq_true"
+  },
+  {
+    "module": "PluralityCountExamples",
+    "name": "SEKernel.Epistemic.labelFlag_mass"
+  },
+  {
+    "module": "PluralityCountExamples",
+    "name": "SEKernel.Epistemic.wordCount_labelFlag"
+  },
+  {
+    "module": "PluralityCountExamples",
+    "name": "SEKernel.Epistemic.iid_single_label_count_probability"
+  },
+  {
+    "module": "PluralityCountExamples",
+    "name": "SEKernel.Epistemic.prob_value_mem_finset"
+  },
+  {
+    "module": "PluralityCountExamples",
+    "name": "SEKernel.Epistemic.iid_single_label_tail_probability"
+  },
+  {
+    "module": "PluralityCountExamples",
+    "name": "SEKernel.Epistemic.iid_five_consensus_polynomial"
+  },
+  {
+    "module": "PluralityCountExamples",
+    "name": "SEKernel.Epistemic.iid_five_falseConsensus_polynomial"
+  },
+  {
+    "module": "PluralityCountExamples",
+    "name": "SEKernel.Epistemic.actual_trap_correctMode_B"
+  },
+  {
+    "module": "PluralityCountExamples",
+    "name": "SEKernel.Epistemic.actual_trap_correctMode_A"
+  },
+  {
+    "module": "PluralityCountExamples",
+    "name": "SEKernel.Epistemic.actual_nonTrap_wrongMode_A"
+  }
+]

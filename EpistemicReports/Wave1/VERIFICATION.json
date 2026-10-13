@@ -1,0 +1,17 @@
+{
+  "cleaned": "root .lake/build removed; fetched Mathlib/package cache retained",
+  "commands": [
+    {
+      "command": "lake build SEKernel.EpistemicFinite",
+      "exit_code": 0,
+      "seconds": 109.96,
+      "log": "EpistemicReports/Wave1/COLD_BUILD.log"
+    },
+    {
+      "command": "lake build SEKernel.AxiomsAuditEpistemic",
+      "exit_code": 0,
+      "seconds": 48.76,
+      "log": "EpistemicReports/Wave1/AXIOMS_BUILD.log"
+    }
+  ]
+}

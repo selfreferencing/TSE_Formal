@@ -1,0 +1,27 @@
+import SEKernel.ScorePooling
+#print axioms SEKernel.ScorePooling.current_scores_equal
+#print axioms SEKernel.ScorePooling.historical_composition_examples
+#print axioms SEKernel.ScorePooling.topSlots_nonempty
+#print axioms SEKernel.ScorePooling.fairTopLaw_count
+#print axioms SEKernel.ScorePooling.fairTopLaw_three_zero
+#print axioms SEKernel.ScorePooling.unequal_evaluation_probability
+#print axioms SEKernel.ScorePooling.unequal_evaluation_counterexamples
+#print axioms SEKernel.ScorePooling.trueCount_le
+#print axioms SEKernel.ScorePooling.trueCount_eq_iff
+#print axioms SEKernel.ScorePooling.historical_strict_win
+#print axioms SEKernel.ScorePooling.prob_prod_rectangle
+#print axioms SEKernel.ScorePooling.past_all_true_probability
+#print axioms SEKernel.ScorePooling.historical_survival_probability
+#print axioms SEKernel.ScorePooling.historical_expected_share
+#print axioms SEKernel.ScorePooling.historical_share_exceeds_current_iff
+#print axioms SEKernel.ScorePooling.current_pool_strict_win_probability
+#print axioms SEKernel.ScorePooling.historical_overlap_counterexample
+#print axioms SEKernel.ScorePooling.fairBit_mean
+#print axioms SEKernel.ScorePooling.fairBit_variance
+#print axioms SEKernel.ScorePooling.trueCount_eq_sum
+#print axioms SEKernel.ScorePooling.past_sum_mean
+#print axioms SEKernel.ScorePooling.past_sum_variance
+#print axioms SEKernel.ScorePooling.currentScore_mean
+#print axioms SEKernel.ScorePooling.historicalScore_mean
+#print axioms SEKernel.ScorePooling.currentScore_variance
+#print axioms SEKernel.ScorePooling.historicalScore_variance

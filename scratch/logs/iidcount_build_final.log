@@ -1,0 +1,9 @@
+✔ [7893/7894] Built SEKernel.CountProfileCombinatorics (20s)
+⚠ [7894/7894] Built SEKernel.IIDCountLaw (12s)
+warning: SEKernel/IIDCountLaw.lean:229:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: SEKernel/IIDCountLaw.lean:229:6: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Build completed successfully (7894 jobs).

@@ -1,0 +1,24 @@
+import SEKernel.MutationBaseline
+#print axioms SEKernel.MutationBaseline.transmission_identity
+#print axioms SEKernel.MutationBaseline.bernoulli_true
+#print axioms SEKernel.MutationBaseline.bernoulli_mean
+#print axioms SEKernel.MutationBaseline.mutationProbability_bounds
+#print axioms SEKernel.MutationBaseline.offspring_mean
+#print axioms SEKernel.MutationBaseline.finite_population_transmission
+#print axioms SEKernel.MutationBaseline.expect_affineStep
+#print axioms SEKernel.MutationBaseline.neutral_expectation
+#print axioms SEKernel.MutationBaseline.fixed_point
+#print axioms SEKernel.MutationBaseline.meanTrajectory_zero
+#print axioms SEKernel.MutationBaseline.meanTrajectory_succ
+#print axioms SEKernel.MutationBaseline.meanTrajectory_closed
+#print axioms SEKernel.MutationBaseline.meanTrajectory_distance
+#print axioms SEKernel.MutationBaseline.coefficient_bounds
+#print axioms SEKernel.MutationBaseline.geometric_sum_start_one
+#print axioms SEKernel.MutationBaseline.meanTrajectory_average
+#print axioms SEKernel.MutationBaseline.meanTrajectory_zero_monotone
+#print axioms SEKernel.MutationBaseline.sixAllele_voter_to_board
+#print axioms SEKernel.MutationBaseline.sixAllele_board_to_voter
+#print axioms SEKernel.MutationBaseline.sixAllele_fixed_point
+#print axioms SEKernel.MutationBaseline.experiment_coefficients
+#print axioms SEKernel.MutationBaseline.experiment_trajectory
+#print axioms SEKernel.MutationBaseline.experiment_seven_generation_mean

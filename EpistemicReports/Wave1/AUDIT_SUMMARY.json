@@ -1,0 +1,46 @@
+{
+  "theorems_audited": 194,
+  "module_theorem_counts": {
+    "FiniteProbability": 46,
+    "FirstAppearancePlurality": 54,
+    "FirstTiedLabelCounting": 13,
+    "PluralityBounds": 19,
+    "EpistemicPayoff": 42,
+    "PluralityConcentration": 20
+  },
+  "axiom_sets": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "count": 192
+    },
+    {
+      "axioms": [],
+      "count": 1
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "count": 1
+    }
+  ],
+  "missing": [],
+  "unexpected_axioms": {},
+  "protected_files_unchanged": 19,
+  "forbidden_construct_scan": [],
+  "source_sha256": {
+    "SEKernel/FiniteProbability.lean": "8dc6b3d1343513386730980953b65abe7c285b30b74cc76d7e0e785eb57e6cdb",
+    "SEKernel/FirstAppearancePlurality.lean": "bf63bbcdd5f496487fe6695d820d422f3b6e92a84e6b165d955fc7dbaae159a8",
+    "SEKernel/FirstTiedLabelCounting.lean": "a1600c165da9279b452f4ad464316b3ef7bbb6f22e454f256398f97bed21df13",
+    "SEKernel/PluralityBounds.lean": "28af410002f58b06010beb8fd90b9f96339412699a7cdb5f61e5e1f24e781bc4",
+    "SEKernel/EpistemicPayoff.lean": "2aa1879c29e26f158d8050f204d51e5586d1c9c61d563e31dcf3a7d07d3b15e3",
+    "SEKernel/PluralityConcentration.lean": "26b0b99590933989f07de69f321d32165f1dc8f18519ec652c6e59133f79cde2",
+    "SEKernel/EpistemicFinite.lean": "dcd0187d77950dce063a8f35719f3b04c88715c075cffa4647e255a69a81e5b5",
+    "SEKernel/AxiomsAuditEpistemic.lean": "30e107e3ba6efcde77ea425c32b8ea2eaf3dfc19a888d0519ab6ccb73ca618ed"
+  }
+}

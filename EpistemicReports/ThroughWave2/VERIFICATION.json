@@ -1,0 +1,58 @@
+{
+  "cache": "Pinned Mathlib cache fetched before the original build; retained.",
+  "modules": [
+    "FiniteProbability",
+    "FirstAppearancePlurality",
+    "FirstTiedLabelCounting",
+    "PluralityBounds",
+    "EpistemicPayoff",
+    "PluralityConcentration",
+    "CountProfileCombinatorics",
+    "IIDCountLaw",
+    "PluralityCountFormula",
+    "PluralityCountExamples",
+    "MutationBaseline",
+    "NoisySelection",
+    "PairedScores",
+    "ScorePooling"
+  ],
+  "commands": [
+    {
+      "command": "lake build SEKernel.EpistemicFinite",
+      "exit_code": 0,
+      "seconds": 143.1,
+      "log": "EpistemicReports/ThroughWave2/BUILD.log"
+    },
+    {
+      "command": "lake env lean SEKernel/AxiomsAuditEpistemic.lean",
+      "exit_code": 0,
+      "seconds": 197.21,
+      "log": "EpistemicReports/ThroughWave2/AXIOMS.txt"
+    }
+  ],
+  "cold_project_build": {
+    "command": "lake build SEKernel.EpistemicFinite",
+    "exit_code": 0,
+    "seconds": 369.06,
+    "cold_scope": "Root project .lake/build absent at start; pinned dependency caches retained.",
+    "source_sha256": {
+      "SEKernel/FiniteProbability.lean": "8dc6b3d1343513386730980953b65abe7c285b30b74cc76d7e0e785eb57e6cdb",
+      "SEKernel/FirstAppearancePlurality.lean": "bf63bbcdd5f496487fe6695d820d422f3b6e92a84e6b165d955fc7dbaae159a8",
+      "SEKernel/FirstTiedLabelCounting.lean": "a1600c165da9279b452f4ad464316b3ef7bbb6f22e454f256398f97bed21df13",
+      "SEKernel/PluralityBounds.lean": "28af410002f58b06010beb8fd90b9f96339412699a7cdb5f61e5e1f24e781bc4",
+      "SEKernel/EpistemicPayoff.lean": "2aa1879c29e26f158d8050f204d51e5586d1c9c61d563e31dcf3a7d07d3b15e3",
+      "SEKernel/PluralityConcentration.lean": "26b0b99590933989f07de69f321d32165f1dc8f18519ec652c6e59133f79cde2",
+      "SEKernel/CountProfileCombinatorics.lean": "0bc228646186abbc797506bb84954a616fa0e2c8ae888d02b6223ed2ec19f888",
+      "SEKernel/IIDCountLaw.lean": "9ce497bdcb6fe867e40a5155599d9b23240719f13801ce6698f73cbe212211bc",
+      "SEKernel/PluralityCountFormula.lean": "4b33a7a2617c48fb22b1b5b9da24a6d3df4c0e405ee28052ceac54f4262aca34",
+      "SEKernel/PluralityCountExamples.lean": "d4ac5cae160cb1b019d676f09b585af06bab80f14351d796fa1273dcf34736dd",
+      "SEKernel/MutationBaseline.lean": "6840f419098cb043baae773c2a33a2b58ef94224d357d48116973bba58aaa796",
+      "SEKernel/NoisySelection.lean": "969766ef6c33e08dac89b9c973f94f6776875995b63b4d76e76217c6702b939f",
+      "SEKernel/PairedScores.lean": "1ed232929c482c0a5e668393c1e2b0dc5518237959308b54a6f201e0c25c9397",
+      "SEKernel/ScorePooling.lean": "9e481de73719f64413d8226bbadec9cc1aa942173b8de299920d750936f45ddb",
+      "SEKernel/EpistemicFinite.lean": "ff4a537599b68370170fc0f774fc53d8132bb26057e1f5fc2b2bec5ff850c9a8",
+      "SEKernel/AxiomsAuditEpistemic.lean": "67747e32647f4c285283e4eab6b9c9196d9aad03fd5b5bff55fe9984c402db45"
+    },
+    "log": "EpistemicReports/ThroughWave2/COLD_BUILD.log"
+  }
+}

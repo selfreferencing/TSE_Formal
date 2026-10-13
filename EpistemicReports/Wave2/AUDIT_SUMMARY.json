@@ -1,0 +1,32 @@
+{
+  "theorems_audited": 137,
+  "module_theorem_counts": {
+    "MutationBaseline": 23,
+    "NoisySelection": 55,
+    "PairedScores": 33,
+    "ScorePooling": 26
+  },
+  "axiom_sets": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "count": 137
+    }
+  ],
+  "unexpected_axioms": {},
+  "missing": [],
+  "source_sha256": {
+    "SEKernel/MutationBaseline.lean": "6840f419098cb043baae773c2a33a2b58ef94224d357d48116973bba58aaa796",
+    "SEKernel/NoisySelection.lean": "969766ef6c33e08dac89b9c973f94f6776875995b63b4d76e76217c6702b939f",
+    "SEKernel/PairedScores.lean": "1ed232929c482c0a5e668393c1e2b0dc5518237959308b54a6f201e0c25c9397",
+    "SEKernel/ScorePooling.lean": "9e481de73719f64413d8226bbadec9cc1aa942173b8de299920d750936f45ddb"
+  },
+  "combined_receipts": "../ThroughWave2/VERIFICATION.json",
+  "audit_command": "lake env lean SEKernel/AxiomsAuditEpistemic.lean",
+  "audit_exit_code": 0,
+  "combined_axiom_output_sha256": "ae5ccca4b09593e64a1a1771eb9c8d5b790b2b5b185b6380aef4cc127f542cbd",
+  "exact_wave_axiom_output_sha256": "935c11c63443eb7d1efa70b7bfb715c2ec4535572d7c119f4477c13306f4a3d2"
+}

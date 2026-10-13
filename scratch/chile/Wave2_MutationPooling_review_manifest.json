@@ -1,0 +1,81 @@
+{
+  "modules": [
+    {
+      "module": "SEKernel.MutationBaseline",
+      "path": "/Users/kvallier/Desktop/TSE_Formal_chile/SEKernel/MutationBaseline.lean",
+      "sha256": "6840f419098cb043baae773c2a33a2b58ef94224d357d48116973bba58aaa796",
+      "theorem_count": 23,
+      "theorems": [
+        "SEKernel.MutationBaseline.transmission_identity",
+        "SEKernel.MutationBaseline.bernoulli_true",
+        "SEKernel.MutationBaseline.bernoulli_mean",
+        "SEKernel.MutationBaseline.mutationProbability_bounds",
+        "SEKernel.MutationBaseline.offspring_mean",
+        "SEKernel.MutationBaseline.finite_population_transmission",
+        "SEKernel.MutationBaseline.expect_affineStep",
+        "SEKernel.MutationBaseline.neutral_expectation",
+        "SEKernel.MutationBaseline.fixed_point",
+        "SEKernel.MutationBaseline.meanTrajectory_zero",
+        "SEKernel.MutationBaseline.meanTrajectory_succ",
+        "SEKernel.MutationBaseline.meanTrajectory_closed",
+        "SEKernel.MutationBaseline.meanTrajectory_distance",
+        "SEKernel.MutationBaseline.coefficient_bounds",
+        "SEKernel.MutationBaseline.geometric_sum_start_one",
+        "SEKernel.MutationBaseline.meanTrajectory_average",
+        "SEKernel.MutationBaseline.meanTrajectory_zero_monotone",
+        "SEKernel.MutationBaseline.sixAllele_voter_to_board",
+        "SEKernel.MutationBaseline.sixAllele_board_to_voter",
+        "SEKernel.MutationBaseline.sixAllele_fixed_point",
+        "SEKernel.MutationBaseline.experiment_coefficients",
+        "SEKernel.MutationBaseline.experiment_trajectory",
+        "SEKernel.MutationBaseline.experiment_seven_generation_mean"
+      ],
+      "audit_output_sha256": "0270ab621a5d0959d19252cfe89f973d868a30dd9ff23b2cd21c2900c8e5391e",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "SEKernel.ScorePooling",
+      "path": "/Users/kvallier/Desktop/TSE_Formal_chile/SEKernel/ScorePooling.lean",
+      "sha256": "9e481de73719f64413d8226bbadec9cc1aa942173b8de299920d750936f45ddb",
+      "theorem_count": 26,
+      "theorems": [
+        "SEKernel.ScorePooling.current_scores_equal",
+        "SEKernel.ScorePooling.historical_composition_examples",
+        "SEKernel.ScorePooling.topSlots_nonempty",
+        "SEKernel.ScorePooling.fairTopLaw_count",
+        "SEKernel.ScorePooling.fairTopLaw_three_zero",
+        "SEKernel.ScorePooling.unequal_evaluation_probability",
+        "SEKernel.ScorePooling.unequal_evaluation_counterexamples",
+        "SEKernel.ScorePooling.trueCount_le",
+        "SEKernel.ScorePooling.trueCount_eq_iff",
+        "SEKernel.ScorePooling.historical_strict_win",
+        "SEKernel.ScorePooling.prob_prod_rectangle",
+        "SEKernel.ScorePooling.past_all_true_probability",
+        "SEKernel.ScorePooling.historical_survival_probability",
+        "SEKernel.ScorePooling.historical_expected_share",
+        "SEKernel.ScorePooling.historical_share_exceeds_current_iff",
+        "SEKernel.ScorePooling.current_pool_strict_win_probability",
+        "SEKernel.ScorePooling.historical_overlap_counterexample",
+        "SEKernel.ScorePooling.fairBit_mean",
+        "SEKernel.ScorePooling.fairBit_variance",
+        "SEKernel.ScorePooling.trueCount_eq_sum",
+        "SEKernel.ScorePooling.past_sum_mean",
+        "SEKernel.ScorePooling.past_sum_variance",
+        "SEKernel.ScorePooling.currentScore_mean",
+        "SEKernel.ScorePooling.historicalScore_mean",
+        "SEKernel.ScorePooling.currentScore_variance",
+        "SEKernel.ScorePooling.historicalScore_variance"
+      ],
+      "audit_output_sha256": "6ce73d0b4075c88df975f56d95301ffa9d46e5c66d457519b1c73f89e83e0c08",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ]
+}

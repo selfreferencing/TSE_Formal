@@ -1,0 +1,39 @@
+{
+  "theorems_audited": 52,
+  "module_theorem_counts": {
+    "CountProfileCombinatorics": 10,
+    "IIDCountLaw": 19,
+    "PluralityCountFormula": 8,
+    "PluralityCountExamples": 15
+  },
+  "axiom_sets": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "count": 51
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "count": 1
+    }
+  ],
+  "unexpected_axioms": {},
+  "missing": [],
+  "source_sha256": {
+    "SEKernel/CountProfileCombinatorics.lean": "0bc228646186abbc797506bb84954a616fa0e2c8ae888d02b6223ed2ec19f888",
+    "SEKernel/IIDCountLaw.lean": "9ce497bdcb6fe867e40a5155599d9b23240719f13801ce6698f73cbe212211bc",
+    "SEKernel/PluralityCountFormula.lean": "4b33a7a2617c48fb22b1b5b9da24a6d3df4c0e405ee28052ceac54f4262aca34",
+    "SEKernel/PluralityCountExamples.lean": "d4ac5cae160cb1b019d676f09b585af06bab80f14351d796fa1273dcf34736dd"
+  },
+  "combined_receipts": "../ThroughWave2/VERIFICATION.json",
+  "audit_command": "lake env lean SEKernel/AxiomsAuditEpistemic.lean",
+  "audit_exit_code": 0,
+  "combined_axiom_output_sha256": "ae5ccca4b09593e64a1a1771eb9c8d5b790b2b5b185b6380aef4cc127f542cbd",
+  "exact_wave_axiom_output_sha256": "29cf8b3785aa67ca2ff618dde50fbb04d1e9d4cb280d487d77f2d3a8fb1fadab"
+}

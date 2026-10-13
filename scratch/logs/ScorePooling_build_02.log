@@ -1,0 +1,114 @@
+⚠ [7891/7892] Built SEKernel.MutationBaseline (44s)
+warning: SEKernel/MutationBaseline.lean:127:5: unused variable `hu`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SEKernel/MutationBaseline.lean:127:32: unused variable `hd`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SEKernel/MutationBaseline.lean:176:50: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: SEKernel/MutationBaseline.lean:176:50: 'positivity' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SEKernel/MutationBaseline.lean:196:37: This simp argument is unused:
+  ha
+
+Hint: Omit it from the simp argument list.
+  simp [Law.prob, sixAlleleMutation, h̵a̵,̵ ̵Ne.symm ha]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✖ [7892/7892] Building SEKernel.ScorePooling (53s)
+trace: .> LEAN_PATH=/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/Cli/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/batteries/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/Qq/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/aesop/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/importGraph/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/plausible/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/packages/mathlib/.lake/build/lib/lean:/Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/lib/lean /Users/kvallier/.elan/toolchains/leanprover--lean4---v4.28.0-rc1/bin/lean /Users/kvallier/Desktop/TSE_Formal_chile/SEKernel/ScorePooling.lean -o /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/lib/lean/SEKernel/ScorePooling.olean -i /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/lib/lean/SEKernel/ScorePooling.ilean -c /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/ir/SEKernel/ScorePooling.c --setup /Users/kvallier/Desktop/TSE_Formal_chile/.lake/build/ir/SEKernel/ScorePooling.setup.json --json
+error: SEKernel/ScorePooling.lean:37:82: unexpected identifier; expected '⟩'
+error: SEKernel/ScorePooling.lean:37:12: unsolved goals
+ι : Type u_1
+inst✝¹ : Fintype ι
+inst✝ : Nonempty ι
+score : ι → ℝ
+i : ι
+hi : i ∈ Finset.univ
+hmax : ∀ x' ∈ Finset.univ, score x' ≤ score i
+⊢ ∀ (j : ι), score j ≤ score i
+error: SEKernel/ScorePooling.lean:42:12: failed to synthesize instance of type class
+  Decidable (i ∈ topSlots score)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: SEKernel/ScorePooling.lean:43:17: Tactic `split_ifs` failed: no if-then-else conditions to split
+
+ι : Type u_1
+inst✝¹ : Fintype ι
+inst✝ : Nonempty ι
+score : ι → ℝ
+i : ι
+⊢ 0 ≤ sorry
+error: SEKernel/ScorePooling.lean:57:79: unsolved goals
+ι : Type u_1
+inst✝¹ : Fintype ι
+inst✝ : Nonempty ι
+score : ι → ℝ
+i : ι
+⊢ sorry () = if ∀ (j : ι), score j ≤ score i then (↑{i | ∀ (j : ι), score j ≤ score i}.card)⁻¹ else 0
+warning: SEKernel/ScorePooling.lean:59:8: declaration uses `sorry`
+error: SEKernel/ScorePooling.lean:85:4: Ambiguous term
+  bernoulli
+Possible interpretations:
+  _root_.bernoulli : ℕ → ℚ
+  
+  MutationBaseline.bernoulli : (p : ℝ) → 0 ≤ p → p ≤ 1 → Law Bool
+warning: SEKernel/ScorePooling.lean:83:31: Possibly looping simp theorem: `fairTopLaw_count`
+
+Note: Possibly caused by: `topSlots`, `Finset.card_filter`, and `Finset.sum_boole`
+
+Hint: You can disable a simp theorem from the default simp set by passing `- theoremName` to `simp`.
+warning: SEKernel/ScorePooling.lean:84:35: Possibly looping simp theorem: `Finset.card_filter`
+
+Note: Possibly caused by: `Finset.sum_boole`
+
+Hint: You can disable a simp theorem from the default simp set by passing `- theoremName` to `simp`.
+error: SEKernel/ScorePooling.lean:83:2: Tactic `simp` failed with a nested error:
+maximum recursion depth has been reached
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information
+warning: SEKernel/ScorePooling.lean:82:23: This simp argument is unused:
+  Law.mass
+
+Hint: Omit it from the simp argument list.
+  simp only [Law.prod,̵ ̵L̵a̵w̵.̵m̵a̵s̵s̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: SEKernel/ScorePooling.lean:133:4: Type mismatch
+  not_lt.mpr (div_nonneg (le_of_lt hm) (le_of_lt hm))
+has type
+  ¬↑(m + 1) / ↑(m + 1) < 0
+but is expected to have type
+  ↑(trueCount ω.2) / ↑(m + 1) < 0 ↔ False
+error: SEKernel/ScorePooling.lean:143:68: Application type mismatch: The argument
+  hce.mp
+has type
+  trueCount ω.2 = m → ∀ (i : Fin m), ω.2 i = true
+but is expected to have type
+  m = trueCount ω.2 → ?m.149
+in the application
+  mt hce.mp
+error: SEKernel/ScorePooling.lean:166:44: Ambiguous term
+  bernoulli
+Possible interpretations:
+  _root_.bernoulli : ℕ → ℚ
+  
+  MutationBaseline.bernoulli : (p : ℝ) → 0 ≤ p → p ≤ 1 → Law Bool
+error: SEKernel/ScorePooling.lean:177:22: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (Law.prod ?L ?K).prob fun ω => ?E ω.1 ∧ ?F ω.2
+in the target expression
+  ((fairBit.prod (pastLaw m)).prob fun ω => ω.1 = true ∧ ¬∀ (i : Fin m), ω.2 i = true) = 1 / 2 * (1 - (1 / 2) ^ m)
+
+m : ℕ
+he : (fun ω => historicalScore ω < currentScore ω) = fun ω => ω.1 = true ∧ ¬∀ (i : Fin m), ω.2 i = true
+⊢ ((fairBit.prod (pastLaw m)).prob fun ω => ω.1 = true ∧ ¬∀ (i : Fin m), ω.2 i = true) = 1 / 2 * (1 - (1 / 2) ^ m)
+error: SEKernel/ScorePooling.lean:186:43: unsolved goals
+m S : ℕ
+⊢ 1 / 2 * (1 - (1 / 2) ^ m) * (↑S)⁻¹ = 1 * 2⁻¹ * (1 - (1 * 2⁻¹) ^ m) * (↑S)⁻¹
+error: Lean exited with code 1
+Some required targets logged failures:
+- SEKernel.ScorePooling
+error: build failed

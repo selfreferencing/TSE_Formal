@@ -1,0 +1,3 @@
+'SEKernel.Epistemic.iid_countProfile_event_probability_shuffle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

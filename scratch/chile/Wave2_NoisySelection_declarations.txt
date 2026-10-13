@@ -1,0 +1,88 @@
+SEKernel/PairedScores.lean:17:theorem count_eq_sum {n : ℕ} (z : Fin n → Fin 3) (a : Fin 3) :
+SEKernel/PairedScores.lean:20:theorem count_two (x y a : Fin 3) :
+SEKernel/PairedScores.lean:27:theorem score_sum {n : ℕ} (z : Fin n → Fin 3) :
+SEKernel/PairedScores.lean:39:theorem flip_flip {n : ℕ} (z : Fin n → Fin 3) : flip (flip z)=z := by
+SEKernel/PairedScores.lean:48:theorem count_flip {n : ℕ} (z : Fin n → Fin 3) (a : Fin 3) :
+SEKernel/PairedScores.lean:62:@[simp] theorem count_flip_plus {n : ℕ} (z : Fin n → Fin 3) : count (flip z) 0=count z 1 := by
+SEKernel/PairedScores.lean:64:@[simp] theorem count_flip_minus {n : ℕ} (z : Fin n → Fin 3) : count (flip z) 1=count z 0 := by
+SEKernel/PairedScores.lean:66:@[simp] theorem count_flip_zero {n : ℕ} (z : Fin n → Fin 3) : count (flip z) 2=count z 2 := by
+SEKernel/PairedScores.lean:73:theorem wordMass_counts {n : ℕ} (a b c : ℝ) (z : Fin n → Fin 3) :
+SEKernel/PairedScores.lean:83:theorem wordMass_total (a b c : ℝ) (n : ℕ) :
+SEKernel/PairedScores.lean:108:theorem sample_mass {a b c : ℝ} (ha : 0 ≤ a) (hb : 0 ≤ b) (hc : 0 ≤ c)
+SEKernel/PairedScores.lean:125:theorem outcome_probability_total {n : ℕ} (L : Law (Fin n → Fin 3)) :
+SEKernel/PairedScores.lean:138:theorem win_reflection_identity {n : ℕ} (L : Law (Fin n → Fin 3)) :
+SEKernel/PairedScores.lean:166:theorem reflected_mass_order {a b c : ℝ} (ha : 0 ≤ a) (hb : 0 ≤ b) (hc : 0 ≤ c)
+SEKernel/PairedScores.lean:178:theorem iid_win_ge_half {a b c : ℝ} (ha : 0 ≤ a) (hb : 0 ≤ b) (hc : 0 ≤ c)
+SEKernel/PairedScores.lean:193:theorem iid_win_gt_half {a b c : ℝ} (ha : 0 ≤ a) (hb : 0 ≤ b) (hc : 0 ≤ c)
+SEKernel/PairedScores.lean:216:theorem iid_win_swap {a b c : ℝ} (ha : 0 ≤ a) (hb : 0 ≤ b) (hc : 0 ≤ c)
+SEKernel/PairedScores.lean:267:theorem iid_win_sign {a b c : ℝ} (ha : 0 ≤ a) (hb : 0 ≤ b) (hc : 0 ≤ c)
+SEKernel/PairedScores.lean:294:theorem lossFactor_nonneg {n : ℕ} (z : Fin n → Fin 3) : 0 ≤ lossFactor z := by
+SEKernel/PairedScores.lean:297:theorem lossFactor_reflect {n : ℕ} (z : Fin n → Fin 3) : lossFactor z+lossFactor (flip z)=1 := by
+SEKernel/PairedScores.lean:304:theorem win_error_sum {n : ℕ} (L : Law (Fin n → Fin 3)) :
+SEKernel/PairedScores.lean:320:theorem error_le_nonpositive_le_twice_error {n : ℕ} (L : Law (Fin n → Fin 3)) :
+SEKernel/PairedScores.lean:341:theorem loss_mass_geometric_mean {a b c : ℝ} (ha : 0 ≤ a) (hb : 0 ≤ b)
+SEKernel/PairedScores.lean:365:theorem iid_sharp_error_bound {a b c : ℝ} (ha : 0 ≤ a) (hb : 0 ≤ b) (hc : 0 ≤ c)
+SEKernel/PairedScores.lean:398:theorem sqrt_base_le_rational {a b c : ℝ} (ha : 0 ≤ a) (hb : 0 ≤ b)
+SEKernel/PairedScores.lean:411:theorem iid_sharp_rational_error_bound {a b c : ℝ} (ha : 0 ≤ a) (hb : 0 ≤ b) (hc : 0 ≤ c)
+SEKernel/PairedScores.lean:423:theorem iid_nonpositive_rational_bound {a b c : ℝ} (ha : 0 ≤ a) (hb : 0 ≤ b)
+SEKernel/PairedScores.lean:431:theorem sum_twoWords (F : (Fin 2 → Fin 3) → ℝ) :
+SEKernel/PairedScores.lean:438:theorem iid_win_two {a b c : ℝ} (ha : 0 ≤ a) (hb : 0 ≤ b) (hc : 0 ≤ c)
+SEKernel/PairedScores.lean:453:theorem paired_moments {a b c : ℝ} (ha : 0 ≤ a) (hb : 0 ≤ b) (hc : 0 ≤ c)
+SEKernel/PairedScores.lean:472:theorem iid_paired_average_moments {a b c : ℝ} (ha : 0 ≤ a) (hb : 0 ≤ b) (hc : 0 ≤ c)
+SEKernel/PairedScores.lean:487:theorem larger_gap_fewer_iid_wins :
+SEKernel/PairedScores.lean:504:theorem equal_variance_larger_gap_fewer_iid_wins :
+SEKernel/NoisySelection.lean:27:theorem full_state_transition_normalized {G H : Type*} [Fintype G] [Fintype H]
+SEKernel/NoisySelection.lean:55:theorem rankRecord_injective {P : ℕ} (score : Fin P → ℝ) (key : Fin P → ℤ) :
+SEKernel/NoisySelection.lean:68:theorem rankingList_nodup {P : ℕ} (score : Fin P → ℝ) (key : Fin P → ℤ) :
+SEKernel/NoisySelection.lean:76:theorem rankingList_length {P : ℕ} (score : Fin P → ℝ) (key : Fin P → ℤ) :
+SEKernel/NoisySelection.lean:81:theorem rankingList_lexicographic {P : ℕ} (score : Fin P → ℝ) (key : Fin P → ℤ) :
+SEKernel/NoisySelection.lean:129:theorem survivorCount_sum (roster : Fin P → G) (A : Survivors P S) :
+SEKernel/NoisySelection.lean:140:theorem expectedSurvivorCount_nonneg (L : Law (Survivors P S))
+SEKernel/NoisySelection.lean:144:theorem expectedSurvivorCount_sum (L : Law (Survivors P S)) (roster : Fin P → G) :
+SEKernel/NoisySelection.lean:153:theorem expectedSurvivorCount_absent (L : Law (Survivors P S))
+SEKernel/NoisySelection.lean:166:theorem price_count_identity (hS : 0 < S) (L : Law (Survivors P S))
+SEKernel/NoisySelection.lean:202:theorem topS_master (E : PooledExperiment Ω) (S : ℕ) (hS : 0 < S)
+SEKernel/NoisySelection.lean:243:theorem slot_tie_decomposition {S H L rplus rminus tau x : ℝ}
+SEKernel/NoisySelection.lean:254:theorem incumbent_tie_penalty {S H L rplus rminus tau x : ℝ} (hS : S ≠ 0) :
+SEKernel/NoisySelection.lean:261:theorem pairwise_incumbent_penalty (rplus tau : ℝ) :
+SEKernel/NoisySelection.lean:266:theorem balanced_fair_formula {S H L rplus rminus tau : ℝ}
+SEKernel/NoisySelection.lean:278:theorem balanced_incumbent_formula {S H L rplus rminus tau : ℝ}
+SEKernel/NoisySelection.lean:288:theorem balanced_count_geometry {P S : ℕ} (hP : Even P) (hS : 0 < S) (hSP : S < P) :
+SEKernel/NoisySelection.lean:298:theorem balanced_sign {P S : ℕ} (hP : Even P) (hS : 0 < S) (hSP : S < P)
+SEKernel/NoisySelection.lean:312:theorem neutral_rare_block : blockFraction 4 1 0 (1/2) (1/2) 0 (1/3) = 1/8 ∧
+SEKernel/NoisySelection.lean:316:theorem genotype_coin_differs_from_slot_ties :
+SEKernel/NoisySelection.lean:321:theorem unbiased_block_fitness_decline :
+SEKernel/NoisySelection.lean:327:theorem balanced_incumbent_sign_counterexample :
+SEKernel/NoisySelection.lean:339:theorem selection_transmission_environment (L : Law Ω) (x f : G → ℝ)
+SEKernel/NoisySelection.lean:356:theorem arbitrary_update_environment (L : Law Ω) (x f : G → ℝ)
+SEKernel/NoisySelection.lean:369:theorem controlled_remainder_bound {selection transmission environment gamma : ℝ}
+SEKernel/NoisySelection.lean:376:theorem affine_control_contrast (alpha beta selected current : ℝ) :
+SEKernel/NoisySelection.lean:388:theorem rankingList_mem {P : ℕ} (score : Fin P → ℝ) (key : Fin P → ℤ) (i : Fin P) :
+SEKernel/NoisySelection.lean:398:theorem lexSurvivors_topSet {P S : ℕ} (hSP : S ≤ P)
+SEKernel/NoisySelection.lean:417:theorem higher_target_count (score : ι → ℝ) (target B : Finset ι)
+SEKernel/NoisySelection.lean:444:theorem pooled_count_ahead {P S : ℕ} {G : Type*} [Fintype G]
+SEKernel/NoisySelection.lean:462:theorem pooled_count_behind {P S : ℕ} {G : Type*} [Fintype G]
+SEKernel/NoisySelection.lean:499:theorem implemented_topS_master {Ω G : Type*} [Fintype Ω] [Fintype G]
+SEKernel/NoisySelection.lean:546:theorem topSet_threshold (f : ι → ℝ) (A : Finset ι) (hA : A.Nonempty)
+SEKernel/NoisySelection.lean:562:theorem topSet_dominates_fractional (f : ι → ℝ) (A : Finset ι)
+SEKernel/NoisySelection.lean:589:theorem uniform_expect (f : ι → ℝ) :
+SEKernel/NoisySelection.lean:597:theorem true_top_variance_bound (f : ι → ℝ) (hf : ∀ i, 0 ≤ f i ∧ f i ≤ 1)
+SEKernel/NoisySelection.lean:678:theorem topSet_regret (f estimate : ι → ℝ) (A B : Finset ι)
+SEKernel/NoisySelection.lean:710:theorem setMean_bounds (f : ι → ℝ) (hf : ∀ i, 0 ≤ f i ∧ f i ≤ 1)
+SEKernel/NoisySelection.lean:721:theorem noisy_topSet_regret {Ω : Type*} [Fintype Ω] (L : Law Ω)
+SEKernel/NoisySelection.lean:748:theorem bad_score_probability {Ω : Type*} [Fintype Ω] (L : Law Ω)
+SEKernel/NoisySelection.lean:769:theorem noisy_top_variance_bound {Ω : Type*} [Fintype Ω] (L : Law Ω)
+SEKernel/NoisySelection.lean:785:theorem topSet_eq_of_strict_cross (estimate : ι → ℝ) (A B : Finset ι)
+SEKernel/NoisySelection.lean:804:theorem topSet_recovery_probability {Ω : Type*} [Fintype Ω] (L : Law Ω)
+SEKernel/NoisySelection.lean:834:theorem recovered_topSet_mean {Ω : Type*} [Fintype Ω] (L : Law Ω)
+SEKernel/NoisySelection.lean:861:theorem fairWinWeight_monotone : Monotone fairWinWeight := by
+SEKernel/NoisySelection.lean:875:theorem fairWinWeight_reflect (z : ℝ) : fairWinWeight z+fairWinWeight (-z)=1 := by
+SEKernel/NoisySelection.lean:881:theorem fairWin_error_le_nonpositive (L : Law Ω) (Z : Ω → ℝ) :
+SEKernel/NoisySelection.lean:892:theorem score_error_cantelli (L : Law Ω) (Z : Ω → ℝ) (hmean : 0 < L.expect Z) :
+SEKernel/NoisySelection.lean:904:theorem fairWin_variance_guarantee (L : Law Ω) (Z : Ω → ℝ) (hmean : 0 < L.expect Z) :
+SEKernel/NoisySelection.lean:914:theorem expect_equiv (L : Law Ω) (e : Ω ≃ Ω) (hmass : ∀ ω, L.mass (e ω)=L.mass ω)
+SEKernel/NoisySelection.lean:923:theorem symmetric_fairWin_zero (L : Law Ω) (Z : Ω → ℝ) (e : Ω ≃ Ω)
+SEKernel/NoisySelection.lean:936:theorem location_fairWin_monotone (L : Law Ω) (Z : Ω → ℝ) {a b : ℝ} (hab : a≤b) :
+SEKernel/NoisySelection.lean:940:theorem shifted_fairWin_reflect {a : ℝ} (ha : 0<a) (z : ℝ) :
+SEKernel/NoisySelection.lean:978:theorem signal_to_noise_identity (L : Law Ω) (Z : Ω → ℝ) (e : Ω ≃ Ω)
+SEKernel/NoisySelection.lean:1012:theorem same_variance_larger_mean_fewer_wins :

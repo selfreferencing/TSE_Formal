@@ -1,0 +1,24 @@
+import SEKernel.PluralityCountExamples
+#print axioms SEKernel.Epistemic.candidatePositions_eq_active_modes
+#print axioms SEKernel.Epistemic.first_mode_iff_plurality
+#print axioms SEKernel.Epistemic.plurality_mem_readableModes
+#print axioms SEKernel.Epistemic.readableModes_equal_count
+#print axioms SEKernel.Epistemic.active_modes_card
+#print axioms SEKernel.Epistemic.shuffled_plurality_probability
+#print axioms SEKernel.Epistemic.iid_countProfile_vote_probability
+#print axioms SEKernel.Epistemic.plurality_multinomial_formula
+#print axioms SEKernel.Epistemic.prob_map_event
+#print axioms SEKernel.Epistemic.iid_map_atom_probability
+#print axioms SEKernel.Epistemic.law_eq_of_mass_eq
+#print axioms SEKernel.Epistemic.iid_map_event_probability
+#print axioms SEKernel.Epistemic.labelFlag_eq_true
+#print axioms SEKernel.Epistemic.labelFlag_mass
+#print axioms SEKernel.Epistemic.wordCount_labelFlag
+#print axioms SEKernel.Epistemic.iid_single_label_count_probability
+#print axioms SEKernel.Epistemic.prob_value_mem_finset
+#print axioms SEKernel.Epistemic.iid_single_label_tail_probability
+#print axioms SEKernel.Epistemic.iid_five_consensus_polynomial
+#print axioms SEKernel.Epistemic.iid_five_falseConsensus_polynomial
+#print axioms SEKernel.Epistemic.actual_trap_correctMode_B
+#print axioms SEKernel.Epistemic.actual_trap_correctMode_A
+#print axioms SEKernel.Epistemic.actual_nonTrap_wrongMode_A
