@@ -155,3 +155,37 @@ proves E[f]=fmax for a law supported there; its interpretation as optimal payoff
 requires a separately certified true maximum. The selection bound explicitly
 carries hmax, and the whole-allocation KKT construction supplies a maximum
 certificate. No maximality premise is hidden in the equality-level-set definition.
+
+## Close-out pass, 2026-10-13 (seat-integrated; five new modules)
+
+The five modules are written by independent workers. The seat verified each one: it compiled each file, ran the forbidden-token scan, confirmed that headline statements use the kernel's own definitions, and ran the axiom check. All modules are integrated into `EpistemicFinite` and the combined audit.
+
+| Module | Theorems | Closes |
+|---|---:|---|
+| `CloseoutModalMonotonicity` | 25 | Doc B Thm A3.4 in full: `voteAccuracy_succ_sub_ge` (V_{N+1} − V_N ≥ u^N(1−u)/M under a weak correct mode); `voteAccuracy_monotone`; sharp in the single-label case. |
+| `CloseoutBinaryVoting` | 68 | Binary vote formula; fair ties V_{2k} = V_{2k−1}; hump identification on the actual binary 10/5 law, including the ideal recognizer's premium = `hump10`; union bound 1 − V_N ≤ N(1 − p); strengthened prefix realizability (keep 1 ⇒ post 1); both nonmodal counterexamples as actual laws; chance-pickup 5/32, 1/4, 3/32; partial recognizer (Doc B A5.3–A5.4). |
+| `CloseoutSelection` | 114 | Tie counts for the implemented slot, incumbent and genotype tie laws, and the master formula on the actual laws. 1/8 rare-newcomer share and the 151/200, −47/30000 decline derived from the actual sort. Incumbent mutation floor: no board survives; the floor holds at 2/25 for every generation and the control is above it for t ≥ 2; slot ties restore the baseline. Historical pooling via the actual sort: 3/32 > 1/12, zero under current-pool ranking. Task-heterogeneity variance; affine survival variance. Extras: the balanced iid sign theorem with the fair tie count derived, the twelve-board values, and the referee's −1/5 against +1/20. |
+| `CloseoutConcentration` | 83 | Doc B A6.2: one balancing transfer lowers V and raises both wrong-vote cells, at every N and k. A6.3: HLP reduction to balancing steps (standard majorization). A6.4: the concentration theorem and the premium theorem for fixed κ ∈ [0,1]³. A6.5: the size-interaction counterexample on actual laws (−81/4096). |
+| `CloseoutGenesSpawn` | 167 | Deterministic silent recursion, its closed form and fixed point 1/2 (deterministic map only, per G3), with η = (1 − e)μ on the actual lifecycle. Allocation converse (optimal ⇔ exchange ⇔ certificate) and the natural-vector ↔ prefix-set conversion. E1c–g marginal identities and E4c on actual iid laws. Conditional q/z formulas, elite-mixing recombination coefficients, and the G3 refuter (37/100 ≠ 73/200). D2b wrong-mode bound; clone-block reduction. B7.1 replay matrix-power formula. Extras listed in `scratch/closeout/GenesSpawn_REPORT.md`. |
+
+**Total: 457 new audited theorems; 1,078 overall.** The close-out's 457 are 436 on the standard trio, 14 on [propext, Quot.sound], 6 on [propext], and 1 on none. Combined: 1,050 / 20 / 6 / 2, with no nonstandard axiom, no sorryAx and no ofReduceBool.
+
+### Still not formalized after the close-out (each with its obstacle)
+
+- **Selection.**
+  - Sampling of distinct ordered parents (a parent-pair law was not requested).
+  - General n-board tie polynomials; only n = 1 and n = 12 are done.
+  - The full simulator transition with evaluation and history counters. The protocol's metadata update is abstract.
+  - For slot ties, the per-slot survival probability S/P is proved; uniformity of the survivor set over all S-subsets is not.
+- **Genes and spawning.**
+  - Analytic log/ceiling crossing-time corollaries (outside the finite scope; the Bernoulli certificates exist).
+  - A concrete experimental metadata update (Φ, r_σ), which the protocol does not specify.
+  - Equality of the G3 role-selection law with `slotTieSelectionLaw` (a symmetrization count over Perm (Fin 4)). The refuter does not depend on it.
+- **Earlier-wave items not targeted by this pass.**
+  - The general-k hump polynomial and derivative identities (k = 5 is done).
+  - The general two-block multinomial joint law for the overlapping design (the binary 10/5 consequences are done).
+  - The distribution-level variety counterexample (Doc A A8) and Doc B A8.1's state-level witness.
+  - Tie-at-the-mode completion.
+  - Doc A's second-moment bounds A3.1–A3.3 in their printed form. Doc B's geometric bounds dominate them, and the wrong-mode Chebyshev bound is proved.
+  - Fixed-discordance coupling, and the count-state non-Markov witness.
+- **Optional T2 analysis, excluded by design:** Hoeffding refinements, the continuous scale-family theorem, the real-root peak 126^(−1/4), Gaussian forms, and limits.

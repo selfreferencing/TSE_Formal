@@ -1,0 +1,92 @@
+SEKernel/CloseoutConcentration.lean:512:0: warning: automatically included section variable(s) unused in theorem `SEKernel.Closeout.Concentration.decodeWord_wild`:
+  [Fintype A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+SEKernel/CloseoutConcentration.lean:517:0: warning: automatically included section variable(s) unused in theorem `SEKernel.Closeout.Concentration.decodeWord_wild'`:
+  [Fintype A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+SEKernel/CloseoutConcentration.lean:523:0: warning: automatically included section variable(s) unused in theorem `SEKernel.Closeout.Concentration.decodeWord_nonwild`:
+  [Fintype A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+SEKernel/CloseoutConcentration.lean:753:0: warning: automatically included section variable(s) unused in theorem `SEKernel.Closeout.Concentration.winIndicator_of`:
+  [Fintype A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+SEKernel/CloseoutConcentration.lean:758:0: warning: automatically included section variable(s) unused in theorem `SEKernel.Closeout.Concentration.winIndicator_of_not`:
+  [Fintype A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+SEKernel/CloseoutConcentration.lean:781:0: warning: automatically included section variable(s) unused in theorem `SEKernel.Closeout.Concentration.readsOnly_true`:
+  [Fintype A]
+  [DecidableEq A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype A] [DecidableEq A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+SEKernel/CloseoutConcentration.lean:784:0: warning: automatically included section variable(s) unused in theorem `SEKernel.Closeout.Concentration.readsOnly_reaches`:
+  [Fintype A]
+  [DecidableEq A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype A] [DecidableEq A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+SEKernel/CloseoutConcentration.lean:916:0: warning: automatically included section variable(s) unused in theorem `SEKernel.Closeout.Concentration.voteAccuracy_eq_win`:
+  [DecidableEq A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+SEKernel/CloseoutConcentration.lean:921:0: warning: automatically included section variable(s) unused in theorem `SEKernel.Closeout.Concentration.jointVoteReach_eq_win`:
+  [DecidableEq A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+SEKernel/CloseoutConcentration.lean:925:0: warning: automatically included section variable(s) unused in theorem `SEKernel.Closeout.Concentration.jointVoteAbsent_eq_win`:
+  [DecidableEq A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+SEKernel/CloseoutConcentration.lean:931:0: warning: automatically included section variable(s) unused in theorem `SEKernel.Closeout.Concentration.reachProbability_eq_min`:
+  [DecidableEq A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+SEKernel/CloseoutConcentration.lean:1279:0: warning: automatically included section variable(s) unused in theorem `SEKernel.Closeout.Concentration.massOf_some_wrong`:
+  [Fintype A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+SEKernel/CloseoutConcentration.lean:1283:0: warning: automatically included section variable(s) unused in theorem `SEKernel.Closeout.Concentration.massOf_nonneg`:
+  [Fintype A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+SEKernel/CloseoutConcentration.lean:1413:0: warning: automatically included section variable(s) unused in theorem `SEKernel.Closeout.Concentration.premium_eq`:
+  [DecidableEq A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+SEKernel/CloseoutConcentration.lean:1746:20: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+SEKernel/CloseoutConcentration.lean:1749:23: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`

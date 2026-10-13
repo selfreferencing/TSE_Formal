@@ -1,0 +1,122 @@
+scratch/closeout/concentration/AxCheck.lean:512:0: warning: automatically included section variable(s) unused in theorem `SEKernel.Closeout.Concentration.decodeWord_wild`:
+  [Fintype A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+scratch/closeout/concentration/AxCheck.lean:517:0: warning: automatically included section variable(s) unused in theorem `SEKernel.Closeout.Concentration.decodeWord_wild'`:
+  [Fintype A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+scratch/closeout/concentration/AxCheck.lean:523:0: warning: automatically included section variable(s) unused in theorem `SEKernel.Closeout.Concentration.decodeWord_nonwild`:
+  [Fintype A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+scratch/closeout/concentration/AxCheck.lean:753:0: warning: automatically included section variable(s) unused in theorem `SEKernel.Closeout.Concentration.winIndicator_of`:
+  [Fintype A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+scratch/closeout/concentration/AxCheck.lean:758:0: warning: automatically included section variable(s) unused in theorem `SEKernel.Closeout.Concentration.winIndicator_of_not`:
+  [Fintype A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+scratch/closeout/concentration/AxCheck.lean:781:0: warning: automatically included section variable(s) unused in theorem `SEKernel.Closeout.Concentration.readsOnly_true`:
+  [Fintype A]
+  [DecidableEq A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype A] [DecidableEq A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+scratch/closeout/concentration/AxCheck.lean:784:0: warning: automatically included section variable(s) unused in theorem `SEKernel.Closeout.Concentration.readsOnly_reaches`:
+  [Fintype A]
+  [DecidableEq A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype A] [DecidableEq A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+scratch/closeout/concentration/AxCheck.lean:916:0: warning: automatically included section variable(s) unused in theorem `SEKernel.Closeout.Concentration.voteAccuracy_eq_win`:
+  [DecidableEq A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+scratch/closeout/concentration/AxCheck.lean:921:0: warning: automatically included section variable(s) unused in theorem `SEKernel.Closeout.Concentration.jointVoteReach_eq_win`:
+  [DecidableEq A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+scratch/closeout/concentration/AxCheck.lean:925:0: warning: automatically included section variable(s) unused in theorem `SEKernel.Closeout.Concentration.jointVoteAbsent_eq_win`:
+  [DecidableEq A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+scratch/closeout/concentration/AxCheck.lean:931:0: warning: automatically included section variable(s) unused in theorem `SEKernel.Closeout.Concentration.reachProbability_eq_min`:
+  [DecidableEq A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+scratch/closeout/concentration/AxCheck.lean:1279:0: warning: automatically included section variable(s) unused in theorem `SEKernel.Closeout.Concentration.massOf_some_wrong`:
+  [Fintype A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+scratch/closeout/concentration/AxCheck.lean:1283:0: warning: automatically included section variable(s) unused in theorem `SEKernel.Closeout.Concentration.massOf_nonneg`:
+  [Fintype A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+scratch/closeout/concentration/AxCheck.lean:1413:0: warning: automatically included section variable(s) unused in theorem `SEKernel.Closeout.Concentration.premium_eq`:
+  [DecidableEq A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+scratch/closeout/concentration/AxCheck.lean:1746:20: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+scratch/closeout/concentration/AxCheck.lean:1749:23: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'SEKernel.Closeout.Concentration.binomial_balance_fin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.Concentration.bool_balancing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.Concentration.plurality_of_dominated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.Concentration.wordSum_collapse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.Concentration.wordSum_balancing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.Concentration.decode_win_conditions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.Concentration.wordSum_win_balancing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.Concentration.balancing_transfer_win' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.Concentration.balancing_transfer_cells' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.Concentration.concentrating_transfer_cells' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.Closeout.Concentration.balancing_transfer_premium' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.Concentration.hlp_sorted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.Concentration.hlp_majorizes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.Concentration.concentration_win' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.Concentration.concentration_cells' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.Concentration.concentration_premium' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.Concentration.premium_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.Concentration.voteAccuracy_law3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.Concentration.vote_conc_4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.Concentration.vote_conc_5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.Concentration.vote_diff_4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.Concentration.vote_diff_5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.Concentration.premium_full_post' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.Concentration.size_interaction_counterexample' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.Closeout.Concentration.conc_majorizes_diff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.Concentration.conc_premium_ge_diff' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,29 @@
+'SEKernel.Closeout.ModalMonotonicity.voteAccuracy_succ_sub_ge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.Closeout.ModalMonotonicity.voteAccuracy_le_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.ModalMonotonicity.voteAccuracy_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.ModalMonotonicity.voteAccuracy_succ_sub_eq_of_subsingleton' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.Closeout.ModalMonotonicity.modalIncrement_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.ModalMonotonicity.jointWeight_le_of_labelCount_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.Closeout.ModalMonotonicity.jointWeight_le_winnerOr' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.ModalMonotonicity.jointWeight_eq_sum_cons' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.ModalMonotonicity.jointWeight_allAbstain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.ModalMonotonicity.stateAccuracy_eq_voteAccuracy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.Closeout.ModalMonotonicity.sum_jointWeight_winnerOr' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.Closeout.ModalMonotonicity.normalized_J_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.ModalMonotonicity.sum_jointWeight_winnerOr_mono' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.Closeout.ModalMonotonicity.card_mul_fixCount' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.ModalMonotonicity.prod_pow_le_prod_pow_swap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

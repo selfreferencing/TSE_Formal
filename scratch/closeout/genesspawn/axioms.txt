@@ -1,0 +1,207 @@
+'SEKernel.Closeout.GenesSpawn.silentRecursion_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.silentRecursion_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.silentRecursion_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.silent_fixed_point_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.silent_half_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.silentRecursion_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.silent_contraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.silentRecursion_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.silentRecursion_from_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.silentRecursion_monotone_from_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.Closeout.GenesSpawn.silentRecursion_from_zero_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.Closeout.GenesSpawn.silentRecursion_not_monotone_above_half' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.Closeout.GenesSpawn.SilentLifecycle.select_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.SilentLifecycle.select_voterShare_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.Closeout.GenesSpawn.SilentLifecycle.next_voterShare' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.Closeout.GenesSpawn.SilentLifecycle.next_silent_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.Closeout.GenesSpawn.SilentLifecycle.next_silent_frequency' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.Closeout.GenesSpawn.SilentLifecycle.orbit_voterShare_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.Closeout.GenesSpawn.SilentLifecycle.orbit_silent_frequency' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.Closeout.GenesSpawn.SilentLifecycle.orbit_silent_closed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.Closeout.GenesSpawn.SilentLifecycle.eta_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.SilentLifecycle.eta_le_mu' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.SilentLifecycle.orbit_monotone_from_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.Closeout.GenesSpawn.SilentLifecycle.orbit_tendsto_half' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.Closeout.GenesSpawn.docB_silent_example' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.scalar_y_denominator_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.scalar_y_increment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.scalar_y_increases_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.scalar_y_endpoints' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.actual_y_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.actual_B_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.slot_eq_iff' does not depend on any axioms
+'SEKernel.Closeout.GenesSpawn.prefixClosed_of_threshold' depends on axioms: [propext, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.nextSlot_not_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.lastSlot_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.not_mem_le_next' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.mem_ge_last' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.insert_next_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.swap_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.optimal_implies_exchange' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.exchange_implies_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.prefix_optimal_iff_exchange' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.mem_prefixSet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.prefixSet_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.taskCount_prefixSet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.prefixSet_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.prefixSet_taskCount' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.toPrefix_taskCount' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.reachObjective_eq_slotValue' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.exists_optimal_nat_allocation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.nat_optimal_iff_prefix_optimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.nat_allocation_optimal_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.nat_allocation_optimal_iff_shadow_price' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.Closeout.GenesSpawn.cellPayoff_decomp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.threeCell_decomposition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.threeCell_increment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.prob_not_and_of_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.threeCell_posted_decomposition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.prob_prod_and' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.reaches_succ_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.prob_label_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.first_hit_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.fixed_benchmark_marginal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.fixed_benchmark_marginal_abs_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.Closeout.GenesSpawn.independent_benchmark_marginal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.posted_benchmark_payoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.posted_benchmark_marginal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.posted_benchmark_premium_marginal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.Closeout.GenesSpawn.selection_regret_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.recombine_signed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.recombine_voterMass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.advocate_conditional_decomposition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.Closeout.GenesSpawn.recombine_condQ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.recombine_condZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.linkage_conditional' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.elite_mixing_recombination' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.elite_independent_crossover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.elite_distinct_crossover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.uniform_slot_identification' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.selection_recombination_creates_silent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.Closeout.GenesSpawn.mutate_board_coordinate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.mutate_boardMass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.OrderModel.c_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.OrderModel.selected_compartments' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.Closeout.GenesSpawn.OrderModel.selected_condZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.OrderModel.selected_condQ_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.OrderModel.step_order' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.OrderModel.orbit_order' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.OrderModel.orbit_ge_neutral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.binomialMix_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.iid_expect_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.silentCountR_cons' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.voterCountR_cons' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.iid_ratio_binomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.nextSilentExpectation_binomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.nextSilentExpectation_binomial_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.Closeout.GenesSpawn.nextSilentExpectation_no_voter_children' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SEKernel.Closeout.GenesSpawn.law_map_bind' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.law_bind_map' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.law_map_map' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.fullStateKernel_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.fullStateKernel_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.marginY_mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.marginY_variance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.marginY_count_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.wrong_mode_count_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.wrong_mode_accuracy_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.blockSize_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.clone_sum_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.clone_block_reduction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.decisionValue_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.decisionValue_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.kernelProd_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.matrixProd_stochastic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.replayLaw_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.replay_expectation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.matrixProd_const' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.replay_expectation_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.roleTopSets_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.roleSelection_expect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.sum_selectedRoster' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.roleTop_all_boards' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.roleTop_one_board_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.roleTop_one_board_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.one_board_of_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.roleSelection_one_board' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.roleSelection_many_boards' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.g3Start_0' depends on axioms: [propext]
+'SEKernel.Closeout.GenesSpawn.g3Start_1' depends on axioms: [propext]
+'SEKernel.Closeout.GenesSpawn.g3Start_2' depends on axioms: [propext]
+'SEKernel.Closeout.GenesSpawn.g3Start_3' depends on axioms: [propext]
+'SEKernel.Closeout.GenesSpawn.psiSilent_board' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.psiVoter_board' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.g3Child_silent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.g3Child_voter' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.g3Step_silent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.g3Step_voter' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.pointLaw_bind_expect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.g3Start_boards' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.g3_t1_silent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.g3_t1_voter' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.boardSet_card_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.boardSet_nextRoster' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.next_generation_pointwise' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.brood_expect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.expect_voterInd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.expect_voterInd_silent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.expect_voterInd_voter' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.pair_survivor_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.pair_board_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.pair_psi_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.second_generation_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.theta_expect_voterInd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.theta_expect_silent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.theta_expect_voter' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.g3Start_voters' depends on axioms: [propext]
+'SEKernel.Closeout.GenesSpawn.g3_two_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.erase_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.pair_voterMass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.g3_t2_silent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.g3_t2_voter' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.mass_eq_expect_indicator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.slotLaw_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.voterCountR_eq_counts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.slotSilentFrequency_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.pointLaw_expect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SEKernel.Closeout.GenesSpawn.g3_refuter' depends on axioms: [propext, Classical.choice, Quot.sound]

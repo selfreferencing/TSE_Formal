@@ -22,3 +22,8 @@ import SEKernel.GenotypeTransition
 import SEKernel.CorrelatedAnswers
 import SEKernel.SpawnAllocation
 import SEKernel.InnovationArrival
+import SEKernel.CloseoutBinaryVoting
+import SEKernel.CloseoutModalMonotonicity
+import SEKernel.CloseoutSelection
+import SEKernel.CloseoutConcentration
+import SEKernel.CloseoutGenesSpawn

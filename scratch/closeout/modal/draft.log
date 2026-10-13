@@ -1,0 +1,40 @@
+scratch/closeout/modal/Draft.lean:83:0: warning: automatically included section variable(s) unused in theorem `SEKernel.Closeout.ModalMonotonicity.stateLikelihood_nonneg`:
+  [DecidableEq A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+scratch/closeout/modal/Draft.lean:85:25: warning: unused variable `i`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+scratch/closeout/modal/Draft.lean:114:0: warning: automatically included section variable(s) unused in theorem `SEKernel.Closeout.ModalMonotonicity.stateLikelihood_cons`:
+  [DecidableEq A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+scratch/closeout/modal/Draft.lean:122:0: warning: automatically included section variable(s) unused in theorem `SEKernel.Closeout.ModalMonotonicity.sum_mass_relabel`:
+  [DecidableEq A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+scratch/closeout/modal/Draft.lean:140:0: warning: automatically included section variable(s) unused in theorem `SEKernel.Closeout.ModalMonotonicity.sum_word_succ`:
+  [DecidableEq A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+scratch/closeout/modal/Draft.lean:149:0: warning: automatically included section variable(s) unused in theorem `SEKernel.Closeout.ModalMonotonicity.labelCount_le_winnerOr`:
+  [Fintype A]
+  [DecidableEq A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype A] [DecidableEq A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+scratch/closeout/modal/Draft.lean:190:0: warning: automatically included section variable(s) unused in theorem `SEKernel.Closeout.ModalMonotonicity.prob_plurality_none`:
+  [DecidableEq A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
