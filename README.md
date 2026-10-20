@@ -4,12 +4,9 @@ Machine-verified kernel of the formal backbone of Kevin Vallier, *The Theory of
 Strategic Evolution: Games with Endogenous Players and the Seven Laws of
 Strategic Replicators* (arXiv:2512.07901).
 
-> **Looking for the paper itself?** This repository is the Lean kernel only.
-> The paper — LaTeX source, compiled PDF, and the v4 changelog — lives at
-> **[`selfreferencing/TSE_Paper`](https://github.com/selfreferencing/TSE_Paper)**.
-> The arXiv preprint links here, so readers arriving from it land on the
-> verification rather than the text; that is deliberate, but the paper is one
-> click away.
+> **Looking for the paper?** This repository is the Lean development only. The
+> paper is [arXiv:2512.07901](https://arxiv.org/abs/2512.07901) (version 4), which links here.
+> The current draft of the paper, *Three Principles of Strategic Replicators*, drops Law 7.
 
 [![Lean 4](https://img.shields.io/badge/Lean-v4.28.0--rc1-blue.svg)](https://lean-lang.org/)
 [![Mathlib4](https://img.shields.io/badge/Mathlib-4-green.svg)](https://github.com/leanprover-community/mathlib4)
@@ -44,15 +41,13 @@ number is machine-DERIVED from the replicator–mutator dynamics
 at `κ = μ = 0` is identified (`Law7_Hopf.lean`, `Law7_Instantiation.lean`,
 `RepairProbe.lean`).
 
-The design contract, deviations, and per-law status live in three documents:
+The design contract, deviations, and per-law status live in two documents:
 
 - [`STATEMENTS.md`](STATEMENTS.md) — theorem-by-theorem transcription of the
   paper's claims into the exact statements the Lean proves, with the ambiguity
   ledger (AQ-1 … AQ-20) and every recorded deviation.
 - [`RETURN.md`](RETURN.md) — per-law verification status, the axiom audit
   protocol, artifact hashes, the repairs, and plain-language summaries.
-- [`RECONCILIATION.md`](RECONCILIATION.md) — provenance and the relationship to
-  the earlier partial formalization described in the paper's own notes.
 
 ## The Seven Laws
 
@@ -127,10 +122,8 @@ audit list) reports zero custom axioms and zero `sorryAx` dependencies.
 The Lean statements are the contract in `STATEMENTS.md`, not a paraphrase.
 Where the discrete-time or certificate form deviates from the paper's
 continuous-time or spectral phrasing, the deviation is recorded there with its
-rationale. The paper is arXiv:2512.07901; its LaTeX source and the
-author-facing writeup live in the companion
-[`TSE_Paper`](https://github.com/selfreferencing/TSE_Paper) repository.
+rationale. The paper is arXiv:2512.07901.
 
 ## License
 
-Following the paper. See the author, Kevin Vallier.
+Apache License 2.0; see `LICENSE`.
