@@ -188,4 +188,28 @@ The five modules are written by independent workers. The seat verified each one:
   - Tie-at-the-mode completion.
   - Doc A's second-moment bounds A3.1–A3.3 in their printed form. Doc B's geometric bounds dominate them, and the wrong-mode Chebyshev bound is proved.
   - Fixed-discordance coupling, and the count-state non-Markov witness.
-- **Optional T2 analysis, excluded by design:** Hoeffding refinements, the continuous scale-family theorem, the real-root peak 126^(−1/4), Gaussian forms, and limits.
+- **Optional T2 analysis, excluded by design:** Hoeffding refinements, the continuous scale-family theorem, Gaussian forms, and limits.
+
+## Hump peak and worst-case wrong answers, 2026-10-21
+
+`SEKernel.CloseoutHumpPeak` proves the derivative
+`hump10'(p) = (1-p)^4 (5-630p^4)` and defines the positive fourth root
+`humpPeak = sqrt (sqrt (1/126))`. It proves `0.29 < humpPeak < 0.30`,
+strict increase on `[0,humpPeak]`, strict decrease on `[humpPeak,1]`,
+the unique maximum on `[0,1]`, and
+`7331/10000 < hump10 humpPeak < 7332/10000`.
+
+`SEKernel.Closeout.HumpWorstCase.premium_le_hump10` proves that, for every
+finite answer law with zero abstention, the actual ten-voter / five-posted
+ideal-board premium is at most `hump10` of the right-answer mass.
+`premium_eq_hump10_of_single_wrong` proves equality when at most one wrong
+label has positive mass. The proof merges wrong labels in ordered words,
+preserves the first-appearance tie rule, and transports the actual IID law.
+
+These two modules add 21 named theorems; both are integrated into the finite
+umbrella and its append-only audit. The combined build and audit pass; all
+21 additions use only the permitted standard axioms (19 use the standard trio,
+2 use propext alone), bringing the combined audit to 1,099 theorems. Exact statements, checks, axiom output,
+and the local branch/commit scope are in [RETURN_HUMP_PEAK.md](RETURN_HUMP_PEAK.md).
+All requested A1-A5, B1 and B2 statements are formalized. The other omissions
+listed above remain outside this addition.

@@ -27,3 +27,5 @@ import SEKernel.CloseoutModalMonotonicity
 import SEKernel.CloseoutSelection
 import SEKernel.CloseoutConcentration
 import SEKernel.CloseoutGenesSpawn
+import SEKernel.CloseoutHumpPeak
+import SEKernel.CloseoutHumpWorstCase
